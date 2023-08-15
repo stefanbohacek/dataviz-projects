@@ -1,0 +1,103 @@
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css" />
+<main class="flex-shrink-0 mb-5">
+  <div class="container">
+    <h1 class="mt-5">Makeover Monday 2021: Week 24</h1>
+    <p class="lead">Which schools create the most student loans?</p>
+    <p>
+      Assuming that you earn an <strong>average salary</strong> in the state where you
+      graduated and are able to use <strong>10%</strong> of it to pay your student loan, how
+      long does it take to pay it off?
+    </p>
+    <div align="center" class="mt-5 mb-5 p-3 pt-5 pb-5 bg-light">
+      <svg></svg>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <ul class="legend">
+          <li>
+            <span class="legend-title">Loan payoff time</span>
+          </li>
+          <li>
+            <span class="legend-color legend-color-min"></span>
+            <span class="legend-value">10 months</span>
+          </li>
+          <li>
+            <span class="legend-color legend-color-max"></span>
+            <span class="legend-value">30 months</span>
+          </li>
+        </ul>  
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <ul class="legend">
+          <li>
+            <span class="legend-title">Highlights</span>
+          </li>
+          <li>
+            <span class="legend-color" style="background-color: #8d93ac;"></span>
+            <span class="legend-value">California: 33 months</span>
+          </li>
+          <li>
+            <span class="legend-color" style="background-color: #8d93ac;"></span>
+            <span class="legend-value">Alabama: 31 months</span>
+          </li>
+          <li>
+            <span class="legend-color" style="background-color: #8d93ac;"></span>
+            <span class="legend-value">Illinois: 31 months</span>
+          </li>
+          <li>
+            <span class="legend-color" style="background-color: #b7cbdc;"></span>
+            <span class="legend-value">North Dakota: 17 months</span>
+          </li>
+          <li>
+            <span class="legend-color" style="background-color: #b7cbdc;"></span>
+            <span class="legend-value">Alaska: 16 months</span>
+          </li>
+          <li>
+            <span class="legend-color" style="background-color: #c5dbe9;"></span>
+            <span class="legend-value">South Dakota: 15 months</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-5 pt-5">
+      <div class="col-auto">
+        <table
+          class="table table-responsive table-striped table-hover centered mt-5"
+          style="max-width: 900px"
+        >
+          <thead>
+            <tr>
+              <th title="Field #1">State</th>
+              <th title="Field #2">$ Loan per recipient</th>
+              <th title="Field #3">$ Annual Salary</th>
+              <th title="Field #4">Months to pay off</th>
+            </tr>
+          </thead>
+          <tbody id="data-table-body">
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h2 class="mt-5">Sources</h2>
+
+    <ul>
+      <li>
+        2021/W24: Which Schools Create the Most Student Loans?
+        <a href="https://data.world/makeovermonday/2021w24">data.world</a>
+      </li>
+      <li>
+        What Is the Average College Grads Salary by State
+        <a
+          href="https://www.ziprecruiter.com/Salaries/What-Is-the-Average-College-Grads-Salary-by-State"
+          >ziprecruiter.com</a
+        >
+      </li>
+    </ul>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>    
+<script src="https://d3js.org/queue.v1.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>

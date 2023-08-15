@@ -1,0 +1,38 @@
+/* Variables */
+/* Styles */
+body {
+  background-color: #16161a;
+  color: #94a1b2; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fffffe; }
+
+a {
+  color: #7f5af0; }
+  a:hover {
+    color: #fff; }
+
+mark {
+  color: #fff;
+  background-color: #7f5af0; }
+
+.bg-dark {
+  background-color: #72757e; }
+
+.bg-light {
+  background-color: #94a1b2 !important; }
+
+.btn-outline-primary {
+  color: #7f5af0;
+  border-color: #7f5af0; }
+  .btn-outline-primary:hover, .btn-outline-primary.selected {
+    color: #fff;
+    border-color: #7f5af0;
+    background-color: #7f5af0; }
+
+footer {
+  color: #fff; }
+  footer a {
+    color: #fff; }
+    footer a:hover {
+      color: #7f5af0; }

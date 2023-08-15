@@ -1,0 +1,54 @@
+/* Variables */
+/* Styles */
+body {
+  background-color: #F2F2F2;
+  color: #0D0D0D; }
+
+a {
+  color: #5597A6; }
+  a:hover {
+    color: #6FC5D9; }
+
+h1, h2, h3 {
+  color: #333333; }
+
+footer p {
+  color: #343E40; }
+
+footer .border-bottom {
+  border-bottom-color: #343E40 !important; }
+
+#chart {
+  min-height: 150px; }
+
+.step {
+  max-width: 720px;
+  margin: 0 auto; }
+  .step, .step.bg-dark {
+    -webkit-transition: color 0.1s, background-color 0.3s;
+    -o-transition: color 0.1s, background-color 0.3s;
+    transition: color 0.1s, background-color 0.3s; }
+  .step .percent-lasted {
+    opacity: 0; }
+  .step.bg-dark {
+    color: white;
+    background-color: #D98B79 !important; }
+    .step.bg-dark .days-lasted,
+    .step.bg-dark .days-left {
+      font-weight: bold;
+      white-space: nowrap;
+      background-color: #fff;
+      padding: 4px; }
+    .step.bg-dark .percent-lasted {
+      opacity: 1; }
+    .step.bg-dark .days-lasted {
+      color: #485659; }
+    .step.bg-dark .days-left {
+      color: #D98B79; }
+    .step.bg-dark a {
+      color: #fff; }
+      .step.bg-dark a:hover {
+        color: #fff; }
+
+footer a {
+  color: #D98B79 !important; }

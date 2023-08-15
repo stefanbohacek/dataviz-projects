@@ -1,0 +1,319 @@
+{
+    "1971":{
+        "overshoot_day": "12-25",
+        "days_lasted": 358,
+        "days_left": 7,
+        "percent_lasted": 98.08
+    },
+    "1972":{
+        "overshoot_day": "12-14",
+        "days_lasted": 348,
+        "days_left": 18,
+        "percent_lasted": 95.08
+    },
+    "1973":{
+        "overshoot_day": "12-01",
+        "days_lasted": 334,
+        "days_left": 31,
+        "percent_lasted": 91.51
+    },
+    "1974":{
+        "overshoot_day": "12-02",
+        "days_lasted": 335,
+        "days_left": 30,
+        "percent_lasted": 91.78
+    },
+    "1975":{
+        "overshoot_day": "12-04",
+        "days_lasted": 337,
+        "days_left": 28,
+        "percent_lasted": 92.33
+    },
+    "1976":{
+        "overshoot_day": "11-21",
+        "days_lasted": 325,
+        "days_left": 41,
+        "percent_lasted": 88.8
+    },
+    "1977":{
+        "overshoot_day": "11-15",
+        "days_lasted": 318,
+        "days_left": 47,
+        "percent_lasted": 87.12
+    },
+    "1978":{
+        "overshoot_day": "11-11",
+        "days_lasted": 314,
+        "days_left": 51,
+        "percent_lasted": 86.03
+    },
+    "1979":{
+        "overshoot_day": "11-02",
+        "days_lasted": 305,
+        "days_left": 60,
+        "percent_lasted": 83.56
+    },
+    "1980":{
+        "overshoot_day": "11-08",
+        "days_lasted": 312,
+        "days_left": 54,
+        "percent_lasted": 85.25
+    },
+    "1981":{
+        "overshoot_day": "11-15",
+        "days_lasted": 318,
+        "days_left": 47,
+        "percent_lasted": 87.12
+    },
+    "1982":{
+        "overshoot_day": "11-19",
+        "days_lasted": 322,
+        "days_left": 43,
+        "percent_lasted": 88.22
+    },
+    "1983":{
+        "overshoot_day": "11-19",
+        "days_lasted": 322,
+        "days_left": 43,
+        "percent_lasted": 88.22
+    },
+    "1984":{
+        "overshoot_day": "11-11",
+        "days_lasted": 315,
+        "days_left": 51,
+        "percent_lasted": 86.07
+    },
+    "1985":{
+        "overshoot_day": "11-08",
+        "days_lasted": 311,
+        "days_left": 54,
+        "percent_lasted": 85.21
+    },
+    "1986":{
+        "overshoot_day": "11-03",
+        "days_lasted": 306,
+        "days_left": 59,
+        "percent_lasted": 83.84
+    },
+    "1987":{
+        "overshoot_day": "10-27",
+        "days_lasted": 299,
+        "days_left": 66,
+        "percent_lasted": 81.92
+    },
+    "1988":{
+        "overshoot_day": "10-18",
+        "days_lasted": 291,
+        "days_left": 75,
+        "percent_lasted": 79.51
+    },
+    "1989":{
+        "overshoot_day": "10-15",
+        "days_lasted": 287,
+        "days_left": 78,
+        "percent_lasted": 78.63
+    },
+    "1990":{
+        "overshoot_day": "10-14",
+        "days_lasted": 286,
+        "days_left": 79,
+        "percent_lasted": 78.36
+    },
+    "1991":{
+        "overshoot_day": "10-13",
+        "days_lasted": 285,
+        "days_left": 80,
+        "percent_lasted": 78.08
+    },
+    "1992":{
+        "overshoot_day": "10-15",
+        "days_lasted": 288,
+        "days_left": 78,
+        "percent_lasted": 78.69
+    },
+    "1993":{
+        "overshoot_day": "10-15",
+        "days_lasted": 287,
+        "days_left": 78,
+        "percent_lasted": 78.63
+    },
+    "1994":{
+        "overshoot_day": "10-13",
+        "days_lasted": 285,
+        "days_left": 80,
+        "percent_lasted": 78.08
+    },
+    "1995":{
+        "overshoot_day": "10-07",
+        "days_lasted": 279,
+        "days_left": 86,
+        "percent_lasted": 76.44
+    },
+    "1996":{
+        "overshoot_day": "10-04",
+        "days_lasted": 277,
+        "days_left": 89,
+        "percent_lasted": 75.68
+    },
+    "1997":{
+        "overshoot_day": "10-01",
+        "days_lasted": 273,
+        "days_left": 92,
+        "percent_lasted": 74.79
+    },
+    "1998":{
+        "overshoot_day": "10-01",
+        "days_lasted": 273,
+        "days_left": 92,
+        "percent_lasted": 74.79
+    },
+    "1999":{
+        "overshoot_day": "10-01",
+        "days_lasted": 273,
+        "days_left": 92,
+        "percent_lasted": 74.79
+    },
+    "2000":{
+        "overshoot_day": "09-25",
+        "days_lasted": 268,
+        "days_left": 98,
+        "percent_lasted": 73.22
+    },
+    "2001":{
+        "overshoot_day": "09-24",
+        "days_lasted": 266,
+        "days_left": 99,
+        "percent_lasted": 72.88
+    },
+    "2002":{
+        "overshoot_day": "09-21",
+        "days_lasted": 263,
+        "days_left": 102,
+        "percent_lasted": 72.05
+    },
+    "2003":{
+        "overshoot_day": "09-11",
+        "days_lasted": 253,
+        "days_left": 112,
+        "percent_lasted": 69.32
+    },
+    "2004":{
+        "overshoot_day": "09-02",
+        "days_lasted": 245,
+        "days_left": 121,
+        "percent_lasted": 66.94
+    },
+    "2005":{
+        "overshoot_day": "08-26",
+        "days_lasted": 237,
+        "days_left": 128,
+        "percent_lasted": 64.93
+    },
+    "2006":{
+        "overshoot_day": "08-21",
+        "days_lasted": 232,
+        "days_left": 133,
+        "percent_lasted": 63.56
+    },
+    "2007":{
+        "overshoot_day": "08-15",
+        "days_lasted": 226,
+        "days_left": 139,
+        "percent_lasted": 61.92
+    },
+    "2008":{
+        "overshoot_day": "08-15",
+        "days_lasted": 227,
+        "days_left": 139,
+        "percent_lasted": 62.02
+    },
+    "2009":{
+        "overshoot_day": "08-19",
+        "days_lasted": 230,
+        "days_left": 135,
+        "percent_lasted": 63.01
+    },
+    "2010":{
+        "overshoot_day": "08-08",
+        "days_lasted": 219,
+        "days_left": 146
+    },
+    "2011":{
+        "overshoot_day": "08-04",
+        "days_lasted": 215,
+        "days_left": 150,
+        "percent_lasted": 58.9
+    },
+    "2012":{
+        "overshoot_day": "08-04",
+        "days_lasted": 216,
+        "days_left": 150,
+        "percent_lasted": 59.02
+    },
+    "2013":{
+        "overshoot_day": "08-03",
+        "days_lasted": 214,
+        "days_left": 151,
+        "percent_lasted": 58.63
+    },
+    "2014":{
+        "overshoot_day": "08-04",
+        "days_lasted": 215,
+        "days_left": 150,
+        "percent_lasted": 58.9
+    },
+    "2015":{
+        "overshoot_day": "08-05",
+        "days_lasted": 216,
+        "days_left": 149,
+        "percent_lasted": 59.18
+    },
+    "2016":{
+        "overshoot_day": "08-06",
+        "days_lasted": 218,
+        "days_left": 148,
+        "percent_lasted": 59.56
+    },
+    "2017":{
+        "overshoot_day": "08-01",
+        "days_lasted": 212,
+        "days_left": 153,
+        "percent_lasted": 58.08
+    },
+    "2018":{
+        "overshoot_day": "07-28",
+        "days_lasted": 208,
+        "days_left": 157,
+        "percent_lasted": 56.99
+    },
+    "2019":{
+        "overshoot_day": "07-29",
+        "days_lasted": 209,
+        "days_left": 156,
+        "percent_lasted": 57.26
+    },
+    "2020":{
+        "overshoot_day": "08-22",
+        "days_lasted": 234,
+        "days_left": 132,
+        "percent_lasted": 63.93
+    },
+    "2021":{
+        "overshoot_day": "07-30",
+        "days_lasted": 210,
+        "days_left": 155,
+        "percent_lasted": 57.53
+    },
+    "2022":{
+        "overshoot_day": "07-28",
+        "days_lasted": 208,
+        "days_left": 157,
+        "percent_lasted": 56.99
+    },
+    "2023":{
+        "overshoot_day": "08-02",
+        "days_lasted": 213,
+        "days_left": 152,
+        "percent_lasted": 58.34
+    }
+}

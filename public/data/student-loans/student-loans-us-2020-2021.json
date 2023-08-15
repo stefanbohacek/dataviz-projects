@@ -1,0 +1,401 @@
+[{
+    "x": 0,
+    "y": 0,
+    "state_abbrev": "AK",
+    "state_name": "Alaska",
+    "loan_per_recipient": 6162.21,
+    "annual_salary": 46113.00,
+    "loan_payoff_months": 16
+}, {
+    "x": 11,
+    "y": 0,
+    "state_abbrev": "ME",
+    "state_name": "Maine",
+    "loan_per_recipient": 7678.71,
+    "annual_salary": 38017.00,
+    "loan_payoff_months": 24
+}, {
+    "x": 9,
+    "y": 1,
+    "state_abbrev": "VT",
+    "state_name": "Vermont",
+    "loan_per_recipient": 9696.25,
+    "annual_salary": 45367.00,
+    "loan_payoff_months": 27
+}, {
+    "x": 10,
+    "y": 1,
+    "state_abbrev": "NH",
+    "state_name": "New Hampshire",
+    "loan_per_recipient": 6320.89,
+    "annual_salary": 42787.00,
+    "loan_payoff_months": 17
+}, {
+    "x": 11,
+    "y": 1,
+    "state_abbrev": "MA",
+    "state_name": "Massachusetts",
+    "loan_per_recipient": 10716.53,
+    "annual_salary": 48948.00,
+    "loan_payoff_months": 26
+}, {
+    "x": 1,
+    "y": 2,
+    "state_abbrev": "WA",
+    "state_name": "Washington",
+    "loan_per_recipient": 9696.25,
+    "annual_salary": 45367.00,
+    "loan_payoff_months": 25
+}, {
+    "x": 2,
+    "y": 2,
+    "state_abbrev": "MT",
+    "state_name": "Montana",
+    "loan_per_recipient": 7494.96,
+    "annual_salary": 37703.00,
+    "loan_payoff_months": 23
+}, {
+    "x": 3,
+    "y": 2,
+    "state_abbrev": "ND",
+    "state_name": "North Dakota",
+    "loan_per_recipient": 6675.60,
+    "annual_salary": 46383.00,
+    "loan_payoff_months": 17
+}, {
+    "x": 4,
+    "y": 2,
+    "state_abbrev": "SD",
+    "state_name": "South Dakota",
+    "loan_per_recipient": 5779.23,
+    "annual_salary": 45029.00,
+    "loan_payoff_months": 15
+}, {
+    "x": 5,
+    "y": 2,
+    "state_abbrev": "MN",
+    "state_name": "Minnesota",
+    "loan_per_recipient": 8714.86,
+    "annual_salary": 37197.00,
+    "loan_payoff_months": 28
+}, {
+    "x": 6,
+    "y": 2,
+    "state_abbrev": "WI",
+    "state_name": "Wisconsin",
+    "loan_per_recipient": 6808.05,
+    "annual_salary": 36891.00,
+    "loan_payoff_months": 22
+}, {
+    "x": 7,
+    "y": 2,
+    "state_abbrev": "MI",
+    "state_name": "Michigan",
+    "loan_per_recipient": 8079.98,
+    "annual_salary": 38926.00,
+    "loan_payoff_months": 24
+}, {
+    "x": 9,
+    "y": 2,
+    "state_abbrev": "NY",
+    "state_name": "New York",
+    "loan_per_recipient": 10774.64,
+    "annual_salary": 44287.00,
+    "loan_payoff_months": 29
+}, {
+    "x": 10,
+    "y": 2,
+    "state_abbrev": "CT",
+    "state_name": "Connecticut",
+    "loan_per_recipient": 8729.13,
+    "annual_salary": 39401.00,
+    "loan_payoff_months": 26
+}, {
+    "x": 11,
+    "y": 2,
+    "state_abbrev": "RI",
+    "state_name": "Rhode Island",
+    "loan_per_recipient": 7027.57,
+    "annual_salary": 47263.00,
+    "loan_payoff_months": 17
+}, {
+    "x": 1,
+    "y": 3,
+    "state_abbrev": "OR",
+    "state_name": "Oregon",
+    "loan_per_recipient": 9792.80,
+    "annual_salary": 44539.00,
+    "loan_payoff_months": 26
+}, {
+    "x": 2,
+    "y": 3,
+    "state_abbrev": "ID",
+    "state_name": "Idaho",
+    "loan_per_recipient": 6688.51,
+    "annual_salary": 38346.00,
+    "loan_payoff_months": 20
+}, {
+    "x": 3,
+    "y": 3,
+    "state_abbrev": "WY",
+    "state_name": "Wyoming",
+    "loan_per_recipient": 5962.30,
+    "annual_salary": 39673.00,
+    "loan_payoff_months": 18
+}, {
+    "x": 4,
+    "y": 3,
+    "state_abbrev": "NE",
+    "state_name": "Nebraska",
+    "loan_per_recipient": 9192.82,
+    "annual_salary": 43068.00,
+    "loan_payoff_months": 25
+}, {
+    "x": 5,
+    "y": 3,
+    "state_abbrev": "IA",
+    "state_name": "Iowa",
+    "loan_per_recipient": 6785.76,
+    "annual_salary": 35591.00,
+    "loan_payoff_months": 22
+}, {
+    "x": 6,
+    "y": 3,
+    "state_abbrev": "IL",
+    "state_name": "Illinois",
+    "loan_per_recipient": 10068.39,
+    "annual_salary": 38929.00,
+    "loan_payoff_months": 31
+}, {
+    "x": 7,
+    "y": 3,
+    "state_abbrev": "IN",
+    "state_name": "Indiana",
+    "loan_per_recipient": 7668.99,
+    "annual_salary": 37076.00,
+    "loan_payoff_months": 24
+}, {
+    "x": 8,
+    "y": 3,
+    "state_abbrev": "OH",
+    "state_name": "Ohio",
+    "loan_per_recipient": 7525.36,
+    "annual_salary": 36860.00,
+    "loan_payoff_months": 24
+}, {
+    "x": 9,
+    "y": 3,
+    "state_abbrev": "PA",
+    "state_name": "Pennsylvania",
+    "loan_per_recipient": 8615.26,
+    "annual_salary": 38308.00,
+    "loan_payoff_months": 26
+}, {
+    "x": 10,
+    "y": 3,
+    "state_abbrev": "NJ",
+    "state_name": "New Jersey",
+    "loan_per_recipient": 8336.43,
+    "annual_salary": 37975.00,
+    "loan_payoff_months": 26
+}, {
+    "x": 0,
+    "y": 4,
+    "state_abbrev": "CA",
+    "state_name": "California",
+    "loan_per_recipient": 11250.19,
+    "annual_salary": 40877.00,
+    "loan_payoff_months": 33
+}, {
+    "x": 1,
+    "y": 4,
+    "state_abbrev": "NV",
+    "state_name": "Nevada",
+    "loan_per_recipient": 10468.97,
+    "annual_salary": 45748.00,
+    "loan_payoff_months": 27
+}, {
+    "x": 2,
+    "y": 4,
+    "state_abbrev": "UT",
+    "state_name": "Utah",
+    "loan_per_recipient": 6557.65,
+    "annual_salary": 36438.00,
+    "loan_payoff_months": 21
+}, {
+    "x": 3,
+    "y": 4,
+    "state_abbrev": "CO",
+    "state_name": "Colorado",
+    "loan_per_recipient": 9453.77,
+    "annual_salary": 41521.00,
+    "loan_payoff_months": 27
+}, {
+    "x": 4,
+    "y": 4,
+    "state_abbrev": "KS",
+    "state_name": "Kansas",
+    "loan_per_recipient": 7573.89,
+    "annual_salary": 36113.00,
+    "loan_payoff_months": 25
+}, {
+    "x": 5,
+    "y": 4,
+    "state_abbrev": "MO",
+    "state_name": "Missouri",
+    "loan_per_recipient": 9772.63,
+    "annual_salary": 37923.00,
+    "loan_payoff_months": 30
+}, {
+    "x": 6,
+    "y": 4,
+    "state_abbrev": "KY",
+    "state_name": "Kentucky",
+    "loan_per_recipient": 8235.92,
+    "annual_salary": 42914.00,
+    "loan_payoff_months": 23
+}, {
+    "x": 7,
+    "y": 4,
+    "state_abbrev": "WV",
+    "state_name": "West Virginia",
+    "loan_per_recipient": 8013.80,
+    "annual_salary": 38493.00,
+    "loan_payoff_months": 24
+}, {
+    "x": 8,
+    "y": 4,
+    "state_abbrev": "MD",
+    "state_name": "Maryland",
+    "loan_per_recipient": 9967.31,
+    "annual_salary": 43894.00,
+    "loan_payoff_months": 27
+}, {
+    "x": 9,
+    "y": 4,
+    "state_abbrev": "DE",
+    "state_name": "Delaware",
+    "loan_per_recipient": 6566.59,
+    "annual_salary": 41062.00,
+    "loan_payoff_months": 19
+}, {
+    "x": 2,
+    "y": 5,
+    "state_abbrev": "AZ",
+    "state_name": "Arizona",
+    "loan_per_recipient": 8043.52,
+    "annual_salary": 37315.00,
+    "loan_payoff_months": 25
+}, {
+    "x": 3,
+    "y": 5,
+    "state_abbrev": "NM",
+    "state_name": "New Mexico",
+    "loan_per_recipient": 7686.61,
+    "annual_salary": 35043.00,
+    "loan_payoff_months": 26
+}, {
+    "x": 4,
+    "y": 5,
+    "state_abbrev": "OK",
+    "state_name": "Oklahoma",
+    "loan_per_recipient": 8271.96,
+    "annual_salary": 40028.00,
+    "loan_payoff_months": 24
+}, {
+    "x": 5,
+    "y": 5,
+    "state_abbrev": "AR",
+    "state_name": "Arkansas",
+    "loan_per_recipient": 7467.52,
+    "annual_salary": 39140.00,
+    "loan_payoff_months": 22
+}, {
+    "x": 6,
+    "y": 5,
+    "state_abbrev": "TN",
+    "state_name": "Tennessee",
+    "loan_per_recipient": 9489.08,
+    "annual_salary": 37129.00,
+    "loan_payoff_months": 30
+}, {
+    "x": 7,
+    "y": 5,
+    "state_abbrev": "VA",
+    "state_name": "Virginia",
+    "loan_per_recipient": 9818.66,
+    "annual_salary": 42503.00,
+    "loan_payoff_months": 27
+}, {
+    "x": 8,
+    "y": 5,
+    "state_abbrev": "NC",
+    "state_name": "North Carolina",
+    "loan_per_recipient": 8090.30,
+    "annual_salary": 35364.00,
+    "loan_payoff_months": 27
+}, {
+    "x": 3,
+    "y": 6,
+    "state_abbrev": "TX",
+    "state_name": "Texas",
+    "loan_per_recipient": 7721.30,
+    "annual_salary": 37081.00,
+    "loan_payoff_months": 24
+}, {
+    "x": 4,
+    "y": 6,
+    "state_abbrev": "LA",
+    "state_name": "Louisiana",
+    "loan_per_recipient": 8426.31,
+    "annual_salary": 36075.00,
+    "loan_payoff_months": 28
+}, {
+    "x": 5,
+    "y": 6,
+    "state_abbrev": "MS",
+    "state_name": "Mississippi",
+    "loan_per_recipient": 8232.64,
+    "annual_salary": 33828.00,
+    "loan_payoff_months": 29
+}, {
+    "x": 6,
+    "y": 6,
+    "state_abbrev": "AL",
+    "state_name": "Alabama",
+    "loan_per_recipient": 9148.62,
+    "annual_salary": 35155.00,
+    "loan_payoff_months": 31
+}, {
+    "x": 7,
+    "y": 6,
+    "state_abbrev": "GA",
+    "state_name": "Georgia",
+    "loan_per_recipient": 7984.36,
+    "annual_salary": 35997.00,
+    "loan_payoff_months": 26
+}, {
+    "x": 8,
+    "y": 6,
+    "state_abbrev": "SC",
+    "state_name": "South Carolina",
+    "loan_per_recipient": 7797.28,
+    "annual_salary": 41499.00,
+    "loan_payoff_months": 22
+}, {
+    "x": 0,
+    "y": 7,
+    "state_abbrev": "HI",
+    "state_name": "Hawaii",
+    "loan_per_recipient": 9617.92,
+    "annual_salary": 48957.00,
+    "loan_payoff_months": 23
+}, {
+    "x": 7,
+    "y": 7,
+    "state_abbrev": "FL",
+    "state_name": "Florida",
+    "loan_per_recipient": 7953.47,
+    "annual_salary": 33927.00,
+    "loan_payoff_months": 28
+}]

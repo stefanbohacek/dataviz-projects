@@ -1,0 +1,8 @@
+{
+    "title": "Makeover Monday 2023: Week 5",
+    "description": "Top ten most expensive pizza slices in NYC.",
+    "publish_date": "2023/02/21",
+    "draft": false,
+    "tags": ["pizza", "nyc", "food", "price", "rating", "yelp", "map", "mapbox"],
+    "data": ["nyc-pizza-slices/nyc-pizza-slices.json"]
+}

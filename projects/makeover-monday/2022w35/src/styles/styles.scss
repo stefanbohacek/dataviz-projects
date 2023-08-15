@@ -1,0 +1,46 @@
+body, .bg-white{
+    background-color: #fef6e4 !important;
+    color: #172c66;
+}
+
+.border-bottom{
+    border-bottom-color: #fef6e4 !important;
+}
+
+.bg-light{
+    background-color: #f3d2c1 !important;
+    color: #172c66;
+}
+
+h1, h2{
+    color: #001858;
+}
+
+a{
+    color: #f582ae;
+    &:hover{
+        color: #172c66;
+    }
+
+    .alert &{
+        color: #172c66;
+        &:hover{
+            color: #b66a87;
+        }
+    }
+}
+
+
+
+.text-bg-success{
+    color: #001858 !important;
+    background-color: #8bd3dd !important;
+    margin-left: 0.3rem;
+    transform: rotate(-2deg);
+}
+
+h2:hover{
+    .text-bg-success{
+        transform: rotate(3deg);
+    }
+}

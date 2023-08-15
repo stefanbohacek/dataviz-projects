@@ -1,0 +1,70 @@
+{
+  "name": "stefanbohacek-dataviz",
+  "version": "1.0.0",
+  "description": "A collection of dataviz projects.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": ". ~/.nvm/nvm.sh && nvm use 16 && nodemon -L",
+    "gulp": ". ~/.nvm/nvm.sh && nvm use 10 && gulp"
+  },
+  "dependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "body-parser": "^1.20.0",
+    "cache-manager": "^4.0.1",
+    "cache-manager-fs": "^1.0.9",
+    "cheerio": "^0.22.0",
+    "color-scheme": "^1.0.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "hbs": "^4.2.0",
+    "node-cache": "^5.1.2",
+    "remove-leading-slash": "^1.0.1",
+    "request": "^2.88.0",
+    "sqlite3": "^5.0.8",
+    "underscore": "^1.13.4"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "repository": {
+    "url": "https://stefanbohacek.com/data"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dataviz"
+  ],
+  "devDependencies": {
+    "@babel/plugin-transform-destructuring": "^7.18.0",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-less": "^5.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^4.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.13.4",
+    "jshint-stylish": "^2.2.1",
+    "merge-stream": "^2.0.0",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.16",
+    "path": "^0.12.7",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

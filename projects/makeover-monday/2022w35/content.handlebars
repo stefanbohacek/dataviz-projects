@@ -1,0 +1,93 @@
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="alert alert-primary mt-5 mb-5" role="alert">
+        This page is an exercise for the <a href="https://www.makeovermonday.co.uk/">2022 Makeover Monday Week 35 challenge</a> and includes text from <a href="https://www.visualcapitalist.com/ranked-top-10-countries-by-military-spending/">the original article</a> written by <a href="https://www.visualcapitalist.com/author/niccolo/">Niccolo Conte</a> and used here under the <a href="https://en.wikipedia.org/wiki/Fair_use">fair use doctrine</a>.
+      </div>
+
+    </div>
+    <div class="col-sm-12">
+      <h1 class="mb-4">Top 10 Countries by Military Spending</h1>
+      <p class="lead">The world's military expenditure totaled $2.1 trillion in 2021, marking the seventh year in a row of increased global military spending.</p>
+      <p>Using data from the Stockholm International Peace Research Institute (<a href="https://www.sipri.org/databases/milex">SIPRI</a>), this visualization shows which countries spent the most on their military in 2021, along with their overall share of global military spending.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-6 sticky-top bg-white">
+      <div class="sticky-top bg-light p-3 mt-3 mb-3">
+        <canvas id="chart" aria-label="Dataset name" role="img" height="200px"></canvas>
+        <p id="description" class="mb-1 pt-4 fs-6">
+          <span class="d-inline d-md-none">Continue scrolling to explore the data.</span>
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      {{#each data_military_budget_2021}}
+      <div class="step" data-step="{{@index}}">
+        <h2>{{this.country}} <span class="badge rounded-pill text-bg-success">${{this.budget}}B {{this.label}}</span></h2>
+        <p>{{this.description}}</p>
+        <table class="table w-100">
+          <tr>
+            <td>2021 military budget</td>
+            <td>${{this.budget}}B</td>
+          </tr>
+          <tr>
+            <td>Percentage of global spending</td>
+            <td>{{this.percentage_global}}</td>
+          </tr>
+          {{#if this.percentage_of_gdp}}
+          <tr>
+            <td>Percentage of GDP</td>
+            <td>{{this.percentage_of_gdp}}</td>
+          </tr>
+          {{/if}}
+        </table>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>Which Countries Spend the Most on Military?</h2>
+      <p>The United States was the top nation in terms of military expenditure, spending $801 billion to make up almost 38% of global military spending in 2021. America has been the top military spending nation since SIPRI began tracking in 1949, making up more than 30% of the world’s military spending for the last two decades.</p>
+      <p>U.S. military spending increased year-over-year by $22.3 billion, and the country’s total for 2021 was more than every other country in the top 10 combined.</p>
+      <p>
+        <img class="float-start rounded m-3 mt-0 ml-0" src="https://generative-placeholders.glitch.me/image?width=400&height=260&style=cellular-automata&cells=10&colors=15">The next top military spender in 2021 was China, which spent $293.4 billion and made up nearly 14% of global military spend. While China’s expenditure is still less than half of America’s, the country has increased its military spending for 27 years in a row.</p>
+        <p>In fact, China has the largest total of active military personnel, and the country’s military spending has more than doubled over the last decade.</p>
+        <p>While Russia was only the fifth top nation by military spending at $65.9 billion in 2021, it was among the higher ranking nations in terms of military spending as a share of GDP. Russia military expenditures amounted to 4.1% of its GDP, and among the top 10 spending nations, was only beaten by Saudi Arabia whose spending was 6.6% of its GDP.</p>
+      <h2>Military Collaboration Since the Russia-Ukraine Conflict</h2>
+      <p>Russia’s invasion of Ukraine in February has resulted in seismic geopolitical shifts, kicking off a cascade of international military shipments and collaboration between nations. The security assistance just sent by the U.S. to Ukraine has totaled $8.2 billion since the start of the war, and has shown how alliances can help make up for some domestic military spending in times of conflict.</p>
+
+      <p>Similarly, Russia and China have deepened their relationship, sharing military intelligence and technology along with beginning joint military exercises at the end of August, alongside other nations like India, Belarus, Mongolia, and Tajikistan.</p>
+
+      <p>Since China’s breakthrough in hypersonic missile flight a year ago, Russia has now been testing its own versions of the technology, with Putin mentioning Russia’s readiness to export weaponry he described as, “years, or maybe even decades ahead of their foreign counterparts”.</p>
+      <h2>Sanctions and Energy Exports: New Weapons in Modern Warfare</h2>
+      
+      <p>Along with advanced weaponry, sanctions and energy commodities have become new tools of modern cold warfare. As Western economic sanctions attempted to cripple Russia’s economy following its invasion, Russian gas and oil supplies have been limited and forced to be paid in rubles in retaliation.</p>
+      
+      <p>Global trade has been turned into a new battlefield with offshore assets and import dependencies as the attack vectors. Along with these, cyberattacks and cybersecurity are an increasingly complex, obscure, and important part of national military and security.</p>
+      
+      <p>Whether or not Russia’s invasion of Ukraine ends in 2022, the rise in geopolitical tensions and conflict this year will almost certainly result in a global increase in military spending.</p>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>
+          <a href="https://data.world/makeovermonday/2022w35">Data: data.world</a>
+        </li>
+        <li>
+          <a href="https://www.visualcapitalist.com/ranked-top-10-countries-by-military-spending/">Original article: visualcapitalist.com</a>
+        </li>
+      </ul>
+      <div class="rounded w-100 bg-black mt-5 p-5">
+        <div class="ratio ratio-16x9 mx-auto" style="max-width: 900px;">
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/01-2pNCZiNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/libs/scrollama/3.1.1/scrollama.min.js"></script>
+<script src="/libs/chart.js/3.8.0/chart.min.js"></script>
+<script src="/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"></script>
+<script src="/libs/chartjs-plugin-annotation/1.4.0/chartjs-plugin-annotation.min.js"></script>
+<script src="/libs/chartjs-plugin-labels.min.js"></script

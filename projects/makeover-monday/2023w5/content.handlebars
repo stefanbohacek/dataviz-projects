@@ -1,0 +1,81 @@
+<div id="map-wrapper" class="fixed-top min-vh-100">
+  <div id="map"></div>
+  {{! <canvas id="chart" aria-label="Dataset name" role="img"></canvas>
+  <p id="description" class="mb-1 pt-4 fs-6"><span class="d-inline d-md-none">Continue scrolling to explore the data.</span></p> }}
+</div>
+
+<div class="container mb-5">
+  <div id="row-intro" class="row p-4 mb-5">
+    <div class="col-sm-12">
+      <h1 class="mt-5 mb-4">The cost of pizza slices in New York City 🗽🍕</h1>
+      <p class="lead">
+        Exploring Liam Quigley's
+        <a href="https://elkue.com/nyc-slice/">top ten most expensive pizza
+          slices in NYC</a>
+        for
+        <a href="https://data.world/makeovermonday/2023w5">Makeover Monday
+          2023/W5</a>.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-6 sticky-top">
+      <div id="map-wrapper" class="sticky-top mt-3 mb-3">
+      </div>
+    </div>
+    <div id="pizza-ratings" class="col-sm-12 col-md-6">
+      <style>code{color:black !important}</style>
+
+      {{#each data_nyc_pizza_slices}}
+        <div
+          class="step min-vh-100 p-4"
+          id="step-{{@index}}"
+          data-step="{{@index}}"
+          data-lat="{{this.lat}}"
+          data-lng="{{this.lng}}"
+        >
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12 col-md-5">
+                  <h5 class="card-title">{{this.name}}</h5>
+                  <p class="card-text"></p>
+                  <ul>
+                    <li><span class="fw-bold">Slice</span>
+                      <span class="text-success">${{this.price}}</span></li>
+                    <li><span class="fw-bold">Yelp rating</span>
+                      {{this.rating}}
+                      <img
+                        class="rating"
+                        src="/images/icons/star-fill.svg"
+                      /></li>
+                  </ul>
+                  {{#if @last}}
+                    <a href="#step-0" class="step-next btn">Start over</a>
+                  {{else}}
+                    <a href="#step-{{math @index  "+" 1}}" class="step-next btn">Next</a>
+                  {{/if}}
+                </div>
+                <div class="col-12 col-md-7 p-4">
+                  <a
+                    class="d-block p-2 mt-4"
+                    href="https://www.instagram.com/p/CUGIJyaFIP3/"
+                    target="_blank"
+                  >
+                    <img
+                      class="pizza-slice-img d-block w-100 mx-auto"
+                      src="2023w5/images/slices/artichoke-basilles-pizza-times-square.jpg"
+                      title=""
+                      alt="A slice of pizza from Artichoke Basille's Pizza - Times Square location"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+<script src="/libs/scrollama/3.1.1/scrollama.min.js"></script>

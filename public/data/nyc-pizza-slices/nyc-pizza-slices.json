@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Artichoke Basille's Pizza - Times Square",
+    "lat": "40.75332",
+    "lng": "-73.98698",    
+    "price": 6.53,
+    "rating": "3.5/5",
+    "link": "https://www.instagram.com/p/CUGIJyaFIP3/"
+  },
+  {
+    "name": "Koronet Pizzeria",
+    "lat": "40.80447",
+    "lng": "-73.96616",    
+    "price": 5.5,
+    "rating": "3.5/5",
+    "link": "https://www.instagram.com/p/CXEaUhWFYC3/"
+  },
+  {
+    "name": "My PIE Pizzeria",
+    "lat": "40.76079",
+    "lng": "-73.96941",    
+    "price": 5.25,
+    "rating": "4.5/5",
+    "link": "https://www.instagram.com/p/BF0I-bpBp4G/"
+  },
+  {
+    "name": "Di Fara Pizza",
+    "lat": "40.62508413",
+    "lng": "-73.96155206",    
+    "price": 5,
+    "rating": "4.5/5",
+    "link": "https://www.instagram.com/p/tOHJJVhpxM/"
+  },
+  {
+    "name": "Dough Boys Pizza",
+    "lat": "40.7438563",
+    "lng": "-73.9792757",    
+    "price": 5,
+    "rating": "3.5/5",
+    "link": "https://www.instagram.com/p/-UW__chp3L/"
+  },
+  {
+    "name": "Pizza Italia",
+    "lat": "40.822888",
+    "lng": "-73.84862",    
+    "price": 5,
+    "rating": "4.5/5",
+    "link": "https://www.instagram.com/p/CYKGRXjFLmz/"
+  },
+  {
+    "name": "Marinara Pizza",
+    "lat": "40.7297781",
+    "lng": "-73.9865052",    
+    "price": 4.9,
+    "rating": "4.5/5",
+    "link": "https://www.instagram.com/p/CbarxzguiBE/"
+  },
+  {
+    "name": "Valentine's Pizza",
+    "lat": "40.68753",
+    "lng": "-73.954427",    
+    "price": 4.5,
+    "rating": "4/5",
+    "link": "https://www.instagram.com/p/CdepDIws1Rp/"
+  },
+  {
+    "name": "Pronto Pizza",
+    "lat": "40.75824",
+    "lng": "-73.98063",    
+    "price": 4.5,
+    "rating": "3/5",
+    "link": "https://www.instagram.com/p/CUIX-dTlS1b/"
+  },
+  {
+    "name": "Artichoke Basille's Pizza - East Village",
+    "lat": "40.73209",
+    "lng": "-73.98391",    
+    "price": 4.5,
+    "rating": "4/5",
+    "link": "https://www.instagram.com/p/xcp_uEBp0o/"
+  }
+]

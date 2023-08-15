@@ -1,0 +1,118 @@
+body{
+    // background-color: #dbdbdc;
+    background-color: #f7f7f7;
+    color: #fffffe;
+}
+
+h1, .lead{
+    color: #232946;
+}
+
+img{
+    &.pizza-slice-img{
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        border: solid white 10px;
+        border-bottom: solid white 40px;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+
+        transform: rotate(-1deg);
+        transition: transform 0.3s ease-in-out;
+        position: relative;
+        z-index: 10;
+
+        @media (min-width: 768px) {
+            max-width: 220px;
+        }
+
+        &:hover{
+            box-shadow: 4px 4px 6px rgba(0,0,0,0.2);
+            
+        }
+
+
+    }
+
+    &.rating{
+        vertical-align: baseline;
+    }
+}
+
+#row-intro{
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+#map-wrapper{
+    height: 100px;
+    max-height: 30vh;
+    z-index: -10;
+
+    @media (min-width: 768px) {
+        max-height: 50vh;
+    }
+
+    #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+.card{
+    color: #232946;
+    background-color: #b8c1ec;
+}
+
+.btn{
+    background-color: #121629;
+    color: #fffffe;
+
+    &:hover{
+        background-color: #232946;
+        color: #fffffe;
+    }
+}
+
+.step{
+    @media (max-width: 767px) {
+        margin-bottom: 80vh;
+    }
+}
+
+.bg-light{
+    background-color: #b8c1ec !important;
+    color: #121629;
+    a{
+        color: #121629;
+        &:hover{
+            color: #232946 !important;
+        }
+    }
+}
+
+.border-bottom{
+    border-bottom-color: #b8c1ec !important;
+}
+
+.active-step{
+    img.pizza-slice-img{
+        transform: rotate(2deg);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+.step-next{
+    position: absolute;
+    bottom: 3rem;
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+
+.step.min-vh-100{
+    @media (max-width: 767px) {
+        min-height: 100px !important;
+    }
+}

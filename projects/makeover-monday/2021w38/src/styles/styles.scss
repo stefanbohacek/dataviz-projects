@@ -1,0 +1,63 @@
+/* Variables */
+
+$background: #16161a;
+$background-secondary: #72757e;
+$color-text: #94a1b2;
+$color-headline: #fffffe;
+$color-button: #7f5af0;
+$white: #fff;
+
+/* Styles */
+
+body{
+    background-color: $background;
+    color: $color-text;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: $color-headline;
+}
+
+a{
+    color: $color-button;
+
+    &:hover{
+        color: $white;
+    }
+}
+
+mark{
+    color: $white;
+    background-color: $color-button;
+}
+
+.bg-dark{
+    background-color: $background-secondary;
+}
+
+.bg-light{
+    background-color: $color-text !important;
+}
+
+.btn-outline-primary{
+    color: $color-button;
+    border-color: $color-button;
+
+    &:hover,
+    &.selected{
+        color: $white;
+        border-color: $color-button;
+        background-color: $color-button;
+    }
+}
+
+footer{
+    color: $white;
+    a{
+        color: $white;
+
+        &:hover{
+            color: $color-button;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "country": "United States",
+    "logo": "us",
+    "label": "💸",
+    "description": "United States and China made up more than 50% of global military spending at nearly $1.1 trillion combined.",
+    "budget": 801,
+    "percentage_global": 37.9,
+    "percentage_of_gdp": 3.48
+  },
+  {
+    "country": "China",
+    "description": "China's military spending has increased 27 years in a row -- by $148B (100.2%) since 2012.",
+    "logo": "china",
+    "label": "💵",
+    "budget": 293,
+    "percentage_global": 13.9,
+    "percentage_of_gdp": 1.74
+  },
+  {
+    "country": "India",
+    "logo": "india",
+    "label": "💵",
+    "budget": 76.6,
+    "percentage_global": 3.6,
+    "percentage_of_gdp": 2.66
+  },
+  {
+    "country": "UK",
+    "logo": "uk",
+    "label": "💵",
+    "budget": 68.4,
+    "percentage_global": 3.2,
+    "percentage_of_gdp": 2.22
+  },
+  {
+    "country": "Russia",
+    "logo": "russia",
+    "label": "💰",
+    "description": "Russia spent 4.1% of its GDP on its military, with only two other nations in the top 15 having a higher share (Israel 5.2% and Saudi Arabia 6.6%).",
+    "budget": 65.9,
+    "percentage_global": 3.1,
+    "percentage_of_gdp": 4.08
+  },
+  {
+    "country": "France",
+    "logo": "france",
+    "label": "💰",
+    "budget": 56.6,
+    "percentage_global": 2.7,
+    "percentage_of_gdp": 1.95
+  },
+  {
+    "country": "Germany",
+    "logo": "germany",
+    "label": "💰",
+    "budget": 56,
+    "percentage_global": 2.7,
+    "percentage_of_gdp": 1.34
+  },
+  {
+    "country": "Saudi Arabia",
+    "logo": "saudi-arabia",
+    "label": "💰",
+    "budget": 55.6,
+    "percentage_global": 2.6,
+    "percentage_of_gdp": 6.59
+  },
+  {
+    "country": "Japan",
+    "logo": "japan",
+    "label": "💰",
+    "budget": 54.1,
+    "percentage_global": 2.6,
+    "percentage_of_gdp": 1.07
+  },
+  {
+    "country": "South Korea",
+    "logo": "south-korea",
+    "label": "💰",
+    "budget": 50.2,
+    "percentage_global": 2.4,
+    "percentage_of_gdp": 2.78
+  },
+  {
+    "country": "Rest of the world",
+    "logo": "world",
+    "label": "💳",
+    "budget": 536,
+    "percentage_global": 25.3
+  }
+]

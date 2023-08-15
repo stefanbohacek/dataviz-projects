@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" itemscope itemtype="//schema.org/WebPage">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="{{description}}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}}</title>
+    <meta property="og:title" content="{{title}}" />
+    <meta property="og:description" content="{{description}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="{{reqUrlFull}}/images/preview.png" /> 
+    <meta property="twitter:image:src" content="{{reqUrlFull}}/images/preview.png" /> 
+    <meta name="twitter:title" content="{{title}}">
+    <meta name="twitter:description" content="{{description}}">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@stefanbohacek" />
+    <meta name="twitter:domain" content="/" />
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->  
+    <link rel="shortcut icon" href="{{appURL}}images/favicon.ico"/>
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{appURL}}images/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{appURL}}images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{appURL}}images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{appURL}}images/favicon-16x16.png">
+    </head>
+    <body class="d-flex flex-column h-100">
+        <style id="critical-css">{{ criticalCss }}</style>
+        <main class="flex-shrink-0 mb-5">
+        <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        {{{body}}}
+    </main>
+{{> footer }}
+<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/css/styles.min.css" type="text/css">
+<link href="/css/styles.min.css" rel="stylesheet" type="text/css">
+{{#if project}}
+<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/css/projects/{{ project }}/styles.min.css" type="text/css">
+<link href="/css/projects/{{ project }}/styles.min.css" rel="stylesheet" type="text/css">
+{{/if}}
+<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Roboto|Source+Code+Pro&display=swap" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Roboto|Source+Code+Pro&display=swap" rel="stylesheet" type="text/css">
+<script src="/libs/lazy-load-images/lazy-load-images.min.js"></script>
+<script type="module" src="/js/main.min.js"></script>
+{{#if project}}
+{{{ dependencies }}}
+
+{{!-- <script src="/js/projects/{{ project }}/scripts.min.js"></script> --}}
+<script type="module" src="/js/projects/{{ project }}/main.min.js"></script>
+{{/if}}
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://matomo.stefanbohacek.dev/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+</body>
+</html>

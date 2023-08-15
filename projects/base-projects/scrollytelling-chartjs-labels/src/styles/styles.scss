@@ -1,0 +1,26 @@
+body, .bg-white{
+    background-color: #fef6e4 !important;
+    color: #172c66;
+}
+
+.border-bottom{
+    border-bottom-color: #fef6e4 !important;
+}
+
+.bg-light{
+    background-color: #f3d2c1 !important;
+    color: #172c66;
+}
+
+h1, h2{
+    color: #001858;
+}
+
+a{
+    color: #f582ae;
+    &:hover{
+        color: #172c66;
+    }
+}
+
+

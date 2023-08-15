@@ -1,0 +1,96 @@
+/* Variables */
+
+// $color-green: #84D98A;
+// $color-green: #485659;
+// $color-red: #BF625A;
+
+$color-green: #485659;
+$color-red: #D98B79;
+
+/* Styles */
+
+body{
+    background-color: #F2F2F2;
+    color: #0D0D0D;
+}
+
+a{
+    color: #5597A6;
+    &:hover{
+        color: #6FC5D9;
+    }
+}
+
+h1, h2, h3{
+    color: #333333;
+}
+
+footer{
+    p{
+        color: #343E40;
+    }
+    .border-bottom{
+        border-bottom-color: #343E40 !important;
+    }
+}
+
+#chart{
+    min-height: 150px;
+}
+
+// .bg-light{
+//     background-color: $color-green !important;
+// }
+
+.step{
+    max-width: 720px;
+    margin: 0 auto;
+
+    &, &.bg-dark{
+        transition: color 0.1s, background-color 0.3s;
+    }
+
+    .percent-lasted{
+        opacity: 0;
+    }
+
+    &.bg-dark{
+        color: white;
+        background-color: $color-red !important;
+
+        .days-lasted,
+        .days-left{
+            font-weight: bold;
+            white-space: nowrap;
+            background-color: #fff;
+            padding: 4px;
+        }
+
+        .percent-lasted{
+            opacity: 1;
+        }
+
+        .days-lasted{
+            color: $color-green;
+        }
+        .days-left{
+            color: $color-red;
+        }
+
+
+        a{
+            color: #fff;
+            &:hover{
+                color: #fff;
+            }
+        }
+
+    }
+
+}
+
+footer{
+    a{
+        color: $color-red !important        
+    }
+}
