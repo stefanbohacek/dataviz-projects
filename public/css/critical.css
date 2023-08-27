@@ -6657,6 +6657,7 @@ header p {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: 'Playfair Display', serif;
+  font-weight: bold;
   margin: 10px 0; }
 
 h1, .h1 {
