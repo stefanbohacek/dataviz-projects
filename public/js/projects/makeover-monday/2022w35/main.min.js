@@ -11,7 +11,7 @@ ready(async () => {
 
     Chart.defaults.color = "#172c66";
     Chart.defaults.borderColor = "#8bd3dd";
-    Chart.defaults.backgroundColor = "#fef6e4";
+    Chart.defaults.backgroundColor = "#f3d2c1";
 
     const dataLabels = dataset.map(function(datapoint){
         return datapoint.country;

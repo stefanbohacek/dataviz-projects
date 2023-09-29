@@ -9,9 +9,21 @@ $white: #fff;
 
 /* Styles */
 
-body{
-    background-color: $background;
+body.bg-light{
+    background-color: $background !important;
     color: $color-text;
+
+    footer{
+        background-color: $background !important;
+        color: $white;
+        a{
+            color: $white;
+    
+            &:hover{
+                color: $color-button;
+            }
+        }
+    }    
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -48,16 +60,5 @@ mark{
         color: $white;
         border-color: $color-button;
         background-color: $color-button;
-    }
-}
-
-footer{
-    color: $white;
-    a{
-        color: $white;
-
-        &:hover{
-            color: $color-button;
-        }
     }
 }

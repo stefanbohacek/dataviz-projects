@@ -1,8 +1,15 @@
 /* Variables */
 /* Styles */
-body {
-  background-color: #16161a;
+body.bg-light {
+  background-color: #16161a !important;
   color: #94a1b2; }
+  body.bg-light footer {
+    background-color: #16161a !important;
+    color: #fff; }
+    body.bg-light footer a {
+      color: #fff; }
+      body.bg-light footer a:hover {
+        color: #7f5af0; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #fffffe; }
@@ -29,10 +36,3 @@ mark {
     color: #fff;
     border-color: #7f5af0;
     background-color: #7f5af0; }
-
-footer {
-  color: #fff; }
-  footer a {
-    color: #fff; }
-    footer a:hover {
-      color: #7f5af0; }
