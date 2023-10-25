@@ -16,14 +16,15 @@ const domainsUniqueConnectionsEl = document.getElementById('domains-unique-conne
 
 const showData = async (userData) => {
   
+  loadingScreen.classList.add("d-none");
   userVisualization.classList.remove("d-none");
   userVisualization.scrollIntoView({
     behavior: "smooth",
   });
 
-  setTimeout(() => {
-    loadingScreen.classList.add("d-none");
-  }, 2000);
+  // setTimeout(() => {
+  //   loadingScreen.classList.add("d-none");
+  // }, 2000);
 
   accountNameEl.innerHTML = userData.name;
 
