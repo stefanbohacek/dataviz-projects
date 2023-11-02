@@ -62,21 +62,19 @@ ready(async () => {
     const descriptionEl = document.getElementById("description");
   
     let descriptionHTML = `
+    <details>
+      <summary>Government agencies with fediverse presence</summary>
+      <ul>
+        ${countriesSortable.map(country => `
+        <li>
+        ${country[0]}: ${country[1]}
+        </li>
+          
+        `).join('')}
+      </ul>
+    </details>
     <p>
-      <strong>Number of government agencies<br/>
-      with fediverse presence</strong>
-    </p>
-    <ul>
-      ${countriesSortable.map(country => `
-      <li>
-      ${country[0]}: ${country[1]}
-      </li>
-        
-      `).join('')}
-    </ul>
-    <p>
-      <a href="/data/fediverse/fediverse-gov-accounts.json" target="_blank">Download data</a><br/>
-      Source: wikidata.org 
+      Source: wikidata.org | <a href="/data/fediverse/fediverse-gov-accounts.json" target="_blank">Download data</a>
     </p>
     `;
   
