@@ -112,7 +112,8 @@ ready(async () => {
   
     let descriptionHTML = `
     <p>
-      <strong>New York's sister cities:</strong>
+      <a href="https://en.wikipedia.org/wiki/List_of_sister_cities_in_New_York"><strong>New York's sister cities</strong></a> |
+      <a href="nyc-sister-cities.json" target="_blank">Download</a>
     </p>
     <ul>
       ${sisterCities
@@ -136,10 +137,6 @@ ready(async () => {
         )
         .join("")}
     </ul>
-    <p>
-      <a href="nyc-sister-cities.json" target="_blank">Download data</a><br/>
-      Source: <a href="https://en.wikipedia.org/wiki/List_of_sister_cities_in_New_York">Wikipedia</a> 
-    </p>
     `;
   
     descriptionEl.innerHTML = descriptionHTML;
