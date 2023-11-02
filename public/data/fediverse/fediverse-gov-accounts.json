@@ -1,0 +1,1549 @@
+[
+  {
+    "item": "http://www.wikidata.org/entity/Q1005454",
+    "itemLabel": "Federal Agency for Cartography and Geodesy",
+    "MastName": "BKG@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q1005454",
+    "physical_location": {
+      "latitude": 50.08972222,
+      "longitude": 8.66444444
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1005470",
+    "itemLabel": "Federal Office for Migration and Refugees",
+    "MastName": "bamf@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q1005470",
+    "physical_location": {
+      "latitude": 49.4309,
+      "longitude": 11.0994
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1005494",
+    "itemLabel": "Federal Office for Radiation Protection",
+    "MastName": "strahlenschutz@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q1005494",
+    "physical_location": {
+      "latitude": 52.1511,
+      "longitude": 10.331
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1005539",
+    "itemLabel": "Bundesanstalt für Post und Telekommunikation Deutsche Bundespost",
+    "MastName": "BAnst_PT@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q1005539",
+    "physical_location": {
+      "latitude": 50.702888,
+      "longitude": 7.176929
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1005540",
+    "itemLabel": "Bundesanstalt für Materialforschung und -prüfung",
+    "MastName": "BAMResearch@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q1005540",
+    "physical_location": {
+      "latitude": 52.441944,
+      "longitude": 13.287222
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1005821",
+    "itemLabel": "Federal Commissioner for Data Protection and Freedom of Information",
+    "MastName": "bfdi@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q1005821",
+    "physical_location": {
+      "latitude": 50.74812,
+      "longitude": 7.09652
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1006223",
+    "itemLabel": "Federal Institute for Risk Assessment",
+    "MastName": "bfr@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q1006223",
+    "physical_location": {
+      "latitude": 52.531078,
+      "longitude": 13.297058
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1009321",
+    "itemLabel": "German Federal Centre for Health Education",
+    "MastName": "bzga@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q1009321",
+    "physical_location": {
+      "latitude": 50.9397,
+      "longitude": 7.0528
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1009333",
+    "itemLabel": "Bundeszollverwaltung",
+    "MastName": "Zoll@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q1009333",
+    "physical_location": {
+      "latitude": 50.047325,
+      "longitude": 8.691152
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1022",
+    "itemLabel": "Stuttgart",
+    "MastName": "stuttgart@xn--baw-joa.social",
+    "hostAt": "xn--baw-joa.social",
+    "id": "Q1022",
+    "physical_location": {
+      "latitude": 48.7775,
+      "longitude": 9.18
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q108315630",
+    "itemLabel": "Stuttgart City Council",
+    "MastName": "stuttgart@bawü.social",
+    "hostAt": "bawü.social",
+    "id": "Q108315630",
+    "physical_location": {
+      "latitude": 48.7696709,
+      "longitude": 9.178394
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q110021824",
+    "itemLabel": "Federal Ministry for Housing, Urban Development and Building",
+    "MastName": "BMWSB_Bund@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q110021824",
+    "physical_location": {
+      "latitude": 52.52269,
+      "longitude": 13.36354
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q11089595",
+    "itemLabel": "The Office of the Government of the Czech Republic",
+    "MastName": "strakovka@mastodonczech.cz",
+    "hostAt": "mastodonczech.cz",
+    "id": "Q11089595",
+    "physical_location": {
+      "latitude": 50.092,
+      "longitude": 14.4119
+    },
+    "country": "Czechia",
+    "country_code": "cz"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1115586",
+    "itemLabel": "National Commission on Informatics and Liberty",
+    "MastName": "CNIL@mastodon.etalab.gouv.fr",
+    "hostAt": "mastodon.etalab.gouv.fr",
+    "id": "Q1115586",
+    "physical_location": {
+      "latitude": 48.85077777777778,
+      "longitude": 2.3071944444444443
+    },
+    "country": "France",
+    "country_code": "fr"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1119337",
+    "itemLabel": "Max Planck Institute for the Study of Societies",
+    "MastName": "MPIfG@wisskomm.social",
+    "hostAt": "wisskomm.social",
+    "id": "Q1119337",
+    "physical_location": {
+      "latitude": 50.9267,
+      "longitude": 6.95417
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1155243",
+    "itemLabel": "Council of State",
+    "MastName": "raadvanstate@social.overheid.nl",
+    "hostAt": "social.overheid.nl",
+    "id": "Q1155243",
+    "physical_location": {
+      "latitude": 52.081482,
+      "longitude": 4.308911
+    },
+    "country": "Netherlands",
+    "country_code": "nl"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q116815052",
+    "itemLabel": "Freiburg Regional Council",
+    "MastName": "RPFreiburg@bawü.social",
+    "hostAt": "bawü.social",
+    "id": "Q116815052",
+    "physical_location": {
+      "latitude": 47.99731,
+      "longitude": 7.84319
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q118208592",
+    "itemLabel": "Generalstaatsanwaltschaft Berlin",
+    "MastName": "GStABerlin@berlin.social",
+    "hostAt": "berlin.social",
+    "id": "Q118208592",
+    "physical_location": {
+      "latitude": 52.52343,
+      "longitude": 13.41144
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1202231",
+    "itemLabel": "Embassy of Germany, Ankara",
+    "MastName": "AlmanyaBE@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q1202231",
+    "physical_location": {
+      "latitude": 39.904609,
+      "longitude": 32.855967
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1204536",
+    "itemLabel": "ZB MED - Information Centre for Life Sciences",
+    "MastName": "ZBMED@mastodon.social",
+    "hostAt": "mastodon.social",
+    "id": "Q1204536",
+    "physical_location": {
+      "latitude": 50.924567,
+      "longitude": 6.916296
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q12305647",
+    "itemLabel": "Generaldirektion Wasserstraßen und Schifffahrt",
+    "MastName": "gdws_wsv_presse@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q12305647",
+    "physical_location": {
+      "latitude": 50.734276,
+      "longitude": 7.070301
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1284355",
+    "itemLabel": "Hessian Ministry for the Environment, Climate Protection, Agriculture and Consumer Protection",
+    "MastName": "umwelthessen@social.hessen.de",
+    "hostAt": "social.hessen.de",
+    "id": "Q1284355",
+    "physical_location": {
+      "latitude": 50.0703,
+      "longitude": 8.2495
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q13432243",
+    "itemLabel": "Authority for Consumers and Markets",
+    "MastName": "acm@social.overheid.nl",
+    "hostAt": "social.overheid.nl",
+    "id": "Q13432243",
+    "physical_location": {
+      "latitude": 52.08065,
+      "longitude": 4.32063
+    },
+    "country": "Netherlands",
+    "country_code": "nl"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1377705",
+    "itemLabel": "European Data Protection Supervisor",
+    "MastName": "EDPS@social.network.europa.eu",
+    "hostAt": "social.network.europa.eu",
+    "id": "Q1377705",
+    "physical_location": {
+      "latitude": 50.84126,
+      "longitude": 4.37051
+    },
+    "country": "Belgium",
+    "country_code": "be"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1378040",
+    "itemLabel": "Directorate-General for European Civil Protection and Humanitarian Aid Operations",
+    "MastName": "EC_ECHO@social.network.europa.eu",
+    "hostAt": "social.network.europa.eu",
+    "id": "Q1378040",
+    "physical_location": {
+      "latitude": 50.8443748,
+      "longitude": 4.373067
+    },
+    "country": "Belgium",
+    "country_code": "be"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1408870",
+    "itemLabel": "Rijkswaterstaat",
+    "MastName": "rijkswaterstaat@social.overheid.nl",
+    "hostAt": "social.overheid.nl",
+    "id": "Q1408870",
+    "physical_location": {
+      "latitude": 52.33062,
+      "longitude": 4.8046
+    },
+    "country": "Netherlands",
+    "country_code": "nl"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1409871",
+    "itemLabel": "Feuerwehr Hamburg",
+    "MastName": "FeuerwehrHH@feuerwehr.social",
+    "hostAt": "feuerwehr.social",
+    "id": "Q1409871",
+    "physical_location": {
+      "latitude": 53.55726,
+      "longitude": 9.99597
+    },
+    "country": "Gernany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1411793",
+    "itemLabel": "Hessian Ministry of Justice",
+    "MastName": "Justiz@social.hessen.de",
+    "hostAt": "social.hessen.de",
+    "id": "Q1411793",
+    "physical_location": {
+      "latitude": 50.0797,
+      "longitude": 8.24274
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1416524",
+    "itemLabel": "Finanzministerium",
+    "MastName": "finanzenbw@bawü.social",
+    "hostAt": "bawü.social",
+    "id": "Q1416524",
+    "physical_location": {
+      "latitude": 52.50869,
+      "longitude": 13.38415
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1457808",
+    "itemLabel": "Friedrich Loeffler Institute",
+    "MastName": "loeffler_news@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q1457808",
+    "physical_location": {
+      "latitude": 54.18277778,
+      "longitude": 13.36305556
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1476836",
+    "itemLabel": "Paul Ehrlich Institute",
+    "MastName": "PEI_Germany@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q1476836",
+    "physical_location": {
+      "latitude": 50.00611111,
+      "longitude": 8.64972222
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1478016",
+    "itemLabel": "Federal Employment Agency of Germany",
+    "MastName": "bundesagentur@mastodon.social",
+    "hostAt": "mastodon.social",
+    "id": "Q1478016",
+    "physical_location": {
+      "latitude": 49.440501,
+      "longitude": 11.106422
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1518827",
+    "itemLabel": "European Court of Justice",
+    "MastName": "Curia@social.network.europa.eu",
+    "hostAt": "social.network.europa.eu",
+    "id": "Q1518827",
+    "physical_location": {
+      "latitude": 49.621388888889,
+      "longitude": 6.1411111111111
+    },
+    "country": "Luxembourg",
+    "country_code": "lu"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q15793043",
+    "itemLabel": "Federal Office for the Safety of Nuclear Waste Management",
+    "MastName": "base@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q15793043",
+    "physical_location": {
+      "latitude": 52.51561,
+      "longitude": 13.3343
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q15824236",
+    "itemLabel": "Coordination Office for the Preservation of the Written Cultural Heritage",
+    "MastName": "originalerhalt@mastodon.social",
+    "hostAt": "mastodon.social",
+    "id": "Q15824236",
+    "physical_location": {
+      "latitude": 52.51747,
+      "longitude": 13.39164
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1615896",
+    "itemLabel": "Hessische Landeszentrale für Politische Bildung",
+    "MastName": "hlz@hessen.social",
+    "hostAt": "hessen.social",
+    "id": "Q1615896",
+    "physical_location": {
+      "latitude": 50.0863,
+      "longitude": 8.24377
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1615909",
+    "itemLabel": "Hessische Staatskanzlei",
+    "MastName": "landesregierung@social.hessen.de",
+    "hostAt": "social.hessen.de",
+    "id": "Q1615909",
+    "physical_location": {
+      "latitude": 50.08611111111111,
+      "longitude": 8.243055555555555
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1615916",
+    "itemLabel": "Hessian Commissioner for Data Protection and Freedom of Information",
+    "MastName": "HBDI@social.hessen.de",
+    "hostAt": "social.hessen.de",
+    "id": "Q1615916",
+    "physical_location": {
+      "latitude": 50.0707266,
+      "longitude": 8.2465436
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1615992",
+    "itemLabel": "Hessian Ministry of Finance",
+    "MastName": "finanzen@social.hessen.de",
+    "hostAt": "social.hessen.de",
+    "id": "Q1615992",
+    "physical_location": {
+      "latitude": 50.0755,
+      "longitude": 8.24656
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1615996",
+    "itemLabel": "Hessian Ministry for Science and the Arts",
+    "MastName": "hmwk_hessen@social.hessen.de",
+    "hostAt": "social.hessen.de",
+    "id": "Q1615996",
+    "physical_location": {
+      "latitude": 50.0782,
+      "longitude": 8.24352
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1652311",
+    "itemLabel": "Landgericht Karlsruhe",
+    "MastName": "LandgerichtKarlsruhe@bawü.social",
+    "hostAt": "bawü.social",
+    "id": "Q1652311",
+    "physical_location": {
+      "latitude": 49.0124,
+      "longitude": 8.39877
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1661653",
+    "itemLabel": "Ministry of Justice of the Czech Republic",
+    "MastName": "SpravedlnostCZ@mastodonczech.cz",
+    "hostAt": "mastodonczech.cz",
+    "id": "Q1661653",
+    "physical_location": {
+      "latitude": 50.06936111,
+      "longitude": 14.41842222
+    },
+    "country": "Czechia",
+    "country_code": "cz"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q16635111",
+    "itemLabel": "Etalab",
+    "MastName": "etalab@mastodon.etalab.gouv.fr",
+    "hostAt": "mastodon.etalab.gouv.fr",
+    "id": "Q16635111",
+    "physical_location": {
+      "latitude": 48.850497,
+      "longitude": 2.3084406
+    },
+    "country": "France",
+    "country_code": "fr"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1694545",
+    "itemLabel": "Johann Heinrich von Thünen-Institut",
+    "MastName": "Thuenen_aktuell@wisskomm.social",
+    "hostAt": "wisskomm.social",
+    "id": "Q1694545",
+    "physical_location": {
+      "latitude": 52.286178,
+      "longitude": 10.449823
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q17025477",
+    "itemLabel": "Northeast Ohio Regional Sewer District",
+    "MastName": "neorsd@mastodon.online",
+    "hostAt": "mastodon.online",
+    "id": "Q17025477",
+    "physical_location": {
+      "latitude": 41.25761,
+      "longitude": -80.66378
+    },
+    "country": "United States",
+    "country_code": "CCCC"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q17461453",
+    "itemLabel": "Firefighting in Cologne",
+    "MastName": "feuerwehrkoeln@feuerwehr.social",
+    "hostAt": "feuerwehr.social",
+    "id": "Q17461453",
+    "physical_location": {
+      "latitude": 50.940529,
+      "longitude": 6.9599
+    },
+    "country": "Germany",
+    "country_code": "CCCC"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q176936",
+    "itemLabel": "Federal Labour Court of Germany",
+    "MastName": "bundesarbeitsgericht@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q176936",
+    "physical_location": {
+      "latitude": 50.97742,
+      "longitude": 11.01427
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1802766",
+    "itemLabel": "Central Agency for Political Education Baden-Württemberg",
+    "MastName": "lpb@bawü.social",
+    "hostAt": "bawü.social",
+    "id": "Q1802766",
+    "physical_location": {
+      "latitude": 48.7719,
+      "longitude": 9.18994
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1802768",
+    "itemLabel": "Landeszentrale für politische Bildung Nordrhein-Westfalen",
+    "MastName": "lpbnrw@bildung.social",
+    "hostAt": "bildung.social",
+    "id": "Q1802768",
+    "physical_location": {
+      "latitude": 51.213188,
+      "longitude": 6.76247
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1802869",
+    "itemLabel": "Landgericht Lübeck",
+    "MastName": "LGLuebeck@troet.cafe",
+    "hostAt": "troet.cafe",
+    "id": "Q1802869",
+    "physical_location": {
+      "latitude": 53.878,
+      "longitude": 10.6969
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q18124763",
+    "itemLabel": "Federal Office of Consumer Protection and Food Safety",
+    "MastName": "BVL_Bund@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q18124763",
+    "physical_location": {
+      "latitude": 52.29254,
+      "longitude": 10.43117
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q18287062",
+    "itemLabel": "Generalzolldirektion",
+    "MastName": "Zoll@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q18287062",
+    "physical_location": {
+      "latitude": 50.736219,
+      "longitude": 7.070911
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1866011",
+    "itemLabel": "General Intelligence and Security Service",
+    "MastName": "aivd@social.overheid.nl",
+    "hostAt": "social.overheid.nl",
+    "id": "Q1866011",
+    "physical_location": {
+      "latitude": 52.062964,
+      "longitude": 4.487842
+    },
+    "country": "Netherlands",
+    "country_code": "nl"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1907350",
+    "itemLabel": "Radiocommunications Agency",
+    "MastName": "rdi@social.overheid.nl",
+    "hostAt": "social.overheid.nl",
+    "id": "Q1907350",
+    "physical_location": {
+      "latitude": 53.212494,
+      "longitude": 6.56062
+    },
+    "country": "Netherlands",
+    "country_code": "nl"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1912080",
+    "itemLabel": "Max Planck Institute for Meteorology",
+    "MastName": "MPI_Meteo@wisskomm.social",
+    "hostAt": "wisskomm.social",
+    "id": "Q1912080",
+    "physical_location": {
+      "latitude": 53.567722222222,
+      "longitude": 9.9751666666667
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1937085",
+    "itemLabel": "Baden-Württemberg Ministry of Transport",
+    "MastName": "VerkehrsministeriumBW@bawü.social",
+    "hostAt": "bawü.social",
+    "id": "Q1937085",
+    "physical_location": {
+      "latitude": 48.77589,
+      "longitude": 9.18084
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1937092",
+    "itemLabel": "Ministry of Science, Research and the Arts of Baden-Württemberg",
+    "MastName": "mwk_bw@mastodon.social",
+    "hostAt": "mastodon.social",
+    "id": "Q1937092",
+    "physical_location": {
+      "latitude": 48.78382,
+      "longitude": 9.18981
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q2188136",
+    "itemLabel": "Ministry of Infrastructure and Water Management",
+    "MastName": "minienw@social.overheid.nl",
+    "hostAt": "social.overheid.nl",
+    "id": "Q2188136",
+    "physical_location": {
+      "latitude": 52.099227,
+      "longitude": 4.302087
+    },
+    "country": "Netherlands",
+    "country_code": "nl"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q2231661",
+    "itemLabel": "Brussels Mobility",
+    "MastName": "verkeersinfo@socialmedia.mobilite-mobiliteit.brussels",
+    "hostAt": "socialmedia.mobilite-mobiliteit.brussels",
+    "id": "Q2231661",
+    "physical_location": {
+      "latitude": 50.85697,
+      "longitude": 4.36144
+    },
+    "country": "Belgium",
+    "country_code": "be"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q22680987",
+    "itemLabel": "Ministry of Health of the Government of Catalonia",
+    "MastName": "salutcat@mastodont.cat",
+    "hostAt": "mastodont.cat",
+    "id": "Q22680987",
+    "physical_location": {
+      "latitude": 41.381545,
+      "longitude": 2.126048
+    },
+    "country": "Spain",
+    "country_code": "es"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q23786362",
+    "itemLabel": "Informationstechnikzentrum Bund",
+    "MastName": "itzbund@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q23786362",
+    "physical_location": {
+      "latitude": 48.79039,
+      "longitude": 9.20713
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q2430892",
+    "itemLabel": "Thuringian State Chancellery",
+    "MastName": "Staatskanzlei@freistaat-thueringen.social",
+    "hostAt": "freistaat-thueringen.social",
+    "id": "Q2430892",
+    "physical_location": {
+      "latitude": 50.9742,
+      "longitude": 11.0292
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q24505407",
+    "itemLabel": "Ministerium für Infrastruktur und Digitales des Landes Sachsen-Anhalt",
+    "MastName": "mid_lsa@social.sachsen-anhalt.de",
+    "hostAt": "social.sachsen-anhalt.de",
+    "id": "Q24505407",
+    "physical_location": {
+      "latitude": 52.121944444444,
+      "longitude": 11.6325
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q2491421",
+    "itemLabel": "Ministry of the Interior and Kingdom Relations",
+    "MastName": "minbzk@social.overheid.nl",
+    "hostAt": "social.overheid.nl",
+    "id": "Q2491421",
+    "physical_location": {
+      "latitude": 52.07924,
+      "longitude": 4.32178
+    },
+    "country": "Netherlands",
+    "country_code": "nl"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q2491722",
+    "itemLabel": "Federal Environment Agency",
+    "MastName": "Umweltbundesamt@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q2491722",
+    "physical_location": {
+      "latitude": 51.84124,
+      "longitude": 12.23826
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q2548003",
+    "itemLabel": "Dutch Custodial Institutions Agency",
+    "MastName": "dji@social.overheid.nl",
+    "hostAt": "social.overheid.nl",
+    "id": "Q2548003",
+    "physical_location": {
+      "latitude": 52.07924,
+      "longitude": 4.32178
+    },
+    "country": "Netherlands",
+    "country_code": "nl"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q2550674",
+    "itemLabel": "Federal Waterways and Shipping Administration",
+    "MastName": "gdws_wsv_presse@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q2550674",
+    "physical_location": {
+      "latitude": 49.79706,
+      "longitude": 9.91655
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q257906",
+    "itemLabel": "Federal Office for Information Security",
+    "MastName": "bsi@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q257906",
+    "physical_location": {
+      "latitude": 50.704554,
+      "longitude": 7.132922
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q269138",
+    "itemLabel": "Federal Network Agency",
+    "MastName": "BNetzA@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q269138",
+    "physical_location": {
+      "latitude": 50.7149,
+      "longitude": 7.1242
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q27302",
+    "itemLabel": "German National Library",
+    "MastName": "DNB_Aktuelles@openbiblio.social",
+    "hostAt": "openbiblio.social",
+    "id": "Q27302",
+    "physical_location": {
+      "latitude": 50.13111111111111,
+      "longitude": 8.683333333333334
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q2778415",
+    "itemLabel": "Max Planck Institute for Gravitational Physics",
+    "MastName": "mpi_grav@social.mpdl.mpg.de",
+    "hostAt": "social.mpdl.mpg.de",
+    "id": "Q2778415",
+    "physical_location": {
+      "latitude": 52.416389,
+      "longitude": 12.970278
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q283099",
+    "itemLabel": "Bundeswehr University Munich",
+    "MastName": "unibwm@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q283099",
+    "physical_location": {
+      "latitude": 48.08032,
+      "longitude": 11.63813
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q314211",
+    "itemLabel": "Federal Financial Supervisory Authority",
+    "MastName": "BaFin@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q314211",
+    "physical_location": {
+      "latitude": 50.74853,
+      "longitude": 7.09398
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q317361",
+    "itemLabel": "Max Planck Institute of Molecular Cell Biology and Genetics",
+    "MastName": "mpicbg@wisskomm.social",
+    "hostAt": "wisskomm.social",
+    "id": "Q317361",
+    "physical_location": {
+      "latitude": 51.0586,
+      "longitude": 13.7846
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q325859",
+    "itemLabel": "Deutscher Wetterdienst",
+    "MastName": "deutscherwetterdienst@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q325859",
+    "physical_location": {
+      "latitude": 50.1032,
+      "longitude": 8.74774
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q328480",
+    "itemLabel": "Berlin Police",
+    "MastName": "PolizeiBerlin@berlin.social",
+    "hostAt": "berlin.social",
+    "id": "Q328480",
+    "physical_location": {
+      "latitude": 52.48299,
+      "longitude": 13.38691
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q333743",
+    "itemLabel": "Translation Centre for the Bodies of the European Union",
+    "MastName": "CDT@social.network.europa.eu",
+    "hostAt": "social.network.europa.eu",
+    "id": "Q333743",
+    "physical_location": {
+      "latitude": 49.618461,
+      "longitude": 6.146078
+    },
+    "country": "Luxembourg",
+    "country_code": "lu"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q3606472",
+    "itemLabel": "European Research Executive Agency",
+    "MastName": "EC_REA@social.network.europa.eu",
+    "hostAt": "social.network.europa.eu",
+    "id": "Q3606472",
+    "physical_location": {
+      "latitude": 50.86099,
+      "longitude": 4.35486
+    },
+    "country": "Belgium",
+    "country_code": "be"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q4440501",
+    "itemLabel": "European Union Agency for the Operational Management of Large-Scale IT Systems in the Area of Freedom, Security and Justice",
+    "MastName": "EULISA@social.network.europa.eu",
+    "hostAt": "social.network.europa.eu",
+    "id": "Q4440501",
+    "physical_location": {
+      "latitude": 59.450815,
+      "longitude": 24.736003
+    },
+    "country": "Estonia",
+    "country_code": "ee"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q470648",
+    "itemLabel": "Max Planck Institute for Solar System Research",
+    "MastName": "mpsgoettingen@astrodon.social",
+    "hostAt": "astrodon.social",
+    "id": "Q470648",
+    "physical_location": {
+      "latitude": 51.560278,
+      "longitude": 9.948611
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q48790",
+    "itemLabel": "European Union Agency for Fundamental Rights",
+    "MastName": "FRA@social.network.europa.eu",
+    "hostAt": "social.network.europa.eu",
+    "id": "Q48790",
+    "physical_location": {
+      "latitude": 48.198168,
+      "longitude": 16.374617
+    },
+    "country": "Austria",
+    "country_code": "at"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q488589",
+    "itemLabel": "Federal Ministry for Economic Affairs and Climate Action",
+    "MastName": "BMWK@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q488589",
+    "physical_location": {
+      "latitude": 52.529525,
+      "longitude": 13.37368056
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q491637",
+    "itemLabel": "Federal Ministry for Digital and Transport",
+    "MastName": "bmdv@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q491637",
+    "physical_location": {
+      "latitude": 52.52947,
+      "longitude": 13.37846
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q492234",
+    "itemLabel": "Federal Ministry of Education and Research",
+    "MastName": "bmbf_bund@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q492234",
+    "physical_location": {
+      "latitude": 50.70342,
+      "longitude": 7.13917
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q493344",
+    "itemLabel": "Federal Ministry for the Environment, Nature Conservation, Building and Nuclear Safety",
+    "MastName": "bmuv@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q493344",
+    "physical_location": {
+      "latitude": 50.705755555555555,
+      "longitude": 7.137886111111111
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q4951",
+    "itemLabel": "Court of Justice of the European Union",
+    "MastName": "Curia_fr@social.network.europa.eu",
+    "hostAt": "social.network.europa.eu",
+    "id": "Q4951",
+    "physical_location": {
+      "latitude": 49.62,
+      "longitude": 6.13944444
+    },
+    "country": "Luxembourg",
+    "country_code": "lu"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q499118",
+    "itemLabel": "Federal Ministry of Finance",
+    "MastName": "bmf@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q499118",
+    "physical_location": {
+      "latitude": 52.50869,
+      "longitude": 13.38415
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q502698",
+    "itemLabel": "Federal Ministry of the Interior and Community",
+    "MastName": "bmi@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q502698",
+    "physical_location": {
+      "latitude": 52.52183,
+      "longitude": 13.36313
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q51726888",
+    "itemLabel": "Federal Ministry of Construction",
+    "MastName": "BMWSB_Bund@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q51726888",
+    "physical_location": {
+      "latitude": 52.52269,
+      "longitude": 13.36354
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q520524",
+    "itemLabel": "Federal Agency for Civic Education",
+    "MastName": "bpb@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q520524",
+    "physical_location": {
+      "latitude": 50.72768055555556,
+      "longitude": 7.109291666666667
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q5280596",
+    "itemLabel": "Directorate-General for Informatics",
+    "MastName": "EC_DIGIT@social.network.europa.eu",
+    "hostAt": "social.network.europa.eu",
+    "id": "Q5280596",
+    "physical_location": {
+      "latitude": 50.83673,
+      "longitude": 4.38423
+    },
+    "country": "Belgium",
+    "country_code": "be"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q55610347",
+    "itemLabel": "European Union Agency for the Space Programme",
+    "MastName": "EUSPA@social.network.europa.eu",
+    "hostAt": "social.network.europa.eu",
+    "id": "Q55610347",
+    "physical_location": {
+      "latitude": 50.09802777777778,
+      "longitude": 14.434511111111112
+    },
+    "country": "Czechia",
+    "country_code": "cz"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q56034",
+    "itemLabel": "Federal Foreign Office",
+    "MastName": "AuswaertigesAmt@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q56034",
+    "physical_location": {
+      "latitude": 52.514722,
+      "longitude": 13.399444
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q56296301",
+    "itemLabel": "European Labour Authority",
+    "MastName": "ELA@social.network.europa.eu",
+    "hostAt": "social.network.europa.eu",
+    "id": "Q56296301",
+    "physical_location": {
+      "latitude": 48.141833,
+      "longitude": 17.12885
+    },
+    "country": "Slovakia",
+    "country_code": "sk"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q575060",
+    "itemLabel": "German Federal Anti-Discrimination Agency",
+    "MastName": "antidiskriminierung@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q575060",
+    "physical_location": {
+      "latitude": 52.52296,
+      "longitude": 13.37544
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q63883523",
+    "itemLabel": "National Agency for Communication and Information Technologies",
+    "MastName": "NAKIT@mastodonczech.cz",
+    "hostAt": "mastodonczech.cz",
+    "id": "Q63883523",
+    "physical_location": {
+      "latitude": 50.05162,
+      "longitude": 14.35181
+    },
+    "country": "Czech Republic",
+    "country_code": "cz"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q641676",
+    "itemLabel": "Naturalis Biodiversity Center",
+    "MastName": "Naturalis@mastodon.nl",
+    "hostAt": "mastodon.nl",
+    "id": "Q641676",
+    "physical_location": {
+      "latitude": 52.16472222,
+      "longitude": 4.47333333
+    },
+    "country": "Netherlands",
+    "country_code": "nl"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q64431673",
+    "itemLabel": "Industrie- und Handelskammer Südlicher Oberrhein",
+    "MastName": "ihksuedlicheroberrhein@bawü.social",
+    "hostAt": "bawü.social",
+    "id": "Q64431673",
+    "physical_location": {
+      "latitude": 47.99865,
+      "longitude": 7.84393
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q649814",
+    "itemLabel": "Hessian Ministry of Economics, Energy, Transport and Regional Development",
+    "MastName": "wirtschafthessen@social.hessen.de",
+    "hostAt": "social.hessen.de",
+    "id": "Q649814",
+    "physical_location": {
+      "latitude": 50.0716,
+      "longitude": 8.23898
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q662528",
+    "itemLabel": "Federal Department of Economic Affairs, Education and Research",
+    "MastName": "WBF_DEFR@social.admin.ch",
+    "hostAt": "social.admin.ch",
+    "id": "Q662528",
+    "physical_location": {
+      "latitude": 46.946533,
+      "longitude": 7.444173
+    },
+    "country": "Switzerland",
+    "country_code": "ch"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q672941",
+    "itemLabel": "European External Action Service",
+    "MastName": "EEAS@social.network.europa.eu",
+    "hostAt": "social.network.europa.eu",
+    "id": "Q672941",
+    "physical_location": {
+      "latitude": 50.8425,
+      "longitude": 4.38556
+    },
+    "country": "Belgium",
+    "country_code": "be"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q674868",
+    "itemLabel": "Federal Social Court",
+    "MastName": "Bundessozialgericht@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q674868",
+    "physical_location": {
+      "latitude": 51.3147,
+      "longitude": 9.44944
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q675983",
+    "itemLabel": "Federal Department of Foreign Affairs",
+    "MastName": "eda_dfae@social.admin.ch",
+    "hostAt": "social.admin.ch",
+    "id": "Q675983",
+    "physical_location": {
+      "latitude": 46.9463,
+      "longitude": 7.4426
+    },
+    "country": "Switzerland",
+    "country_code": "ch"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q679041",
+    "itemLabel": "Robert Koch Institute",
+    "MastName": "RKI@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q679041",
+    "physical_location": {
+      "latitude": 52.53919444444445,
+      "longitude": 13.347194444444444
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q684357",
+    "itemLabel": "Federal Ministry for Economic Cooperation and Development",
+    "MastName": "bmz@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q684357",
+    "physical_location": {
+      "latitude": 50.719818,
+      "longitude": 7.121
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q687323",
+    "itemLabel": "Federal Court of Justice of Germany",
+    "MastName": "BGH_Bund@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q687323",
+    "physical_location": {
+      "latitude": 49.006111111111,
+      "longitude": 8.3966666666667
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q688584",
+    "itemLabel": "Federal Department of Home Affairs",
+    "MastName": "EDI_DFI@social.admin.ch",
+    "hostAt": "social.admin.ch",
+    "id": "Q688584",
+    "physical_location": {
+      "latitude": 46.946533,
+      "longitude": 7.444173
+    },
+    "country": "Switzerland",
+    "country_code": "ch"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q695302",
+    "itemLabel": "German Archaeological Institute",
+    "MastName": "dai_weltweit@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q695302",
+    "physical_location": {
+      "latitude": 52.4648,
+      "longitude": 13.29522
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q6974489",
+    "itemLabel": "National Museum of Natural History, Luxembourg",
+    "MastName": "naturmusee@mastodon.green",
+    "hostAt": "mastodon.green",
+    "id": "Q6974489",
+    "physical_location": {
+      "latitude": 49.60985,
+      "longitude": 6.13575
+    },
+    "country": "Luxembourg",
+    "country_code": "lu"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q697698",
+    "itemLabel": "Technisches Hilfswerk",
+    "MastName": "thw@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q697698",
+    "physical_location": {
+      "latitude": 50.73495,
+      "longitude": 7.07504
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q702415",
+    "itemLabel": "Federal Fiscal Court",
+    "MastName": "bundesfinanzhof@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q702415",
+    "physical_location": {
+      "latitude": 48.149166666666666,
+      "longitude": 11.605555555555556
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q702424",
+    "itemLabel": "Federal Administrative Court",
+    "MastName": "bverwg_de@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q702424",
+    "physical_location": {
+      "latitude": 51.33301,
+      "longitude": 12.36981
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q72587257",
+    "itemLabel": "interministerial digital directorate",
+    "MastName": "dinum@social.numerique.gouv.fr",
+    "hostAt": "social.numerique.gouv.fr",
+    "id": "Q72587257",
+    "physical_location": {
+      "latitude": 48.850516666666664,
+      "longitude": 2.3083666666666667
+    },
+    "country": "France",
+    "country_code": "fr"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q792534",
+    "itemLabel": "European Union Intellectual Property Office",
+    "MastName": "EUIPO@social.network.europa.eu",
+    "hostAt": "social.network.europa.eu",
+    "id": "Q792534",
+    "physical_location": {
+      "latitude": 38.314383,
+      "longitude": -0.518181
+    },
+    "country": "Spain",
+    "country_code": "es"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q8177",
+    "itemLabel": "Rhein-Neckar",
+    "MastName": "rheinneckarkreis@bawü.social",
+    "hostAt": "bawü.social",
+    "id": "Q8177",
+    "physical_location": {
+      "latitude": 49.366666666667,
+      "longitude": 8.7333333333333
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q835031",
+    "itemLabel": "Embassy of Germany, London",
+    "MastName": "germanyinuk@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q835031",
+    "physical_location": {
+      "latitude": 51.49825,
+      "longitude": -0.15425
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q869805",
+    "itemLabel": "Press and Information Office of the Federal Government of Germany",
+    "MastName": "Bundespresseamt@social.bund.de",
+    "hostAt": "social.bund.de",
+    "id": "Q869805",
+    "physical_location": {
+      "latitude": 52.51851,
+      "longitude": 13.38373
+    },
+    "country": "Germany",
+    "country_code": "de"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q896642",
+    "itemLabel": "German Council of Science and Humanities",
+    "MastName": "WissRat@wisskomm.social",
+    "hostAt": "wisskomm.social",
+    "id": "Q896642",
+    "physical_location": {
+      "latitude": 50.93886,
+      "longitude": 6.90781
+    },
+    "country": "Germany",
+    "country_code": "ge"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q998654",
+    "itemLabel": "Ministry for Social Affairs, Health and Integration Baden-Württemberg",
+    "MastName": "MSI_BW@bawü.social",
+    "hostAt": "bawü.social",
+    "id": "Q998654",
+    "physical_location": {
+      "latitude": 48.780586,
+      "longitude": 9.174263
+    },
+    "country": "Germany",
+    "country_code": "de"
+  }
+]
