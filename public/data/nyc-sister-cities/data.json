@@ -1,0 +1,79 @@
+[
+  {
+    "city": "New York City",
+    "country": "United States",
+    "wikipedia": "https://en.wikipedia.org/wiki/New_York_City",
+    "latitude": 40.712776,
+    "longitude": -74.005974
+  },
+  {
+    "city": "Athens",
+    "country": " Greece",
+    "wikipedia": "https://en.wikipedia.org/wiki/Athens",
+    "latitude": 37.98381,
+    "longitude": 23.727539
+  },
+  {
+    "city": "Beijing",
+    "country": " China",
+    "wikipedia": "https://en.wikipedia.org/wiki/Beijing",
+    "latitude": 39.904202,
+    "longitude": 116.407394
+  },
+  {
+    "city": "Budapest",
+    "country": " Hungary",
+    "wikipedia": "https://en.wikipedia.org/wiki/Budapest",
+    "latitude": 47.497913,
+    "longitude": 19.040236
+  },
+  {
+    "city": "Ho Chi Minh City",
+    "country": " Vietnam",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ho_Chi_Minh_City",
+    "latitude": 10.823099,
+    "longitude": 106.629662
+  },
+  {
+    "city": "Jerusalem",
+    "country": " Israel",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jerusalem",
+    "latitude": 31.768318,
+    "longitude": 35.213711
+  },
+  {
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "wikipedia": "https://en.wikipedia.org/wiki/Johannesburg",
+    "latitude": -26.204103,
+    "longitude": 28.047304
+  },
+  {
+    "city": "London",
+    "country": "United Kingdom",
+    "wikipedia": "https://en.wikipedia.org/wiki/London",
+    "latitude": 51.500149,
+    "longitude": -0.12624
+  },
+  {
+    "city": "Madrid",
+    "country": " Spain",
+    "wikipedia": "https://en.wikipedia.org/wiki/Madrid",
+    "latitude": 40.416775,
+    "longitude": -3.70379
+  },
+  {
+    "city": "Santo Domingo",
+    "country": "Dominican Republic",
+    "wikipedia": "https://en.wikipedia.org/wiki/Santo_Domingo",
+    "latitude": 18.486057,
+    "longitude": -69.931213
+  },
+  {
+    "city": "Tokyo",
+    "country": " Japan",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tokyo",
+    "latitude": 35.689487,
+    "longitude": 139.691711
+  }
+ ]
