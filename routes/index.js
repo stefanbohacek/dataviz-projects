@@ -86,8 +86,15 @@ router.all('/', (req, res) => {
 
 });
 
+
+router.all('/projects/', (req, res, next) => {
+    return res.redirect('/');
+});
+
+
 router.all('/projects/*', (req, res, next) => {
     const projectPaths = getRequestPaths(req);
+    console.log({projectPaths});
 
     if (projectPaths.project.indexOf('images') > -1 || projectPaths.project.indexOf('data') > -1){
         res.sendFile(path.resolve(`projects/${ projectPaths.project }`));
