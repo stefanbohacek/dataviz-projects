@@ -124,7 +124,7 @@ ready(async () => {
   
     let descriptionHTML = `
     <p>
-      <a href="https://en.wikipedia.org/wiki/List_of_sister_cities_in_New_York"><strong>New York's sister cities</strong></a> |
+      <a href="https://en.wikipedia.org/wiki/List_of_sister_cities_in_New_York"><strong>New York's sister cities ⭷</strong></a> |
       <a href="/data/nyc-sister-cities/data.json" target="_blank">Download</a>
     </p>
     <ul>
