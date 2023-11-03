@@ -40,6 +40,7 @@ ready(async () => {
   
     map.flyTo({
       center: [nyc.longitude, nyc.latitude],
+      duration: 2400
     });
   
   
@@ -49,8 +50,6 @@ ready(async () => {
       item.longitude,
       item.latitude,
     ]);
-  
-    console.log({ coordinates });
   
     const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(`
       <a target="_blank" href="${nyc.wikipedia}">
@@ -105,7 +104,20 @@ ready(async () => {
           .setLngLat([item.longitude, item.latitude])
           .setPopup(popup)
           .addTo(map);
+
+          // marker.getElement().addEventListener('click', () => {
+          //   console.log(marker);
+          // });
       });
+
+
+      map.on('click', function(e) {
+        map.flyTo({
+          center: e.lngLat,
+          duration: 2400          
+        });
+      });
+    
     });
   
     const descriptionEl = document.getElementById("description");
@@ -162,6 +174,7 @@ ready(async () => {
   
         map.flyTo({
           center: [long, lat],
+          duration: 2400
         });
   
         const popup = new mapboxgl.Popup().setLngLat([long, lat]).setHTML(
