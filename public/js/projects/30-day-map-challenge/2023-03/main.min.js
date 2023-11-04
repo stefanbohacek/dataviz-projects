@@ -14,7 +14,7 @@ ready(async () => {
   map.on("load", () => {
     map.addSource("pangea", {
       type: "geojson",
-      data: "/data/pangea/pangea.geojson",
+      data: "/data/continents/pangea.geojson",
     });
 
     map.addLayer({

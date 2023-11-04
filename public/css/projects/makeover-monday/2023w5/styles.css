@@ -71,6 +71,10 @@ img.rating {
     color: #121629; }
     .bg-light a:hover {
       color: #232946 !important; }
+  .bg-light a.btn {
+    color: #fff; }
+    .bg-light a.btn:hover {
+      color: #fff !important; }
 
 .border-bottom {
   border-bottom-color: #b8c1ec !important; }
