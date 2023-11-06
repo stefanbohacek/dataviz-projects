@@ -1,0 +1,82 @@
+// body{
+//     background-color: #f7f7f7;
+// }
+
+// h1, .lead{
+//     color: #232946;
+// }
+
+img{
+    &.instrument-img{
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        border: solid white 10px;
+        border-bottom: solid white 40px;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+
+        transform: rotate(-1deg);
+        transition: transform 0.3s ease-in-out;
+        position: relative;
+        z-index: 10;
+
+        @media (min-width: 768px) {
+            max-width: 220px;
+        }
+
+        &:hover{
+            box-shadow: 4px 4px 6px rgba(0,0,0,0.2);
+        }
+    }
+
+    &.rating{
+        vertical-align: baseline;
+    }
+}
+
+#row-intro,
+.card{
+    background-color: rgba(255, 255, 255, 0.87);
+}
+
+#map-wrapper{
+    height: 100px;
+    max-height: 30vh;
+    z-index: -10;
+
+    @media (min-width: 768px) {
+        max-height: 50vh;
+    }
+
+    #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+.step{
+    @media (max-width: 767px) {
+        margin-bottom: 80vh;
+    }
+}
+
+.active-step{
+    img.instrument-img{
+        transform: rotate(2deg);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+.step-next{
+    @media (max-width: 992px) {
+        display: none;
+    }
+}
+
+.step.min-vh-100{
+    @media (max-width: 767px) {
+        min-height: 100px !important;
+    }
+}

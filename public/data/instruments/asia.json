@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Guzheng",
+    "description": "<p>A Chinese plucked instrument invented around 221–206 BCE. A modern guzheng has typically 21, 25, or 26 strings and is tuned in a major pentatonic scale. The instrument is often decorated.</p>",
+    "country": "China",
+    "lat": 35.861660,
+    "lng": 104.195396,
+    "video": "ujzMHLac404",
+    "wikipedia": "https://en.wikipedia.org/wiki/Guzheng"
+  },
+  {
+    "name": "Koto",
+    "description": "<p>A Japanese plucked instrument, and the national instrument of Japan. The most common version uses 13 strings strung over movable bridges used for tuning.</p>",
+    "country": "Japan",
+    "lat": 36.204823,
+    "lng": 138.252930,
+    "video": "ImvrPNHVTl8",
+    "wikipedia": "https://en.wikipedia.org/wiki/Koto_(instrument)"
+  },
+  {
+    "name": "Pipa",
+    "description": "<p>A traditional plucked Chinese musical instrument from around the 2nd century AD, sometimes called the \"Chinese lute\". The name refers to the way the instrument is played – \"pí\" is to strike outward with the right hand, and \"pá\" is to pluck inward towards the palm of the hand.</p>",
+    "country": "China",
+    "lat": 35.861660,
+    "lng": 104.195396,
+    "video": "iuxTywpBJNI",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pipa"
+  },
+  {
+    "name": "Saung",
+    "description": "<p>An arched harp used in traditional Burmese music, and a national musical instrument of Burma. It may have been introduced as early as 500 AD from southeastern India.</p>",
+    "country": "Burma",
+    "lat": 21.9162,
+    "lng": 95.9560,
+    "video": "NP8GTDEIpmc",
+    "wikipedia": "https://en.wikipedia.org/wiki/Saung"
+  },
+  {
+    "name": "Kse Diev",
+    "description": "<p>A Cambodian musical bow with a single copper or brass string and a gourd resonator. When the United Nations helped Cambodia to assess its cultural heritage, the kse diev was considered to be the country's oldest musical instrument, played as early as 12 or 13th century.</p>",
+    "country": "Cambodia",
+    "lat": 12.565679,
+    "lng": 104.990967,
+    "video": "jATktcHEh94",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kse_diev"
+  },
+  {
+    "name": "Daegeum",
+    "description": "<p>A large bamboo flute used in traditional Korean music, said to be invented in 681.</p>",
+    "country": "South Korea",
+    "lat": 35.907757,
+    "lng": 127.766922,
+    "video": "f00eDzDMXBM",
+    "wikipedia": "https://en.wikipedia.org/wiki/Daegeum"
+  },
+  {
+    "name": "Taiko",
+    "description": "<p>A broad range of Japanese percussion instruments. Historical records suggest that taiko were introduced to Japan through Chinese and Korean cultural influence as early as the 6th century.</p>",
+    "country": "Japan",
+    "lat": 36.204823,
+    "lng": 138.252930,
+    "video": "C7HL5wYqAbU",
+    "wikipedia": "https://en.wikipedia.org/wiki/Taiko"
+  },
+  {
+    "name": "Gamelan",
+    "description": "<p>Traditional ensemble music of the Javanese, Sundanese, and Balinese peoples of Indonesia, made up predominantly of percussive instruments.</p>",
+    "country": "Indonesia",
+    "lat": -0.789275,
+    "lng": 113.921326,
+    "video": "p3HwqqiVxbE",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gamelan"
+  },
+  {
+    "name": "Kulintang",
+    "description": "<p>A modern term for an ancient instrumental form of music composed on a row of small, horizontally laid gongs that function melodically, accompanied by larger, suspended gongs and drums.</p>",
+    "country": "Indonesia",
+    "lat": -0.789275,
+    "lng": 113.921326,
+    "video": "8Bn4Zc4qGhU",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kulintang"
+  }
+]
