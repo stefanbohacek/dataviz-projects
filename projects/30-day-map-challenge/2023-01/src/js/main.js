@@ -82,7 +82,7 @@ ready(async () => {
 
   let descriptionHTML = `
     <details>
-      <summary>Government agencies with fediverse presence</summary>
+      <summary>Government agencies with <a href="https://jointhefediverse.net/">fediverse<a> presence</summary>
       <ul>
         ${countriesSortable
           .map(
