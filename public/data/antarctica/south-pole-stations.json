@@ -1,0 +1,77 @@
+[
+  {
+    "name": "Amundsen-Scott South Pole station",
+    "url": "https://www.usap.gov/videoclipsandmaps/spWebCam.cfm",
+    "page_url": "https://www.usap.gov/videoclipsandmaps/",
+    "location": {
+      "lat": -90,
+      "lon": 0
+    }
+  },
+  {
+    "name": "Palmer station",
+    "url": "https://www.usap.gov/videoclipsandmaps/palwebcam.cfm?t=0",
+    "page_url": "https://www.usap.gov/videoclipsandmaps/",
+    "location": {
+      "lat": -64.7742513,
+      "lon": -64.0564048
+    }
+  },
+
+  {
+    "name": "Casey station",
+    "url": "https://www.antarctica.gov.au/antarctic-operations/webcams/casey/",
+    "location": {
+      "lat": -66.2818917,
+      "lon": 110.5220425
+    }
+  },
+  {
+    "name": "Davis station",
+    "url": "https://www.antarctica.gov.au/antarctic-operations/webcams/davis/",
+    "location": {
+      "lat": -68.5767698,
+      "lon": 77.9631471
+    }
+  },
+  {
+    "name": "Macquarie Island station",
+    "url": "https://www.antarctica.gov.au/antarctic-operations/webcams/macquarie-island/",
+    "location": {
+      "lat": -64.5731347,
+      "lon": 139.75534
+    }
+  },
+  {
+    "name": "Mawson station",
+    "url": "https://www.antarctica.gov.au/antarctic-operations/webcams/mawson/",
+    "location": {
+      "lat": -67.6032721,
+      "lon": 62.87159
+    }
+  },
+  {
+    "name": "Bird Island research station",
+    "url": "https://www.bas.ac.uk/data/our-data/images/webcams/bird-island-webcam/",
+    "location": {
+      "lat": -71.3714939,
+      "lon": -57.67193
+    }
+  },
+  {
+    "name": "King Edward Point",
+    "url": "https://www.bas.ac.uk/data/our-data/images/webcams/king-edward-point-webcam/",
+    "location": {
+      "lat": -69.7269736,
+      "lon": -23.0802078
+    }
+  },
+  {
+    "name": "Rothera webcam",
+    "url": "https://www.bas.ac.uk/data/our-data/images/webcams/rothera-webcam/",
+    "location": {
+      "lat": -67.5678385,
+      "lon": -68.1292447
+    }
+  }
+]
