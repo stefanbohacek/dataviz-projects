@@ -33,10 +33,13 @@ const drawChart = (userData) => {
         label: 'Your hashtags',
         // data: hashtags.map((hashtag) => hashtag.count)
         // data: hashtags.map((hashtag) => scale(hashtag.count, minCount, maxCount, minFontSize, maxFontSize ))
-        data: hashtags.map((d) => {
+        data: hashtags.map((d, i) => {
           let size = 5 + d.count * 5;
-          if (size > 50){
-            size = 50;
+          if (size > 45){
+            size = 45;
+          }
+          if (i > hashtags.length - 5){
+            size = 50 + (hashtags.length - i);
           }
 
           return size;
