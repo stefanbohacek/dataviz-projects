@@ -64,7 +64,7 @@ const showData = async (userData) => {
 
   hashtags = sortArrayOfObjects(hashtags, "count", true);
   // userData.hashtags = hashtags;
-  userData.hashtags = hashtags.slice(1,251);
+  userData.hashtags = hashtags.slice(0,250);
   drawChart(userData);
 
   dataDownloadPrompt.innerHTML = `
