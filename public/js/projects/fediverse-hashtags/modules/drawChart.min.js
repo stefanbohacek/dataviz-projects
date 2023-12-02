@@ -13,8 +13,8 @@ const drawChart = (userData) => {
 
   // const hashtags = userData.hashtags.slice(0, 10);
   const hashtags = userData.hashtags;
-  const minFontSize = 20;
-  const maxFontSize = 22;
+  const minFontSize = 16;
+  const maxFontSize = 50;
   // const minFontSize = Math.min(200/hashtags.length, 10);
   // const maxFontSize = Math.min(300/hashtags.length, 40);
 
@@ -30,20 +30,20 @@ const drawChart = (userData) => {
     labels: hashtags.map(hashtag => hashtag.hashtag),
     datasets: [
       {
-        label: 'Your hashtags',
+        label: `Your top ${hashtags.length.toLocaleString()} hashtags`,
         // data: hashtags.map((hashtag) => hashtag.count)
-        // data: hashtags.map((hashtag) => scale(hashtag.count, minCount, maxCount, minFontSize, maxFontSize ))
-        data: hashtags.map((d, i) => {
-          let size = 5 + d.count * 5;
-          if (size > 45){
-            size = 45;
-          }
-          if (i > hashtags.length - 5){
-            size = 50 + (hashtags.length - i);
-          }
+        data: hashtags.map((hashtag) => scale(hashtag.count, minCount, maxCount, minFontSize, maxFontSize ))
+        // data: hashtags.map((d, i) => {
+        //   let size = 5 + d.count * 5;
+        //   if (size > 45){
+        //     size = 45;
+        //   }
+        //   if (i > hashtags.length - 5){
+        //     size = 50 + (hashtags.length - i);
+        //   }
 
-          return size;
-        })
+        //   return size;
+        // })
       },
     ],
   };

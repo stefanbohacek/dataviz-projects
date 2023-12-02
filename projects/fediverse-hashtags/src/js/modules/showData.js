@@ -63,11 +63,12 @@ const showData = async (userData) => {
   }
 
   hashtags = sortArrayOfObjects(hashtags, "count", true);
-  userData.hashtags = hashtags;
+  // userData.hashtags = hashtags;
+  userData.hashtags = hashtags.slice(1,251);
   drawChart(userData);
 
   dataDownloadPrompt.innerHTML = `
-      <button class="small d-inline d-md-block mt-md-3" id="download-data-btn">Download the data</button>
+      <button class="small d-inline d-md-block mt-md-3" id="download-data-btn">Download the full data</button>
   `;
 
   const csv = jsonToCSV(hashtags);
