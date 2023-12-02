@@ -1,0 +1,100 @@
+<section id="intro" class="flex-shrink-0">
+  <div
+    class="d-flex align-items-center vh-100 position-relative overflow-hidden"
+  >
+    <div class="mx-auto my-5 p-2" style="max-width: 700px;">
+      <h1 class="text-center">Explore your <mark>fediverse hashtags</mark></h1>
+      <p class="text-start mt-5">
+        <form id="sign-in-form">
+          <label for="fediverse-server" class="d-block form-label text-start">Your instance or server</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text">https://</span>
+            <input required id="fediverse-server" type="text" class="form-control" placeholder="mastodon.social">
+            <button class="btn btn-outline-secondary" type="submit" id="sign-in">Sign in</button>
+          </div>
+        </form>
+        {{!-- <p><a href="https://stefanbohacek.com/project/explore-your-fediverse-connections/">Learn more</a> | <a href="https://stefanbohacek.com/project/explore-your-fediverse-connections/#privacy-policy">Privacy policy</a></p> --}}
+      </p>
+      <details>
+        <summary>Privacy policy</summary>
+        <p class="mt-4">This tool requires the following <strong>read-only</strong> access when you log in:</p>
+        <ul>
+          <li>
+            <strong>Your account information:</strong> this is to display your name and profile picture
+          </li>
+          <li>
+            <strong>Your posts:</strong> this is to show which hashtags you've used in the past, the primary functionality of my tool
+          </li>
+        </ul>
+        <p><strong>No data is saved on my server.</strong> A portion of the data that’s used for the data visualization will be cached in your browser for one hour, and is also available for you to download.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+<section id="loading" class="flex-shrink-0 d-none">
+  <div
+    class="d-flex align-items-center vh-100 position-relative overflow-hidden text-center"
+  >
+    <div class="mx-auto my-5">
+      <h1 class="display-4 fw-normal"><span class="greeting"></span> <img class="profile-image rounded-circle"></h1>
+      <p id="wait-message" class="mt-5">
+        Please wait, your data is loading <span id="loading-status"></span>...
+      </p>
+      <p class="placeholder-wave">
+        <span class="placeholder col-12"></span>
+      </p>
+    </div>
+  </div>
+</section>
+<div id="viz-user" class="d-none container mb-5">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 class="mt-0 mb-4"><img class="profile-image rounded-circle"> <span id="account-name"></span></h1>
+      <p>
+        Let's have a look at your use of hashtags.
+      </p>
+      <p class="text-muted">
+        Hint: You can right-click this wordcloud and save it as an image.
+      </p>
+      <div class="bg-white p-3 mt-5 mb-5">
+        <div style="height:600px;max-height:600px;" data-style="height: 600px; width: 600px; max-width:100%; margin: 0 auto;">
+          <canvas style="display: block; box-sizing: border-box; height: 500px; width: 688px;" id="chart" aria-label="A wordcloud of hashtags you used in your posts." role="img"></canvas>
+        </div>
+        <p>
+          <span id="download-data"></span>
+        </p>
+        <div id="results-table"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>The fediverse is vast</h2>
+      <p class="mt-5">
+        {{!-- <video muted autoplay loop class="float-start m-3 mt-0 ml-0">
+            <source src="/media/fediverse-animation.mp4" type="video/mp4">
+        </video> --}}
+        <a href="https://fediverse.observer/stats">Millions of people</a> communicate and interact across a vast network of thousands of interconnected servers.
+      </p>
+      <p>
+        Here's a few tools to help you connect with more of them.
+      </p>
+      <ul class="clearfix xxxlist-unstyled">
+        <li>
+            <a href="https://feditrends.com/">feditrends</a>: aggregating what's trending across the fediverse
+        </li>
+        <li>
+            <a href="https://fedi.directory/">Fedi.Directory</a>: interesting accounts to follow
+        </li>
+        <li>
+            <a href="https://www.fedified.com/">Fedified</a>: notable accounts on Mastodon
+        </li>
+        <li>
+            <a href="https://fediverse-explorer.stefanbohacek.dev/">Fediverse Explorer</a>: browse most recent public posts across the fediverse by hashtag
+        </li>
+    </div>      
+  </div>
+</div>
+<script src="/libs/chart.js/3.8.0/chart.min.js"></script>
+<script src="/libs/chartjs-chart-wordcloud/4.3.2/chartjs-chart-wordcloud.min.js"></script>

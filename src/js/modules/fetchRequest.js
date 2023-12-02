@@ -28,12 +28,18 @@ const fetchRequest = async (url, platform, options) => {
         }
 
         if (nextPage) {
+          const progressEl = document.getElementById('progress-items');
+  
+          if (progressEl){
+            progressEl.innerHTML = (parseInt(progressEl.innerHTML.replace(/\D/g,'')) + data.length).toLocaleString();
+          }
+
           await sleep(500);
           data = data.concat(
             await fetchRequest(nextPage, platform, options)
           );
         }
-
+        
         break;
       case "misskey":
       case "calckey":
@@ -42,9 +48,9 @@ const fetchRequest = async (url, platform, options) => {
       case "magnetar":
         if (data.length === window.globalConfig.misskeyFetchLimit) {
           if (data && data.length) {
-            const lastAccount = data.slice(-1)[0];
+            const lastItem = data.slice(-1)[0];
             let body = JSON.parse(options.body);
-            body.untilId = lastAccount.id;
+            body.untilId = lastItem.id;
             options.body = JSON.stringify(body);
           }
           await sleep(500);
