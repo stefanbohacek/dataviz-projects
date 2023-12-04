@@ -1,0 +1,85 @@
+<section id="intro" class="flex-shrink-0">
+  <div
+    class="d-flex align-items-center vh-100 position-relative overflow-hidden"
+  >
+    <div class="mx-auto my-5 p-2" style="max-width: 700px;">
+      <h1 class="text-center">Asses the <mark>accessibility</mark> of your fediverse posts</h1>
+      <p class="text-start mt-5">
+        <form id="sign-in-form">
+          <label for="fediverse-server" class="d-block form-label text-start">Your instance or server</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text">https://</span>
+            <input required id="fediverse-server" type="text" class="form-control" placeholder="mastodon.social">
+            <button class="btn btn-outline-secondary" type="submit" id="sign-in">Sign in</button>
+          </div>
+        </form>
+        {{!-- <p><a href="https://stefanbohacek.com/project/explore-your-fediverse-connections/">Learn more</a> | <a href="https://stefanbohacek.com/project/explore-your-fediverse-connections/#privacy-policy">Privacy policy</a></p> --}}
+      </p>
+      <details>
+        <summary>Privacy policy</summary>
+        <p class="mt-4">This tool requires the following <strong>read-only</strong> access when you log in:</p>
+        <ul>
+          <li>
+            <strong>Your account information:</strong> this is to display your name and profile picture
+          </li>
+          <li>
+            <strong>Your posts:</strong> this is to determine the accessibility of your posts based on several criteria, including whether you caption your images, and proper use of hashtags, which is the primary functionality of my tool
+          </li>
+        </ul>
+        <p><strong>No data is saved on my server.</strong> A portion of the data that’s used for the data visualization will be cached in your browser for one hour, and is also available for you to download. <a href="https://stefanbohacek.com/project/explore-your-fediverse-connections/#faq-access">See instructions for removing data access.</a></p>
+        <p>Source code is available <a href="https://github.com/stefanbohacek/dataviz-projects/tree/main/projects/fediverse-post-accessibility">on GitHub</a>.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+<section id="loading" class="flex-shrink-0 d-none">
+  <div
+    class="d-flex align-items-center vh-100 position-relative overflow-hidden text-center"
+  >
+    <div class="mx-auto my-5">
+      <h1 class="display-4 fw-normal"><span class="greeting"></span> <img class="profile-image rounded-circle"></h1>
+      <p id="wait-message" class="mt-5">
+        Please wait, your data is loading <span id="loading-status"></span>...
+      </p>
+      <p class="placeholder-wave">
+        <span class="placeholder col-12"></span>
+      </p>
+    </div>
+  </div>
+</section>
+<div id="viz-user" class="d-none container mb-5">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 class="mt-0 mb-4"><img class="profile-image rounded-circle"> <span id="account-name"></span></h1>
+      <div id="results"></div>
+      <p>
+        According to the World Health Organization, <a href="https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment">at least 2.2 billion people have a near or distance vision impairment</a>. Many rely on <a href="https://en.wikipedia.org/wiki/Screen_reader">screen readers</a> and other assistive technology to convey the meaning of images you post on social media.
+      </p>
+      <p>
+        If we all work together, we can make their, and everyone's experience browsing the social web a lot richer.
+      </p>
+      <p id="thank-you" class="d-none">
+        Thank you for doing your part!
+      </p>
+      <p>Please visit <a href="https://alttexthalloffame.org">AltTextHallOfFame.org</a> for examples of well-written alt text and resources that show you how to get better.</p>
+      {{!--
+      <p class="text-muted">
+        TO-DO
+      </p>
+      --}}
+      {{!--
+      <div class="bg-white p-3 mt-5 mb-5">
+        <div style="height:600px;max-height:600px;" data-style="height: 600px; width: 600px; max-width:100%; margin: 0 auto;">
+          <canvas style="display: block; box-sizing: border-box; height: 500px; width: 688px;" id="chart" aria-label="A wordcloud of hashtags you used in your posts." role="img"></canvas>
+        </div>
+        <p>
+          <span id="download-data"></span>
+        </p>
+      </div>      
+      --}}
+    </div>
+  </div>
+</div>
+<script src="/libs/chart.js/3.8.0/chart.min.js"></script>
+<script src="/libs/chartjs-chart-wordcloud/4.3.2/chartjs-chart-wordcloud.min.js"></script>

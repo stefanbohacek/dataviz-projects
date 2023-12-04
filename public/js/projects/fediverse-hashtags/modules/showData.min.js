@@ -10,11 +10,6 @@ const profileImage = document.getElementsByClassName("profile-image");
 const accountNameEl = document.getElementById("account-name");
 const userVisualization = document.getElementById("viz-user");
 
-const connectionsBreakdownEl = document.getElementById("connections-breakdown");
-const topDomainsCountEl = document.getElementById("top-servers-count");
-const topServersListEl = document.getElementById("top-servers-list");
-const domainsUniqueConnectionsEl = document.getElementById("domains-unique-connections");
-
 const showData = async (userData) => {
   loadingScreen.classList.add("d-none");
   userVisualization.classList.remove("d-none");
@@ -67,8 +62,13 @@ const showData = async (userData) => {
   userData.hashtags = hashtags.slice(0,isMobile() ? 50 : 250);
   drawChart(userData);
 
-  dataDownloadPrompt.innerHTML = `
-      <button class="small d-inline d-md-block mt-md-3" id="download-data-btn">Download the full data</button>
+  dataDownloadPrompt.innerHTML = /*html*/`
+      <button
+        class="small d-inline d-md-block mt-md-3"
+        id="download-data-btn"
+      >
+        Download the full data
+      </button>
   `;
 
   const csv = jsonToCSV(hashtags);
