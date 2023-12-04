@@ -16,6 +16,7 @@ const signInForm = document.getElementById('sign-in-form');
 ready(async () => {
     signInForm.addEventListener('submit', signIn);
     userData = await loadData('fediverseHashtags');
+    console.log(userData);
 
     if (userData){
         getUrlParams(true);

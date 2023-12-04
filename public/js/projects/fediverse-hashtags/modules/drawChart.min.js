@@ -54,7 +54,7 @@ const drawChart = (userData) => {
     options: {
       // fit: true,
       // responsive: true,
-      // padding: 2,
+      padding: 3,
       plugins: {
         customCanvasBackgroundColor: "#fff",
         tooltip: {

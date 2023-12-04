@@ -1,6 +1,6 @@
 import drawChart from "./drawChart.min.js";
 import sortArrayOfObjects from "/js/modules/sortArrayOfObjects.min.js";
-
+import {isMobile} from '/js/modules/browserHelpers.min.js';
 import {jsonToCSV, downloadCSV} from "/js/modules/csvHelper.min.js";
 
 const dataDownloadPrompt = document.getElementById("download-data");
@@ -64,7 +64,7 @@ const showData = async (userData) => {
 
   hashtags = sortArrayOfObjects(hashtags, "count", true);
   // userData.hashtags = hashtags;
-  userData.hashtags = hashtags.slice(0,250);
+  userData.hashtags = hashtags.slice(0,isMobile() ? 50 : 250);
   drawChart(userData);
 
   dataDownloadPrompt.innerHTML = `
