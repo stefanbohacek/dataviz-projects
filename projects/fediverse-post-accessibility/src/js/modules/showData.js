@@ -100,7 +100,7 @@ const showData = async (userData) => {
 
   let mediaNeedsFixingHTML = "";
 
-  if (userData.stats.statusesNeedFixing) {
+  if (userData.stats.statusesNeedFixing && userData.stats.statusesNeedFixing.length) {
     mediaNeedsFixingHTML = /* html */ `
       <p>Here are some of the images that are missing description.</p>
       <div class="row mt-5 mb-5">`;
