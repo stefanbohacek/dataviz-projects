@@ -16,11 +16,11 @@ const signIn = async (ev) => {
     let platformSupported = false,
       authRedirectURL;
 
-    // const authServer = 'http://localhost:3000/';
-    // const app = 'fediverse-post-accessibility-local';
+    const authServer = 'http://localhost:3000/';
+    const app = 'fediverse-post-accessibility-local';
 
-    const authServer = "https://auth.stefanbohacek.dev/";
-    const app = "fediverse-post-accessibility";
+    // const authServer = "https://auth.stefanbohacek.dev/";
+    // const app = "fediverse-post-accessibility";
 
     switch (platform) {
       case "mastodon":
