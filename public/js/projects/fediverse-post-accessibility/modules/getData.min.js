@@ -145,7 +145,7 @@ const getData = async () => {
     let mediaNeedsFixingCount = 0;
 
     statuses.forEach((status) => {
-      if (mediaNeedsFixingCount < 13) {
+      if (mediaNeedsFixingCount < 24) {
         stats.postsTotal++;
 
         if (
@@ -219,7 +219,7 @@ const getData = async () => {
       }
     });
 
-    userData.hashtags = hashtags;
+    // userData.hashtags = hashtags;
     userData.stats = stats;
     // console.log({ userData });
 
