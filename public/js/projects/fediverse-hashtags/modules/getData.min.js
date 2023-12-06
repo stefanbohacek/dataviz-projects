@@ -82,15 +82,7 @@ const getData = async () => {
       profileImage[0].src = userData.profileImageURL;
     }
 
-    let statusCount = userInfo.statuses_count;
-
-    if (statusCount > 10) {
-      statusCount = (Math.ceil(statusCount / 10) * 10).toLocaleString() + "+";
-    }
-
-    if (statusCount) {
-      loadingStatusEl.innerHTML = `(<span id="progress-items">0</span>/${statusCount})`;
-    }
+    loadingStatusEl.innerHTML = `<span id="progress-items">0</span> posts found...`;
 
     loading.scrollIntoView({
       behavior: "smooth",
