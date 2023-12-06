@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "dev": ". ~/.nvm/nvm.sh && nvm use 16 && nodemon -L",
+    "dev": ". ~/.nvm/nvm.sh && nvm use 16 && NODE_ENV=development nodemon -L",
     "gulp": ". ~/.nvm/nvm.sh && nvm use 10 && gulp"
   },
   "dependencies": {

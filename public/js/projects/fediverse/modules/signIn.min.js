@@ -13,14 +13,18 @@ const signIn = async (ev) => {
   if (fediverseServer) {
     localStorage.removeItem("fediverseUserData");
     const platform = await getServerPlatform(fediverseServer);
-    let platformSupported = false,
-      authRedirectURL;
+    let platformSupported = false;
+    let authRedirectURL;
+    let authServer;
+    let app;
 
-    // const authServer = 'http://localhost:3000/';
-    // const app = 'mastodon-dataviz-local';
-
-    const authServer = "https://auth.stefanbohacek.dev/";
-    const app = "mastodon-dataviz";
+    if (ftfGlobal.node_env === "development"){
+      authServer = 'http://localhost:3000/';
+      app = 'mastodon-dataviz-local';
+    } else {
+      authServer = "https://auth.stefanbohacek.dev/";
+      app = "mastodon-dataviz";  
+    }
 
     switch (platform) {
       case "mastodon":

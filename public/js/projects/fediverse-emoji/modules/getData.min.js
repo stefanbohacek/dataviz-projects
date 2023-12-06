@@ -152,7 +152,7 @@ const getData = async () => {
           const emojiFound = statusContent.match(/\p{Emoji_Presentation}+/gu);
 
           if (emojiFound && emojiFound.length){
-            // console.log(statusContent, emojiFound);
+            console.log(statusContent, emojiFound);
             const emojiArray = [...emojiFound.join('')];
             emojiArray.forEach(e => {
               emoji[e] = emoji[e] ? emoji[e] + 1 : 1;

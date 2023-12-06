@@ -13,14 +13,18 @@ const signIn = async (ev) => {
   if (fediverseServer) {
     localStorage.removeItem("fediverseEmoji");
     const platform = await getServerPlatform(fediverseServer);
-    let platformSupported = false,
-      authRedirectURL;
+    let platformSupported = false;
+    let authRedirectURL;
+    let authServer;
+    let app;
 
-    // const authServer = 'http://localhost:3000/';
-    // const app = 'fediverse-emoji-local';
-
-    const authServer = "https://auth.stefanbohacek.dev/";
-    const app = "fediverse-emoji";
+    if (ftfGlobal.node_env === "development"){
+      authServer = 'http://localhost:3000/';
+      app = 'fediverse-emoji-local';
+    } else {
+      authServer = "https://auth.stefanbohacek.dev/";
+      app = "fediverse-emoji";  
+    }
 
     switch (platform) {
       case "mastodon":

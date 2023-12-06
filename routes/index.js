@@ -88,6 +88,7 @@ router.all("/", (req, res) => {
     res.json(projects);
   } else {
     res.render("../views/home.handlebars", {
+      node_env: process.env.NODE_ENV,
       title: process.env.PROJECT_NAME,
       description: process.env.PROJECT_DESCRIPTION,
       sc_project: process.env.SC_PROJECT,
@@ -133,6 +134,7 @@ router.all("/projects/*", (req, res, next) => {
 
         try {
           let projectDataObject = {
+            node_env: process.env.NODE_ENV,
             title: configJSON.title,
             description: configJSON.description,
             criticalCss: fs.readFileSync(

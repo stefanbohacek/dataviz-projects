@@ -13,14 +13,18 @@ const signIn = async (ev) => {
   if (fediverseServer) {
     localStorage.removeItem("fediverseHashtags");
     const platform = await getServerPlatform(fediverseServer);
-    let platformSupported = false,
-      authRedirectURL;
+    let platformSupported = false;
+    let authRedirectURL;
+    let authServer;
+    let app;
 
-    // const authServer = 'http://localhost:3000/';
-    // const app = 'fediverse-hashtags-local';
-
-    const authServer = "https://auth.stefanbohacek.dev/";
-    const app = "fediverse-hashtags";
+    if (ftfGlobal.node_env === "development"){
+      authServer = 'http://localhost:3000/';
+      app = 'fediverse-hashtags-local';
+    } else {
+      authServer = "https://auth.stefanbohacek.dev/";
+      app = "fediverse-hashtags";  
+    }
 
     switch (platform) {
       case "mastodon":
