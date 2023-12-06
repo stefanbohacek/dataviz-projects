@@ -1,7 +1,7 @@
-const stripHtml = (html) => {
+const stripHTML = (html) => {
   let tmp = document.createElement("DIV");
   tmp.innerHTML = html;
   return tmp.textContent || tmp.innerText || "";
 };
 
-export default stripHtml;
+export default stripHTML;

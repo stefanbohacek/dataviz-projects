@@ -2,7 +2,7 @@
 
 import getServerPlatform from "/js/modules/getServerPlatform.min.js";
 import getUrlParams from "/js/modules/getUrlParams.min.js";
-import stripHtml from '/js/modules/stripHtml.min.js';
+import stripHTML from '/js/modules/stripHTML.min.js';
 import sortArrayOfObjects from "/js/modules/sortArrayOfObjects.min.js";
 import saveData from "/js/modules/saveData.min.js";
 
@@ -148,7 +148,7 @@ const getData = async () => {
             Emoji_Presentation
             Extended_Pictographic
           */
-          const statusContent = stripHtml(statusText);
+          const statusContent = stripHTML(statusText);
           const emojiFound = statusContent.match(/\p{Emoji_Presentation}+/gu);
 
           if (emojiFound && emojiFound.length){
