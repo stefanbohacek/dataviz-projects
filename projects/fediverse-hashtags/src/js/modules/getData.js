@@ -99,7 +99,7 @@ const getData = async () => {
         statuses = await fetchData(
           instance,
           platform,
-          `accounts/${userInfo.id}/statuses?limit=100`,
+          `accounts/${userInfo.id}/statuses?limit=100&exclude_reblogs=true`,
           token
         );
         break;
