@@ -78,7 +78,13 @@ const drawChart = (userData) => {
   options.family = "Noto Color Emoji";
 
   document.fonts.onloadingdone = () => {
-    const chart = new Chart(document.getElementById("chart"), {
+    let chart;
+    
+    if (chart){
+      chart.destroy();
+    }
+
+    chart = new Chart(document.getElementById("chart"), {
       type: "wordCloud",
       data: data,
       options,
