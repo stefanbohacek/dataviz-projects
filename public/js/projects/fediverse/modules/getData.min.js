@@ -80,9 +80,9 @@ const getData = async () => {
       profileImage[0].src = userData.profileImageURL;
     }
 
-    // loading.scrollIntoView({
-    //   behavior: "smooth",
-    // });
+    loadingScreen.scrollIntoView({
+      behavior: "smooth",
+    });
 
     let followers, following, accountIDs, connections;
     let followersInstances = {},
