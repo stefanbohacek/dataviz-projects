@@ -85,7 +85,9 @@ const getData = async () => {
 
     loadingStatusEl.innerHTML = `<span id="progress-items">0</span> posts found...`;
 
-    loadingStatusEl.scrollIntoView({
+    const loading = document.getElementById("loading");
+    
+    loading.scrollIntoView({
       behavior: "smooth",
     });
 

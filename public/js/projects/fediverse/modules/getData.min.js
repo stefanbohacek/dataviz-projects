@@ -80,7 +80,9 @@ const getData = async () => {
       profileImage[0].src = userData.profileImageURL;
     }
 
-    loadingScreen.scrollIntoView({
+    const loading = document.getElementById("loading");
+
+    loading.scrollIntoView({
       behavior: "smooth",
     });
 
