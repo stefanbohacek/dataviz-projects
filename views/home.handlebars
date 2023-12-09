@@ -1,6 +1,6 @@
 <div class="container pb-5">
   <h1 class="mt-5">
-    Dataviz projects
+    <a href="https://stefanbohacek.com/">Stefan's</a> data visualization projects
   </h1>
   <div class="row list mt-5">
     {{#each projects}}
@@ -13,7 +13,8 @@
             <img
               width="1200"
               height="600"
-              src="{{this.path}}/images/preview.png"
+              src="{{this.path}}/images/preview-thumbnail.png"
+              loading="lazy"
               class="card-img-top img-fluid"
               alt="Screenshot of the project page, click for more details."
             />
