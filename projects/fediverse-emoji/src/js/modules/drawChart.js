@@ -76,32 +76,31 @@ const drawChart = (userData) => {
   };
 
   options.family = "Noto Color Emoji";
+  const chart = new Chart(document.getElementById("chart"), {
+    type: "wordCloud",
+    data: data,
+    options,
+    plugins: [
+      {
+        id: "customCanvasBackgroundColor",
+        beforeDraw: (chart, args, options) => {
+          const { ctx } = chart;
+          ctx.save();
+          ctx.globalCompositeOperation = "destination-over";
+          ctx.fillStyle = options.color || "#fff";
+          ctx.fillRect(0, 0, chart.width, chart.height);
+          ctx.restore();
+        },
+      },
+    ],
+  });
+
+  window.emojiChart = chart; 
 
   document.fonts.onloadingdone = () => {
-    let chart;
-    
-    if (chart){
-      chart.destroy();
+    if (window.emojiChart){
+      window.emojiChart.update();      
     }
-
-    chart = new Chart(document.getElementById("chart"), {
-      type: "wordCloud",
-      data: data,
-      options,
-      plugins: [
-        {
-          id: "customCanvasBackgroundColor",
-          beforeDraw: (chart, args, options) => {
-            const { ctx } = chart;
-            ctx.save();
-            ctx.globalCompositeOperation = "destination-over";
-            ctx.fillStyle = options.color || "#fff";
-            ctx.fillRect(0, 0, chart.width, chart.height);
-            ctx.restore();
-          },
-        },
-      ],
-    });
   };
 };
 
