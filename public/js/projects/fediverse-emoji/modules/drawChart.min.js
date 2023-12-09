@@ -1,10 +1,11 @@
 /* globals Chart */
 
-import {backgroundColorFromData} from '/js/modules/chartHelper.min.js';
+import { backgroundColorFromData } from "/js/modules/chartHelper.min.js";
 
-const menuIcon = document.getElementById('menu-icon');
+const menuIcon = document.getElementById("menu-icon");
 
 const drawChart = (userData) => {
+  // Chart.defaults.font.family = "Noto Color Emoji";
   let highlightedValues = [];
   // const labels = userData.allDomains.map((domain) => domain.domain);
   // const datasets = [userData.allDomains.map((domain) => domain.connections)];
@@ -22,19 +23,22 @@ const drawChart = (userData) => {
 
   // console.log({minFontSize, maxFontSize});
 
-  const maxCount = Math.max(...emojis.map(emoji => emoji.count));
-  const minCount = Math.min(...emojis.map(emoji => emoji.count));
+  const maxCount = Math.max(...emojis.map((emoji) => emoji.count));
+  const minCount = Math.min(...emojis.map((emoji) => emoji.count));
 
-  const scale = (num, in_min, in_max, out_min, out_max) => (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+  const scale = (num, in_min, in_max, out_min, out_max) =>
+    ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
 
   const data = {
     // labels: emojis.map(emoji => `#${emoji.emoji}`),
-    labels: emojis.map(emoji => emoji.emoji),
+    labels: emojis.map((emoji) => emoji.emoji),
     datasets: [
       {
         label: `Your top ${emojis.length.toLocaleString()} emoji`,
         // data: emojis.map((emoji) => emoji.count)
-        data: emojis.map((emoji) => scale(emoji.count, minCount, maxCount, minFontSize, maxFontSize ))
+        data: emojis.map((emoji) =>
+          scale(emoji.count, minCount, maxCount, minFontSize, maxFontSize)
+        ),
         // data: emojis.map((d, i) => {
         //   let size = 5 + d.count * 5;
         //   if (size > 45){
@@ -50,38 +54,49 @@ const drawChart = (userData) => {
     ],
   };
 
-  const chart = new Chart(document.getElementById("chart"), {
-    type: "wordCloud",
-    data: data,
-    options: {
-      // fit: true,
-      // responsive: true,
-      rotationSteps: 0,
-      minRotation: 0,
-      padding: 4,
-      plugins: {
-        customCanvasBackgroundColor: "#fff",
-        tooltip: {
-          callbacks: {
-            title: (tooltipItems) => emojis[tooltipItems[0].dataIndex].emoji,
-            label: (context) => `used ${emojis[context.dataIndex].count} time(s)`
-          }
-        }
-      }
+  const options = {
+    // fit: true,
+    // responsive: true,
+    rotationSteps: 0,
+    minRotation: 0,
+    padding: 4,
+    family: "Noto Color Emoji",
+    plugins: {
+      // font: {
+      //   family: "Noto Color Emoji"
+      // },
+      customCanvasBackgroundColor: "#fff",
+      tooltip: {
+        callbacks: {
+          title: (tooltipItems) => emojis[tooltipItems[0].dataIndex].emoji,
+          label: (context) => `used ${emojis[context.dataIndex].count} time(s)`,
+        },
+      },
     },
-    plugins: [{
-      id: 'customCanvasBackgroundColor',
-      beforeDraw: (chart, args, options) => {
-        const {ctx} = chart;
-        ctx.save();
-        ctx.globalCompositeOperation = 'destination-over';
-        ctx.fillStyle = options.color || '#fff';
-        ctx.fillRect(0, 0, chart.width, chart.height);
-        ctx.restore();
-      }
-    }],
-  });
+  };
 
+  options.family = "Noto Color Emoji";
+
+  document.fonts.onloadingdone = () => {
+    const chart = new Chart(document.getElementById("chart"), {
+      type: "wordCloud",
+      data: data,
+      options,
+      plugins: [
+        {
+          id: "customCanvasBackgroundColor",
+          beforeDraw: (chart, args, options) => {
+            const { ctx } = chart;
+            ctx.save();
+            ctx.globalCompositeOperation = "destination-over";
+            ctx.fillStyle = options.color || "#fff";
+            ctx.fillRect(0, 0, chart.width, chart.height);
+            ctx.restore();
+          },
+        },
+      ],
+    });
+  };
 };
 
 export default drawChart;

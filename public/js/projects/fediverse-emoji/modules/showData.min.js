@@ -94,7 +94,7 @@ const showData = async (userData) => {
         .map(
           (emoji) => `
           <tr>
-            <td>${emoji.emoji}</td>
+            <td class="emoji">${emoji.emoji}</td>
             <td>${emoji.count.toLocaleString()}</td>
           </tr>        
         `

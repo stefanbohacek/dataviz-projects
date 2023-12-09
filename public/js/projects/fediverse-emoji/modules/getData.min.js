@@ -145,6 +145,7 @@ const getData = async () => {
           const statusContent = stripHTML(statusText);
           // const emojiFound = statusContent.match(/\p{Emoji_Presentation}+/gu);
           const emojiFound = statusContent.match(/\p{Regional_Indicator}\p{Emoji_Presentation}|\p{Extended_Pictographic}+/gu);
+          // const emojiFound = statusContent.match(/\p{RGI_Emoji}/v);
 
           if (emojiFound && emojiFound.length){
             console.log(statusContent, emojiFound);

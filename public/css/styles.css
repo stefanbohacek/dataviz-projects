@@ -10076,6 +10076,12 @@ ul.share-buttons .sr-only {
   font-style: normal;
   font-display: swap; }
 
+/* Noto Color Emoji */
+@font-face {
+  font-family: 'Noto Color Emoji';
+  src: url("/fonts/Noto_Color_Emoji/NotoColorEmoji-Regular.ttf") format("truetype");
+  font-display: swap; }
+
 body {
   color: #363636;
   font-family: 'Roboto', sans-serif;
@@ -10103,6 +10109,9 @@ h4, .h4 {
 
 pre, code {
   font-family: 'Source Code Pro', monospace; }
+
+.emoji {
+  font-family: 'Noto Color Emoji' !important; }
 
 .lazy-load {
   opacity: 0;

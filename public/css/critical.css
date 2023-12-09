@@ -6674,3 +6674,6 @@ h4, .h4 {
 
 pre, code {
   font-family: 'Source Code Pro', monospace; }
+
+.emoji {
+  font-family: 'Noto Color Emoji' !important; }
