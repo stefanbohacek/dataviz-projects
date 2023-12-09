@@ -1,6 +1,8 @@
-import getServerPlatform from '/js/modules/getServerPlatform.min.js';
-const fediverseServerField = document.getElementById('fediverse-server');
-const signInBtn = document.getElementById('sign-in');
+/* globals ftfGlobal */
+
+import getServerPlatform from "/js/modules/getServerPlatform.min.js";
+const fediverseServerField = document.getElementById("fediverse-server");
+const signInBtn = document.getElementById("sign-in");
 
 const signIn = async (ev) => {
   ev.preventDefault();
@@ -18,12 +20,12 @@ const signIn = async (ev) => {
     let authServer;
     let app;
 
-    if (ftfGlobal.node_env === "development"){
-      authServer = 'http://localhost:3000/';
-      app = 'mastodon-dataviz-local';
+    if (ftfGlobal.node_env === "development") {
+      authServer = "http://localhost:3000/";
+      app = "mastodon-dataviz-local";
     } else {
       authServer = "https://auth.stefanbohacek.dev/";
-      app = "mastodon-dataviz";  
+      app = "mastodon-dataviz";
     }
 
     switch (platform) {

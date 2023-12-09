@@ -1,3 +1,5 @@
+/* globals ftfGlobal */
+
 import getServerPlatform from "/js/modules/getServerPlatform.min.js";
 const fediverseServerField = document.getElementById("fediverse-server");
 const signInBtn = document.getElementById("sign-in");
@@ -18,12 +20,12 @@ const signIn = async (ev) => {
     let authServer;
     let app;
 
-    if (ftfGlobal.node_env === "development"){
-      authServer = 'http://localhost:3000/';
-      app = 'fediverse-post-accessibility-local';
+    if (ftfGlobal.node_env === "development") {
+      authServer = "http://localhost:3000/";
+      app = "fediverse-post-accessibility-local";
     } else {
       authServer = "https://auth.stefanbohacek.dev/";
-      app = "fediverse-post-accessibility";  
+      app = "fediverse-post-accessibility";
     }
 
     switch (platform) {

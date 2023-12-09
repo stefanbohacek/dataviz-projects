@@ -1,3 +1,5 @@
+/* globals mapboxgl */
+
 import ready from '/js/modules/ready.min.js';
 import latLongDistance from '/js/modules/latLongDistance.min.js';
 

@@ -299,9 +299,9 @@ ready(function(){
             // console.log('onStepExit', response);
             // console.log('onStepExit', response.index, response.direction);
 
-            if (menuIcon && ((response.direction === 'up' && response.index === 0) || (response.direction === 'down' && response.index === datasets.length - 1))){
-                menuIcon.classList.remove('d-none');
-            }
+            // if (menuIcon && ((response.direction === 'up' && response.index === 0) || (response.direction === 'down' && response.index === datasets.length - 1))){
+            //     menuIcon.classList.remove('d-none');
+            // }
         }
    );
 

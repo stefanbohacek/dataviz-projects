@@ -1,4 +1,4 @@
-import sleep from '/js/modules/sleep.min.js';
+import sleep from "/js/modules/sleep.min.js";
 
 const fetchRequest = async (url, platform, options) => {
   // console.log('debug:fetchRequest', url, platform, options);
@@ -28,18 +28,18 @@ const fetchRequest = async (url, platform, options) => {
         }
 
         if (nextPage) {
-          const progressEl = document.getElementById('progress-items');
-  
-          if (progressEl){
-            progressEl.innerHTML = (parseInt(progressEl.innerHTML.replace(/\D/g,'')) + data.length).toLocaleString();
+          const progressEl = document.getElementById("progress-items");
+
+          if (progressEl) {
+            progressEl.innerHTML = (
+              parseInt(progressEl.innerHTML.replace(/\D/g, "")) + data.length
+            ).toLocaleString();
           }
 
           await sleep(500);
-          data = data.concat(
-            await fetchRequest(nextPage, platform, options)
-          );
+          data = data.concat(await fetchRequest(nextPage, platform, options));
         }
-        
+
         break;
       case "misskey":
       case "calckey":
@@ -54,10 +54,9 @@ const fetchRequest = async (url, platform, options) => {
             options.body = JSON.stringify(body);
           }
           await sleep(500);
-          data = data.concat(
-            await fetchRequest(url, platform, options)
-          );
+          data = data.concat(await fetchRequest(url, platform, options));
         }
+        break;
       default:
         break;
     }

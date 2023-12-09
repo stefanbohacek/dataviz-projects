@@ -129,15 +129,15 @@ ready(async () => {
                 datasets: [{
                     label: 'CO2 emissions',
                     backgroundColor: datasets[3].data.map((d, i) => i === 0 ? 'rgb(255, 99, 132)' : Chart.defaults.backgroundColor),
-                    borderColor: [
-                      'rgb(255, 99, 132)',
-                      'rgb(255, 159, 64)',
-                      'rgb(255, 205, 86)',
-                      'rgb(75, 192, 192)',
-                      'rgb(54, 162, 235)',
-                      'rgb(153, 102, 255)',
-                      'rgb(201, 203, 207)'
-                    ],                    
+                    // borderColor: [
+                    //   'rgb(255, 99, 132)',
+                    //   'rgb(255, 159, 64)',
+                    //   'rgb(255, 205, 86)',
+                    //   'rgb(75, 192, 192)',
+                    //   'rgb(54, 162, 235)',
+                    //   'rgb(153, 102, 255)',
+                    //   'rgb(201, 203, 207)'
+                    // ],                    
                     // backgroundColor: [
                     //   'rgb(255, 99, 132)',
                     //   'rgb(54, 162, 235)',

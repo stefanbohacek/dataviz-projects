@@ -1,4 +1,4 @@
-/* globals Chart, scrollama, moment */
+/* globals Chart, scrollama, moment, DecompressionStream, untar */
 import ready from "/js/modules/ready.min.js";
 import highlightMax from "/js/modules/highlightMax.min.js";
 import getMonth from "/js/modules/getMonth.min.js";
@@ -6,54 +6,34 @@ import getMonth from "/js/modules/getMonth.min.js";
 ready(() => {
   const archiveInput = document.getElementById("archive");
 
-
   const decompressBlob = async (blob) => {
     let ds = new DecompressionStream("gzip");
     let decompressedStream = blob.stream().pipeThrough(ds);
     return await new Response(decompressedStream).blob();
-  }
+  };
 
-    const readFile = async (event) => {
-        console.log(event.target.result);
-        const decompressed = await decompressBlob(event.target.result);
+  const readFile = async (event) => {
+    console.log(event.target.result);
+    const decompressed = await decompressBlob(event.target.result);
 
-        untar(decompressed).then((extractedFiles) => {
-            console.log({ extractedFiles });
-        });
-      
-    }
-  
-  
+    untar(decompressed).then((extractedFiles) => {
+      console.log({ extractedFiles });
+    });
+  };
 
-
-
-
-
-
-
-  archiveInput.addEventListener('change', async (event) => {
+  archiveInput.addEventListener("change", async (event) => {
     const file = event.target.files[0];
     const buffer = await file.arrayBuffer();
     const byteArray = new Int8Array(buffer);
-      
-    console.log({file});
-    console.log({buffer})
-    console.log({byteArray});
+
+    console.log({ file });
+    console.log({ buffer });
+    console.log({ byteArray });
 
     const reader = new FileReader();
-    reader.addEventListener('load', readFile);
+    reader.addEventListener("load", readFile);
     reader.readAsText(file);
-     
-
-
-
-
-
-
-
-
-
-});
+  });
 
   // const labels = [
   //   'January',

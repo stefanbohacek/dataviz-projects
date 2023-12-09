@@ -1,7 +1,11 @@
 const getMaxValueIndices = (arr) => {
-  let max = -Infinity, indices = [];
-  for (let i = 0; i < arr.length; ++i){
-    if (arr[i] < max) continue;
+  let max = -Infinity;
+  let indices = [];
+
+  for (let i = 0; i < arr.length; ++i) {
+    if (arr[i] < max) {
+      continue;
+    }
     if (arr[i] > max) {
       indices = [];
       max = arr[i];
@@ -9,6 +13,6 @@ const getMaxValueIndices = (arr) => {
     indices.push(i);
   }
   return indices;
-}
+};
 
 export default getMaxValueIndices;

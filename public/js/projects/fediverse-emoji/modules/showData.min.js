@@ -1,7 +1,7 @@
 import drawChart from "./drawChart.min.js";
 import sortArrayOfObjects from "/js/modules/sortArrayOfObjects.min.js";
-import {isMobile} from '/js/modules/browserHelpers.min.js';
-import {jsonToCSV, downloadCSV} from "/js/modules/csvHelper.min.js";
+import { isMobile } from "/js/modules/browserHelpers.min.js";
+import { jsonToCSV, downloadCSV } from "/js/modules/csvHelper.min.js";
 
 const dataDownloadPrompt = document.getElementById("download-data");
 const loadingScreen = document.getElementById("loading");
@@ -50,16 +50,16 @@ const showData = async (userData) => {
 
   let emojis = [];
 
-  for (let emoji in userData.emoji){
+  for (let emoji in userData.emoji) {
     emojis.push({
       emoji: emoji,
-      count: userData.emoji[emoji]
-    })
+      count: userData.emoji[emoji],
+    });
   }
 
   emojis = sortArrayOfObjects(emojis, "count", true);
   // userData.emoji = emojis;
-  userData.emoji = emojis.slice(0,isMobile() ? 50 : 250);
+  userData.emoji = emojis.slice(0, isMobile() ? 50 : 250);
   drawChart(userData);
 
   // dataDownloadPrompt.innerHTML = /*html*/`
@@ -80,8 +80,8 @@ const showData = async (userData) => {
   //     downloadCSV(csv, "fediverse-emoji.csv");
   //   });
 
-    const resultsTableWrapper = document.getElementById("results-table");
-    resultsTableWrapper.innerHTML = `
+  const resultsTableWrapper = document.getElementById("results-table");
+  resultsTableWrapper.innerHTML = `
     <table class="table table-hover mt-5">
       <thead>
         <tr>
@@ -90,14 +90,16 @@ const showData = async (userData) => {
         </tr>
       </thead>
       <tbody>
-      ${
-        emojis.map(emoji => `
+      ${emojis
+        .map(
+          (emoji) => `
           <tr>
             <td>${emoji.emoji}</td>
             <td>${emoji.count.toLocaleString()}</td>
           </tr>        
-        `).join("")
-      }
+        `
+        )
+        .join("")}
     </table>
     `;
 };

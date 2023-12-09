@@ -85,9 +85,9 @@ const getData = async () => {
 
     loadingStatusEl.innerHTML = `<span id="progress-items">0</span> posts found...`;
 
-    loading.scrollIntoView({
-      behavior: "smooth",
-    });
+    // loading.scrollIntoView({
+    //   behavior: "smooth",
+    // });
 
     let statuses = [];
 
@@ -141,7 +141,8 @@ const getData = async () => {
             Extended_Pictographic
           */
           const statusContent = stripHTML(statusText);
-          const emojiFound = statusContent.match(/\p{Emoji_Presentation}+/gu);
+          // const emojiFound = statusContent.match(/\p{Emoji_Presentation}+/gu);
+          const emojiFound = statusContent.match(/\p{Regional_Indicator}\p{Emoji_Presentation}|\p{Extended_Pictographic}+/gu);
 
           if (emojiFound && emojiFound.length){
             console.log(statusContent, emojiFound);

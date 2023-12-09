@@ -1,3 +1,5 @@
+/* globals mapboxgl */
+
 import ready from "/js/modules/ready.min.js";
 import getMastodonURL from "/js/modules/getMastodonURL.min.js";
 
@@ -74,12 +76,6 @@ ready(async () => {
 
   const descriptionEl = document.getElementById("description");
 
-  console.log({
-    country: country,
-    countriesLatLong,
-    latlong: countriesLatLong["Switzerland"],
-  });
-
   let descriptionHTML = `
     <details>
       <summary>Government agencies with <a href="https://jointhefediverse.net/">fediverse<a> presence</summary>
@@ -125,11 +121,11 @@ ready(async () => {
       });
 
       const zoomMap = {
-        "Austria": 6,
-        "France": 6,
-        "Germany": 6,
-        "Luxembourg": 8,
-        "Spain": 6,
+        Austria: 6,
+        France: 6,
+        Germany: 6,
+        Luxembourg: 8,
+        Spain: 6,
         "United States": 4,
       };
 

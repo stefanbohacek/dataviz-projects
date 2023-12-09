@@ -1,3 +1,5 @@
+/* globals Chart, scrollama */
+
 import {backgroundColorFromData} from '/js/modules/chartHelper.min.js';
 
 const menuIcon = document.getElementById('menu-icon');

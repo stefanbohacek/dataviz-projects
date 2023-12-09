@@ -1,7 +1,7 @@
 import drawChart from "./drawChart.min.js";
 import sortArrayOfObjects from "/js/modules/sortArrayOfObjects.min.js";
-import {isMobile} from '/js/modules/browserHelpers.min.js';
-import {jsonToCSV, downloadCSV} from "/js/modules/csvHelper.min.js";
+import { isMobile } from "/js/modules/browserHelpers.min.js";
+import { jsonToCSV, downloadCSV } from "/js/modules/csvHelper.min.js";
 
 const dataDownloadPrompt = document.getElementById("download-data");
 const loadingScreen = document.getElementById("loading");
@@ -50,19 +50,19 @@ const showData = async (userData) => {
 
   let hashtags = [];
 
-  for (let hashtag in userData.hashtags){
+  for (let hashtag in userData.hashtags) {
     hashtags.push({
       hashtag: hashtag,
-      count: userData.hashtags[hashtag]
-    })
+      count: userData.hashtags[hashtag],
+    });
   }
 
   hashtags = sortArrayOfObjects(hashtags, "count", true);
   // userData.hashtags = hashtags;
-  userData.hashtags = hashtags.slice(0,isMobile() ? 50 : 250);
+  userData.hashtags = hashtags.slice(0, isMobile() ? 50 : 250);
   drawChart(userData);
 
-  dataDownloadPrompt.innerHTML = /*html*/`
+  dataDownloadPrompt.innerHTML = /*html*/ `
       <button
         class="small d-inline d-md-block mt-md-3"
         id="download-data-btn"
@@ -80,8 +80,8 @@ const showData = async (userData) => {
       downloadCSV(csv, "fediverse-hashtags.csv");
     });
 
-    const resultsTableWrapper = document.getElementById("results-table");
-    resultsTableWrapper.innerHTML = `
+  const resultsTableWrapper = document.getElementById("results-table");
+  resultsTableWrapper.innerHTML = `
     <table class="table table-hover mt-5">
       <thead>
         <tr>
@@ -90,14 +90,16 @@ const showData = async (userData) => {
         </tr>
       </thead>
       <tbody>
-      ${
-        hashtags.map(hashtag => `
+      ${hashtags
+        .map(
+          (hashtag) => `
           <tr>
             <td>${hashtag.hashtag}</td>
             <td>${hashtag.count.toLocaleString()}</td>
           </tr>        
-        `).join("")
-      }
+        `
+        )
+        .join("")}
     </table>
     `;
 };
