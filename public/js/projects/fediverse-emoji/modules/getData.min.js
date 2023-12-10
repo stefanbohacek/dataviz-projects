@@ -3,6 +3,7 @@
 import getServerPlatform from "/js/modules/getServerPlatform.min.js";
 import getUrlParams from "/js/modules/getUrlParams.min.js";
 import stripHTML from '/js/modules/stripHTML.min.js';
+import findEmoji from '/js/modules/findEmoji.min.js';
 import sortArrayOfObjects from "/js/modules/sortArrayOfObjects.min.js";
 import saveData from "/js/modules/saveData.min.js";
 
@@ -144,13 +145,14 @@ const getData = async () => {
           */
           const statusContent = stripHTML(statusText);
           // const emojiFound = statusContent.match(/\p{Emoji_Presentation}+/gu);
-          const emojiFound = statusContent.match(/\p{Regional_Indicator}\p{Emoji_Presentation}|\p{Extended_Pictographic}+/gu);
+          // const emojiFound = statusContent.match(/\p{Regional_Indicator}\p{Emoji_Presentation}|\p{Extended_Pictographic}+/gu);
           // const emojiFound = statusContent.match(/\p{RGI_Emoji}/v);
+
+          const emojiFound = findEmoji(statusContent);
 
           if (emojiFound && emojiFound.length){
             console.log(statusContent, emojiFound);
-            const emojiArray = [...emojiFound.join('')];
-            emojiArray.forEach(e => {
+            emojiFound.forEach(e => {
               emoji[e] = emoji[e] ? emoji[e] + 1 : 1;
             });
           }
