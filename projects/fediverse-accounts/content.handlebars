@@ -7,7 +7,10 @@
     fediverse accounts
   </h1>
   <p class="lead">
-    Made with <a href="https://tabulator.info/" target="_blank">Tabulator</a> and <a href="https://w.wiki/8Xr7" target="_blank">wikidata.org</a>.
+    Made with
+    <a href="https://tabulator.info/" target="_blank">Tabulator</a>
+    and
+    <a href="https://w.wiki/8Xr7" target="_blank">wikidata.org</a>.
   </p>
   <div class="btn-group mt-4" role="group">
     <button id="download-csv" type="button" class="btn btn-outline-secondary">
@@ -20,6 +23,39 @@
       Download PDF</button>
     <button id="download-html" type="button" class="btn btn-outline-secondary">
       Download HTML</button>
+  </div>
+  <div id="placeholder-table" class="mt-5">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          {{#times 4}}
+          <th scope="col">
+            <span class="placeholder-glow">
+              <span class="placeholder col-4"></span>
+            </span>
+          </th>
+          {{/times}}
+      </thead>
+      <tbody>
+          {{#times 4}}
+            <tr>
+              <th scope="row">
+                <span class="placeholder-glow">
+                  <span class="placeholder col-4"></span>
+                </span>
+              </th>
+            {{#times 3}}
+              <td>
+                <span class="placeholder-glow">
+                  <span class="placeholder col-4"></span>
+                </span>
+
+              </td>
+            {{/times}}
+            </tr>
+          {{/times}}
+      </tbody>
+    </table>
   </div>
   <div id="data" class="mt-4"></div>
 </div>

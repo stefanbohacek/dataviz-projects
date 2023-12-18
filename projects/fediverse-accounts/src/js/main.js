@@ -43,6 +43,7 @@ ready(async () => {
 
   document.getElementById("count-placeholder").remove();
   document.getElementById("count").innerHTML = data.length.toLocaleString();
+  document.getElementById("placeholder-table").remove();
 
   const table = new Tabulator("#data", {
     // height: "500px",
