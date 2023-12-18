@@ -1,0 +1,27 @@
+<div class="container mx-auto mb-5 m-0 p-0">
+  <h1>Explore
+    <span id="count-placeholder" class="placeholder-glow">
+      <span class="placeholder col-1"></span>
+    </span>
+    <span id="count"></span>
+    fediverse accounts
+  </h1>
+  <p class="lead">
+    Source of data: <a href="https://w.wiki/8Xr7" target="_blank">wikidata.org</a>
+  </p>
+  <div class="btn-group mt-4" role="group">
+    <button id="download-csv" type="button" class="btn btn-outline-secondary">
+      Download CSV</button>
+    <button id="download-json" type="button" class="btn btn-outline-secondary">
+      Download JSON</button>
+    <button id="download-xlsx" type="button" class="btn btn-outline-secondary">
+      Download XLSX</button>
+    <button id="download-pdf" type="button" class="btn btn-outline-secondary">
+      Download PDF</button>
+    <button id="download-html" type="button" class="btn btn-outline-secondary">
+      Download HTML</button>
+  </div>
+  <div id="data" class="mt-4"></div>
+</div>
+{{! <script src="/libs/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script> }}
+<script src="/libs/tabulator/v5.5/js/tabulator.min.js"></script>
