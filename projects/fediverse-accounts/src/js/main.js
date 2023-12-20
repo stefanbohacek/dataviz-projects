@@ -5,7 +5,7 @@ import sortArrayOfObjects from "/js/modules/sortArrayOfObjects.min.js";
 
 ready(async () => {
   const resp = await fetch(
-    "https://wikipedia.stefanbohacek.dev/wikidata/?query=SELECT%20DISTINCT%20%3Forg%20%3ForgLabel%20%3ForgTypeLabel%20%3FhostAt%20%3FMastName%20%20WHERE%20%7B%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Forg%20wdt%3AP4033%20%3FMastName.%0A%20%20%3Forg%20wdt%3AP31%20%3ForgType.%0A%20%20FILTER%20(%3ForgType%20!%3D%20wd%3AQ5).%0A%20%20BIND%20(strafter(%3FMastName%2C%22%40%22)%20AS%20%3FhostAt).%0A%7D%20ORDER%20BY%20%3FhostAt%20LIMIT%2020000%0A&token=lYVGZjrHEUk3DxWm8WgVpExNdj5NHY8x7XiHyt9ltMhKNwbJ1XNwPC22SvoqVR"
+    "https://wikipedia.stefanbohacek.dev/wikidata/?query=SELECT%20DISTINCT%20%3Forg%20%3ForgLabel%20%3ForgTypeLabel%20%3FhostAt%20%3FMastName%20WHERE%20%7B%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%20%3Forg%20wdt%3AP4033%20%3FMastName.%20%3Forg%20wdt%3AP31%20%3ForgType.%20BIND%20(strafter(%3FMastName%2C%22%40%22)%20AS%20%3FhostAt).%20%7D%20ORDER%20BY%20%3FhostAt%20LIMIT%2020000&token=lYVGZjrHEUk3DxWm8WgVpExNdj5NHY8x7XiHyt9ltMhKNwbJ1XNwPC22SvoqVR"
   );
 
   const fediverseAccounts = await resp.json();
