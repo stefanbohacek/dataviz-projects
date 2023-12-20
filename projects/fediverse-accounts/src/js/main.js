@@ -1,4 +1,4 @@
-/* globals mapboxgl */
+/* globals Tabulator */
 
 import ready from "/js/modules/ready.min.js";
 import sortArrayOfObjects from "/js/modules/sortArrayOfObjects.min.js";

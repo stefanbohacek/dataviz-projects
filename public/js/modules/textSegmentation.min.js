@@ -1,3 +1,4 @@
+/* jshint ignore:start */
 /*
  * text-segmentation 1.0.3 <https://github.com/niklasvh/text-segmentation>
  * Copyright (c) 2022 Niklas von Hertzen <https://hertzen.com>
