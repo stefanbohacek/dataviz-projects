@@ -16,6 +16,12 @@ ready(async () => {
       field: "name",
       sorter: "string",
       headerFilter: "input",
+      formatter: "link",
+      formatterParams: {
+        labelField: "name",
+        urlField: "url",
+        target: "_blank",
+      },
     },
     {
       title: "Type",
@@ -34,40 +40,60 @@ ready(async () => {
       field: "account",
       sorter: "string",
       headerFilter: "input",
+      // TODO: The account link format depends on the platform used, eg. Mastodon usernames start with @, on Pleroma they do not.
+      // formatter: "link",
+      // formatterParams: {
+      //   labelField: "account",
+      //   urlField: "account_url",
+      //   target: "_blank",
+      // },
     },
     {
       title: "Server",
       field: "server",
       sorter: "string",
       headerFilter: "input",
+      // headerFilter: "list",
+      // headerFilterParams: {
+      //   valuesLookup: true,
+      //   sortValuesList: "asc",
+      //   clearable: true,
+      // },      
+      formatter: "link",
+      formatterParams: {
+        labelField: "server",
+        urlField: "server_url",
+        target: "_blank",
+      },
     },
   ];
 
   let data = [];
 
   fediverseAccounts.forEach((datapoint, index) => {
+    const account = `@${datapoint?.MastName?.value}`.replace("@@", "@");
     if (
       !data
-        .map((account) => account.account)
-        .includes(datapoint?.MastName?.value)
+        .map((acc) => acc.account)
+        .includes(account)
     ) {
+      const server = datapoint?.hostAt?.value;
+      const username = datapoint?.MastName?.value.replace(`@${server}`, "");
+
       data.push({
         id: index,
         name: datapoint?.orgLabel?.value,
         url: datapoint?.org?.value,
         type: datapoint?.orgTypeLabel?.value,
-        account: `@${datapoint?.MastName?.value}`.replace("@@", "@"),
-        server: datapoint?.hostAt?.value,
+        account,
+        account_url: `https://${server}/@${username}`,
+        server_url: `https://${server}`,
+        server,
       });
     }
   });
 
-  data = sortArrayOfObjects(
-    data,
-    "type",
-    false
-  );
-
+  data = sortArrayOfObjects(data, "type", false);
 
   document.getElementById("count-placeholder").remove();
   document.getElementById("count").innerHTML = data.length.toLocaleString();
