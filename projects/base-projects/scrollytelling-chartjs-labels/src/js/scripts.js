@@ -13,80 +13,124 @@ ready( function(){
 
     const dataset = [
         {
-            "country": "U.S.",
-            "budget": 801,
-            "percentage_global": 37.9,
-            "percentage_gdp": 3.48,
-            "logo": "us"
+            language: 'Python',
+            salary: 100742
         },
         {
-            "country": "China",
-            "budget": 293,
-            "percentage_global": 13.9,
-            "percentage_gdp": 1.74,
-            "logo": "china"
+            language: 'JavaScript',
+            salary: 97039
         },
         {
-            "country": "India",
-            "budget": 76.6,
-            "percentage_global": 3.6,
-            "percentage_gdp": 2.66,
-            "logo": "india"
+            language: 'Java',
+            salary: 101192
         },
         {
-            "country": "UK",
-            "budget": 68.4,
-            "percentage_global": 3.2,
-            "percentage_gdp": 2.22,
-            "logo": "uk"
+            language: 'Swift',
+            salary: 101589
         },
         {
-            "country": "Russia",
-            "budget": 65.9,
-            "percentage_global": 3.1,
-            "percentage_gdp": 4.08,
-            "logo": "russia"
+            language: 'C',
+            salary: 94264
         },
         {
-            "country": "France",
-            "budget": 56.6,
-            "percentage_global": 2.7,
-            "percentage_gdp": 1.95,
-            "logo": "france"
+            language: 'C++',
+            salary: 100500
         },
         {
-            "country": "Germany",
-            "budget": 56,
-            "percentage_global": 2.7,
-            "percentage_gdp": 1.34,
-            "logo": "germany"
+            language: 'Ruby',
+            salary: 104988
         },
         {
-            "country": "Saudi Arabia",
-            "budget": 55.6,
-            "percentage_global": 2.6,
-            "percentage_gdp": 6.59,
-            "logo": "saudi-arabia"
+            language: 'Go',
+            salary: 112092
         },
         {
-            "country": "Japan",
-            "budget": 54.1,
-            "percentage_global": 2.6,
-            "percentage_gdp": 1.07,
-            "logo": "japan"
+            language: 'Objective-C',
+            salary: 101285
         },
         {
-            "country": "South Korea",
-            "budget": 50.2,
-            "percentage_global": 2.4,
-            "percentage_gdp": 2.78,
-            "logo": "south-korea"
+            language: 'Perl',
+            salary: 98199
         },
         {
-            "country": "Rest of the world",
-            "budget": 536,
-            "percentage_global": 25.3,
-            "logo": "world"
+            language: 'CSS',
+            salary: 94113
+        },
+        {
+            language: 'Visual Basic',
+            salary: 78271
+        }
+    ].sort( ( a, b ) => ( a.salary > b.salary) ? 1 : -1 );
+
+    const dataLabels = dataset.map( function( datapoint ){
+        return datapoint.language;
+    } );
+
+    const dataValues = dataset.map( function( datapoint ){
+        return datapoint.salary;
+    } );
+
+
+    const logos = [
+        {
+            src: `${ window.location.pathname }/images/logos/go.png`,
+            width: 20,
+            height: 20
+        },
+        {
+            src: `${ window.location.pathname }/images/logos/ruby.png`,
+            width: 20,
+            height: 20
+        },
+        {
+            src: `${ window.location.pathname }/images/logos/swift.png`,
+            width: 20,
+            height: 20
+        },
+        {
+            src: `${ window.location.pathname }/images/logos/objective-c.png`,
+            width: 20,
+            height: 20
+        },
+        {
+            src: `${ window.location.pathname }/images/logos/java.png`,
+            width: 20,
+            height: 20
+        },
+        {
+            src: `${ window.location.pathname }/images/logos/python.png`,
+            width: 20,
+            height: 20
+        },
+        {
+            src: `${ window.location.pathname }/images/logos/c++.png`,
+            width: 20,
+            height: 20
+        },
+        {
+            src: `${ window.location.pathname }/images/logos/perl.png`,
+            width: 20,
+            height: 20
+        },
+        {
+            src: `${ window.location.pathname }/images/logos/javascript.png`,
+            width: 20,
+            height: 20
+        },
+        {
+            src: `${ window.location.pathname }/images/logos/c.png`,
+            width: 20,
+            height: 20
+        },
+        {
+            src: `${ window.location.pathname }/images/logos/css.png`,
+            width: 20,
+            height: 20
+        },
+        {
+            src: `${ window.location.pathname }/images/logos/visual-basic.png`,
+            width: 20,
+            height: 20
         }
     ];
 
@@ -94,30 +138,32 @@ ready( function(){
     Chart.defaults.borderColor = "#8bd3dd";
     Chart.defaults.backgroundColor = "#fef6e4";
 
-    const dataLabels = dataset.map( function( datapoint ){
-        return datapoint.country;
-    } );
-
-    const dataValues = dataset.map( function( datapoint ){
-        return datapoint.budget;
-    } );
-
-    const logos = dataset.map(d => {
-        return {
-            src: `${ window.location.pathname }/images/logos/${d.logo}.png`,
-            width: 20,
-            height: 20
-        }        
-    });
-
     const data = {
         labels: [],
         datasets: [{
-            label: 'Budget',
+            label: 'Median salary',
             borderWidth: 1,
             data: []
         }]
     };
+
+    const annotation = {
+        type: 'line',
+        scaleID: 'y',
+        value: 72560,
+        borderColor: Chart.defaults.borderColor,
+        borderWidth: 2,
+        borderDash: [5, 5],
+        // label: {
+        //     backgroundColor: 'rgba(0,0,0,0.3)',
+        //     color: Chart.defaults.backgroundColor,
+        //     content: '$78k',
+        //     enabled: false
+        // },
+        click: function({chart, element}) {
+            console.log('Line annotation clicked');
+        }
+    };    
 
     const config = {
         type: 'bar',
@@ -134,7 +180,7 @@ ready( function(){
                     suggestedMax: Math.max( dataValues ),
                     ticks: {
                         callback: function( value, index, values ){
-                            return `${new Intl.NumberFormat( 'en-US', { style: 'currency', currency: 'USD' } ).format( value )}B`;
+                            return `${new Intl.NumberFormat( 'en-US', { style: 'currency', currency: 'USD' } ).format( value )}`;
                         }
                     }
                 }
@@ -145,11 +191,11 @@ ready( function(){
                 },
                 title: {
                     display: true,
-                    text: 'Top 10 Countries by Military Spending'
+                    text: 'Average developer salary by programming language'
                 },                
                 subtitle: {
                     display: true,
-                    text: '2021 budget in billions of US Dollars',
+                    text: 'Average developer salary: $78,271',
                     padding: {
                         bottom: 30
                     }                    
@@ -162,7 +208,7 @@ ready( function(){
                               label += ': ';
                           }
                           if ( context.parsed.y !== null ) {
-                              label += `${new Intl.NumberFormat( 'en-US', { style: 'currency', currency: 'USD' } ).format( context.parsed.y )}B`;
+                              label += `${new Intl.NumberFormat( 'en-US', { style: 'currency', currency: 'USD' } ).format( context.parsed.y )}`;
                           }
                           return label;
                       }
@@ -174,9 +220,14 @@ ready( function(){
                 },
                 labels: {
                     render: 'image',
-                    textMargin: -16,
-                    images: logos
-                }
+                    textMargin: -40,
+                    images: logos.reverse()
+                },
+                // annotation: {
+                //     annotations: {
+                //         annotation
+                //     }
+                // }                
             }            
         },
         plugins: {
@@ -194,7 +245,7 @@ ready( function(){
                           label += ': ';
                       }
                       if ( context.parsed.y !== null ) {
-                          label += `$${new Intl.NumberFormat( 'en-US', { style: 'currency', currency: 'USD' } ).format( context.parsed.y )}B`;
+                          label += `$${new Intl.NumberFormat( 'en-US', { style: 'currency', currency: 'USD' } ).format( context.parsed.y )}`;
                       }
                       return label;
                   }
@@ -226,8 +277,15 @@ ready( function(){
             chart.options.scales.y.display = true;
 
             if ( !showAll ){
+                // annotation.label.enabled = response.index > 0;
+
+                chart.options.plugins.annotation = {
+                    annotations: {
+                        annotation
+                    }
+                };
+
                 chart.data.datasets[0].data = dataValues.slice(0, response.index + 1);
-                chart.data.datasets[0].backgroundColor = dataset.map((d, i) => i === 0 ? 'rgb(255, 99, 132)' : Chart.defaults.backgroundColor);
                 chart.data.labels = dataLabels.slice(0, response.index + 1);
                 // chart.data.labels[response.index] = dataLabels[response.index];
 
@@ -239,7 +297,6 @@ ready( function(){
             if ( response.index === dataset.length - 1 ){
                 showAll = true;
             }
-
         } )
         .onStepExit( function( response ){
             /* response = { direction, element, index }, */
@@ -259,5 +316,3 @@ ready( function(){
     } ) );
 
 } );
-
-//# sourceMappingURL=scripts.min.js.map

@@ -1001,5 +1001,3 @@ ready( () => {
 
     showDataset( chart, allData['Credit Card Data'], 'Credit Card Data', '' );
 } );
-
-//# sourceMappingURL=scripts.min.js.map

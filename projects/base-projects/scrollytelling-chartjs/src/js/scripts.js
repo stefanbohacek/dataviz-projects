@@ -165,5 +165,3 @@ ready( function(){
 
     window.addEventListener( 'resize', scroller.resize );
 } );
-
-//# sourceMappingURL=scripts.min.js.map
