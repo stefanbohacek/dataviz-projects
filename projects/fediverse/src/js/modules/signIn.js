@@ -34,6 +34,7 @@ const signIn = async (ev) => {
       case "friendica":
       case "pleroma":
       case "akkoma":
+      case "gotosocial":
         platformSupported = true;
         authRedirectURL = `${authServer}?method=oauth&instance=${fediverseServer}&scope=read:accounts+read:follows&app=${app}`;
         break;

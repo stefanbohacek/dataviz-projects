@@ -29,6 +29,7 @@ const getData = async () => {
       case "friendica":
       case "pleroma":
       case "akkoma":
+      case "gotosocial":
         userInfo = await fetchData(
           instance,
           platform,
@@ -97,6 +98,7 @@ const getData = async () => {
       case "friendica":
       case "pleroma":
       case "akkoma":
+      case "gotosocial":
         followers = await fetchData(
           instance,
           platform,

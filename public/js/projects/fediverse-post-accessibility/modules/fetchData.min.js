@@ -11,6 +11,7 @@ const fetchData = async (instance, platform, endpoint, token, userId) => {
     case "friendica":
     case "pleroma":
     case "akkoma":
+    case "gotosocial":
       fetchURL = `https://${instance}/api/v1/${endpoint}`;
 
       fetchOptions = {

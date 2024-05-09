@@ -21,6 +21,7 @@ const fetchRequest = async (url, platform, options) => {
       case "friendica":
       case "pleroma":
       case "akkoma":
+      case "gotosocial":
         if (/<([^>]+)>; rel="next"/g.test(response.headers.get("link"))) {
           nextPage = /<([^>]+)>; rel="next"/g.exec(
             response.headers.get("link")
