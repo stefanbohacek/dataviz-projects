@@ -37,6 +37,7 @@ const fetchData = async (instance, platform, endpoint, token, userId) => {
     case "firefish":
     case "foundkey":
     case "magnetar":
+    case "sharkey":
       fetchURL = `https://${instance}/api/${endpoint}`;
 
       fetchOptions = {

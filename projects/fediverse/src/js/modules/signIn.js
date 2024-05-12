@@ -43,6 +43,7 @@ const signIn = async (ev) => {
       case "firefish":
       case "foundkey":
       case "magnetar":
+      case "sharkey":
         platformSupported = true;
         authRedirectURL = `${authServer}?method=miauth&instance=${fediverseServer}&scope=read:account+read:following&app=${app}`;
         break;

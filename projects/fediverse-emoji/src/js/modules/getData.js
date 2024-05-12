@@ -68,6 +68,7 @@ const getData = async () => {
       case "firefish":
       case "foundkey":
       case "magnetar":
+      case "sharkey":
         userInfo.id = userid;
         userData.name = username;
         userData.account = `@${username}@${instance}`;
@@ -114,6 +115,7 @@ const getData = async () => {
       case "firefish":
       case "foundkey":
       case "magnetar":
+      case "sharkey":
         platform = "misskey";
         statuses = await fetchData(
           instance,
