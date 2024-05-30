@@ -18,6 +18,7 @@ const fetchData = async (instance, platform, endpoint, token, userId) => {
   switch (platform) {
     case "mastodon":
     case "hometown":
+    case "pixelfed":
     case "friendica":
     case "pleroma":
     case "akkoma":

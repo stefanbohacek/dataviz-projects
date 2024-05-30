@@ -31,6 +31,7 @@ const signIn = async (ev) => {
     switch (platform) {
       case "mastodon":
       case "hometown":
+      case "pixelfed":
       case "friendica":
       case "pleroma":
       case "akkoma":
