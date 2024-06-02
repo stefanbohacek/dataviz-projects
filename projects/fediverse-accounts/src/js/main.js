@@ -18,12 +18,12 @@ ready(async () => {
   `;
   
   // const resp = await fetch(
-  //   `https://wikipedia.stefanbohacek.dev/wikidata/?query=${encodeURIComponent(query)}&token=Lyvgzjrheuk3dxwm8wgvpexndj5nhy8x7xihyt9ltmhknwbj1xnwpc22svoqvr`
+  //   `https://tools.stefanbohacek.dev/wikidata/?query=${encodeURIComponent(query)}&token=Lyvgzjrheuk3dxwm8wgvpexndj5nhy8x7xihyt9ltmhknwbj1xnwpc22svoqvr`
   // );
 
 
   const resp = await fetch(
-    "https://wikipedia.stefanbohacek.dev/wikidata/?query=SELECT%20DISTINCT%20%3Forg%20%3ForgLabel%20%3ForgTypeLabel%20%3FhostAt%20%3FMastName%20WHERE%20%7B%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%20%3Forg%20wdt%3AP4033%20%3FMastName.%20%3Forg%20wdt%3AP31%20%3ForgType.%20BIND%20(strafter(%3FMastName%2C%22%40%22)%20AS%20%3FhostAt).%20%7D%20ORDER%20BY%20%3FhostAt%20LIMIT%2020000&token=lYVGZjrHEUk3DxWm8WgVpExNdj5NHY8x7XiHyt9ltMhKNwbJ1XNwPC22SvoqVR"
+    "https://tools.stefanbohacek.dev/wikidata/?query=SELECT%20DISTINCT%20%3Forg%20%3ForgLabel%20%3ForgTypeLabel%20%3FhostAt%20%3FMastName%20WHERE%20%7B%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%20%3Forg%20wdt%3AP4033%20%3FMastName.%20%3Forg%20wdt%3AP31%20%3ForgType.%20BIND%20(strafter(%3FMastName%2C%22%40%22)%20AS%20%3FhostAt).%20%7D%20ORDER%20BY%20%3FhostAt%20LIMIT%2020000&token=lYVGZjrHEUk3DxWm8WgVpExNdj5NHY8x7XiHyt9ltMhKNwbJ1XNwPC22SvoqVR"
   );
 
   const fediverseAccounts = await resp.json();
