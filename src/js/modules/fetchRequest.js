@@ -2,6 +2,7 @@ import sleep from "/js/modules/sleep.min.js";
 
 const fetchRequest = async (url, platform, options) => {
   // console.log('debug:fetchRequest', url, platform, options);
+  // options.mode = "no-cors"
 
   try {
     const response = await fetch(url, options);

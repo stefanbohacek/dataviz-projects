@@ -332,6 +332,18 @@ ready( function(){
             days_lasted: 208,
             days_left: 157,
             percent_lasted: 56.99
+        },
+        '2023':{
+            overshoot_day: "08-02",
+            days_lasted: 213,
+            days_left: 152,
+            percent_lasted: 58.34
+        },
+        '2024':{
+            overshoot_day: "08-01",
+            days_lasted: 212,
+            days_left: 153,
+            percent_lasted: 58.08
         }
     };
 

@@ -26,6 +26,7 @@ const getData = async () => {
     switch (platform) {
       case "mastodon":
       case "hometown":
+      case "pixelfed":
       case "friendica":
       case "pleroma":
       case "akkoma":
@@ -36,6 +37,7 @@ const getData = async () => {
           "accounts/verify_credentials",
           token
         );
+        console.log("userInfo", userInfo);
         profileImageURL = userInfo.avatar_static || userInfo.avatar;
 
         if (userInfo.display_name) {
@@ -96,6 +98,7 @@ const getData = async () => {
     switch (platform) {
       case "mastodon":
       case "hometown":
+      case "pixelfed":
       case "friendica":
       case "pleroma":
       case "akkoma":
