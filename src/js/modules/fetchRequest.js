@@ -30,7 +30,12 @@ const fetchRequest = async (url, platform, options) => {
         }
 
         if (nextPage) {
+          const progressElWrapper = document.getElementById("progress-items-wrapper");
           const progressEl = document.getElementById("progress-items");
+
+          if (progressElWrapper){
+            progressElWrapper.classList.remove("d-none");
+          }
 
           if (progressEl) {
             progressEl.innerHTML = (
