@@ -2,6 +2,7 @@ import randomFromArray from '/js/modules/randomFromArray.min.js';
 import fetchRequest from '/js/modules/fetchRequest.min.js';
 
 const waitMessageEl = document.getElementById('wait-message');
+const progressInfoEl = document.getElementById('progress-info');
 let waitMessageInterval;
 
 const fetchData = async (instance, platform, endpoint, token, userId) => {
