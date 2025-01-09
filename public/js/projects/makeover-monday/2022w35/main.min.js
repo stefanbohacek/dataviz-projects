@@ -9,9 +9,16 @@ ready(async () => {
   const resp = await fetch("/data/military-budget/military-budget-2021.json");
   const dataset = await resp.json();
 
-  Chart.defaults.color = "#172c66";
-  Chart.defaults.borderColor = "#8bd3dd";
-  Chart.defaults.backgroundColor = "#f3d2c1";
+
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    Chart.defaults.color = "#fff";
+    Chart.defaults.borderColor = "#fff";
+    Chart.defaults.backgroundColor = "#fff";
+  } else {
+    Chart.defaults.color = "#172c66";
+    Chart.defaults.borderColor = "#8bd3dd";
+    Chart.defaults.backgroundColor = "#f3d2c1";
+  }
 
   const dataLabels = dataset.map(function (datapoint) {
     return datapoint.country;

@@ -1,14 +1,14 @@
 /* Variables */
 /* Styles */
-body.bg-light {
+body.bg-secondary-subtle {
   background-color: #16161a !important;
   color: #94a1b2; }
-  body.bg-light footer {
+  body.bg-secondary-subtle footer {
     background-color: #16161a !important;
     color: #fff; }
-    body.bg-light footer a {
+    body.bg-secondary-subtle footer a {
       color: #fff; }
-      body.bg-light footer a:hover {
+      body.bg-secondary-subtle footer a:hover {
         color: #7f5af0; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,7 +26,7 @@ mark {
 .bg-dark {
   background-color: #72757e; }
 
-.bg-light {
+.bg-secondary-subtle {
   background-color: #94a1b2 !important; }
 
 .btn-outline-primary {

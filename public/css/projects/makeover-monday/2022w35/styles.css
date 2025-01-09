@@ -1,27 +1,23 @@
-body.bg-light, .bg-white {
+body[data-bs-theme="light"].bg-secondary-subtle,
+.bg-white {
   background-color: #f3d2c1 !important;
   color: #172c66; }
 
-.border-bottom {
-  border-bottom-color: #fef6e4 !important; }
-
-.bg-light {
-  background-color: #fef6e4 !important;
-  color: #172c66; }
-
-h1, h2 {
+body[data-bs-theme="light"] h1,
+body[data-bs-theme="light"] h2 {
   color: #001858; }
 
-a {
+body[data-bs-theme="light"] a {
   color: #f582ae; }
-  a:hover {
+  body[data-bs-theme="light"] a:hover {
     color: #172c66; }
-  .alert a {
-    color: #172c66; }
-    .alert a:hover {
-      color: #b66a87; }
 
-.text-bg-success {
+body[data-bs-theme="light"] .alert a {
+  color: #172c66; }
+  body[data-bs-theme="light"] .alert a:hover {
+    color: #b66a87; }
+
+body[data-bs-theme="light"] .text-bg-success {
   color: #001858 !important;
   background-color: #8bd3dd !important;
   margin-left: 0.3rem;
@@ -29,7 +25,7 @@ a {
       -ms-transform: rotate(-2deg);
           transform: rotate(-2deg); }
 
-h2:hover .text-bg-success {
+body[data-bs-theme="light"] h2:hover .text-bg-success {
   -webkit-transform: rotate(3deg);
       -ms-transform: rotate(3deg);
           transform: rotate(3deg); }

@@ -68,7 +68,7 @@ ready(async () => {
 
         html += `
           <div class="step --min-vh-100 p-3 ${ isHighlighted }" data-step="${ index }">
-            <h2>${dataYear} <span class="percent-lasted text-white">${ datapoint[0].percent_lasted }%</span></h2>
+            <h2 class="text-body-secondary">${dataYear} <span class="percent-lasted text-white">${ datapoint[0].percent_lasted }%</span></h2>
             <p>In ${dataYear} the Overshoot Day was on <strong>${ moment(`${dataYear}-${overshootDays[dataYear].overshoot_day}`).format('MMMM DD') }</strong>, which means our planet lasted us <span class="days-lasted">${ datapoint[0].days_lasted } days</span> with <span class="days-left">${ datapoint[0].days_left } days</span> left in the year.${ notes }</p>
           </div>
         `;
@@ -76,7 +76,13 @@ ready(async () => {
 
     dataDescriptions.innerHTML = html;
 
-    Chart.defaults.color = "#000";
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        Chart.defaults.color = "#fff";
+    } else {
+        Chart.defaults.color = "#000";
+    }
+    
+
     // Chart.defaults.borderColor = "#8bd3dd";
     // Chart.defaults.backgroundColor = "rgb(255, 99, 132)";
 

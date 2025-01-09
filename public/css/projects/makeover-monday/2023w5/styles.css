@@ -64,16 +64,16 @@ img.rating {
   .step {
     margin-bottom: 80vh; } }
 
-.bg-light {
+.bg-secondary-subtle {
   background-color: #b8c1ec !important;
   color: #121629; }
-  .bg-light a {
+  .bg-secondary-subtle a {
     color: #121629; }
-    .bg-light a:hover {
+    .bg-secondary-subtle a:hover {
       color: #232946 !important; }
-  .bg-light a.btn {
+  .bg-secondary-subtle a.btn {
     color: #fff; }
-    .bg-light a.btn:hover {
+    .bg-secondary-subtle a.btn:hover {
       color: #fff !important; }
 
 .border-bottom {
