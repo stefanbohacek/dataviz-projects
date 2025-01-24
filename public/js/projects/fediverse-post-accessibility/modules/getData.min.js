@@ -147,7 +147,7 @@ const getData = async () => {
         status.visibility &&
         ["public", "unlisted"].includes(status.visibility)
       ) {
-        if (mediaNeedsFixingCount < 24) {
+        // if (mediaNeedsFixingCount < 24) {
           stats.postsTotal++;
 
           if (
@@ -219,7 +219,7 @@ const getData = async () => {
               });
             }
           }
-        }
+        // }
       }
     });
 

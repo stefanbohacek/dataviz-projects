@@ -21,7 +21,7 @@ const signIn = async (ev) => {
     let app;
 
     if (ftfGlobal.node_env === "development") {
-      authServer = "http://localhost:3000/";
+      authServer = "https://auth.stefanbohacek.dev/";
       app = "fediverse-post-accessibility-local";
     } else {
       authServer = "https://auth.stefanbohacek.dev/";
