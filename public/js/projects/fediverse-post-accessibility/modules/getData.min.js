@@ -143,75 +143,81 @@ const getData = async () => {
     let mediaNeedsFixingCount = 0;
 
     statuses.forEach((status) => {
-      if (mediaNeedsFixingCount < 24) {
-        stats.postsTotal++;
+      if (
+        status.visibility &&
+        ["public", "unlisted"].includes(status.visibility)
+      ) {
+        if (mediaNeedsFixingCount < 24) {
+          stats.postsTotal++;
 
-        if (
-          platform === "misskey" ||
-          userData.accountURL === status.account.url ||
-          (status.account.fqn && userData.account === `@${status.account.fqn}`)
-        ) {
-          if (status?.tags?.length) {
-            if (!status.tags[0].name) {
-              status.tags = status.tags.map((tag) => {
-                return {
-                  name: tag,
-                };
+          if (
+            platform === "misskey" ||
+            userData.accountURL === status.account.url ||
+            (status.account.fqn &&
+              userData.account === `@${status.account.fqn}`)
+          ) {
+            if (status?.tags?.length) {
+              if (!status.tags[0].name) {
+                status.tags = status.tags.map((tag) => {
+                  return {
+                    name: tag,
+                  };
+                });
+              }
+
+              status.tags.forEach((tag) => {
+                if (!hashtags.includes(tag.name)) {
+                  hashtags.push(tag.name);
+                }
               });
             }
-
-            status.tags.forEach((tag) => {
-              if (!hashtags.includes(tag.name)) {
-                hashtags.push(tag.name);
-              }
-            });
           }
-        }
 
-        const attachments = status.media_attachments || status.files || [];
+          const attachments = status.media_attachments || status.files || [];
 
-        if (attachments && attachments.length) {
-          let statusNeedsFixing = false;
-          let statusHasVisualMedia = false;
-          let mediaNeedsFixingResults = [];
+          if (attachments && attachments.length) {
+            let statusNeedsFixing = false;
+            let statusHasVisualMedia = false;
+            let mediaNeedsFixingResults = [];
 
-          attachments.forEach((media) => {
-            if (["image", "video", "image/png"].includes(media.type)) {
-              statusHasVisualMedia = true;
-              stats.visualMediaTotal++;
+            attachments.forEach((media) => {
+              if (["image", "video", "image/png"].includes(media.type)) {
+                statusHasVisualMedia = true;
+                stats.visualMediaTotal++;
 
-              if (media.description) {
-                stats.visualMediaDescribed++;
+                if (media.description) {
+                  stats.visualMediaDescribed++;
 
-                if (countWords(media.description) < 6) {
-                  stats.visualMediaDescribedShort++;
+                  if (countWords(media.description) < 6) {
+                    stats.visualMediaDescribedShort++;
+                  }
+                } else {
+                  statusNeedsFixing = true;
+                  mediaNeedsFixingCount++;
+
+                  mediaNeedsFixingResults.push(media.url);
                 }
-              } else {
-                statusNeedsFixing = true;
-                mediaNeedsFixingCount++;
-
-                mediaNeedsFixingResults.push(media.url);
               }
-            }
-          });
-
-          if (statusHasVisualMedia) {
-            stats.postsWithVisualMedia++;
-          }
-
-          if (statusNeedsFixing) {
-            let statusURL;
-
-            if (status.url){
-              statusURL = status.url;
-            } else if (status.id){
-              statusURL = `https://${userData.instance}/notes/${status.id}`;
-            }
-
-            stats.statusesNeedFixing.push({
-              url: statusURL,
-              mediaNeedsFixing: mediaNeedsFixingResults,
             });
+
+            if (statusHasVisualMedia) {
+              stats.postsWithVisualMedia++;
+            }
+
+            if (statusNeedsFixing) {
+              let statusURL;
+
+              if (status.url) {
+                statusURL = status.url;
+              } else if (status.id) {
+                statusURL = `https://${userData.instance}/notes/${status.id}`;
+              }
+
+              stats.statusesNeedFixing.push({
+                url: statusURL,
+                mediaNeedsFixing: mediaNeedsFixingResults,
+              });
+            }
           }
         }
       }
@@ -221,7 +227,7 @@ const getData = async () => {
     userData.stats = stats;
     // console.log({ userData });
 
-    saveData('fediversePostAccessibility', userData, 60);
+    saveData("fediversePostAccessibility", userData, 60);
     showData(userData);
   }
 };

@@ -122,7 +122,7 @@ const showData = async (userData) => {
   const resultsEl = document.getElementById("results");
   resultsEl.innerHTML = /*html*/ `
     <p>
-      Out of your <strong>${userData.stats.postsTotal.toLocaleString()} posts with visual media attached</strong>, <strong>${
+      Out of your <strong>${userData.stats.postsTotal.toLocaleString()} public posts with visual media attached</strong>, <strong>${
     userData.stats.visualMediaDescribed
   } have alt text</strong>. ${visualMediaDescribedNote}
     </p>
