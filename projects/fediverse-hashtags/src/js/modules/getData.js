@@ -18,6 +18,8 @@ const skiptToResultsBtn = document.getElementById("skip-to-results");
 
 skiptToResultsBtn.addEventListener("click", () => {
   window.skipToResults = true;
+  skiptToResultsBtn.innerHTML = "Skipping...";
+  skiptToResultsBtn.disabled = true;
 });
 
 const getData = async () => {

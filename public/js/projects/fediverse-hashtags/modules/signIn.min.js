@@ -19,7 +19,6 @@ const signIn = async (ev) => {
     let authRedirectURL;
     let authServer;
     const app = "fediverse-hashtags";
-
     const environment = ftfGlobal.node_env ?? "production"
 
     if (environment) {

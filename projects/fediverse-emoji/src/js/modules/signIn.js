@@ -19,6 +19,7 @@ const signIn = async (ev) => {
     let authRedirectURL;
     let authServer;
     const app = "fediverse-emoji";
+    const environment = ftfGlobal.node_env ?? "production"
 
     if (ftfGlobal.node_env === "development") {
       authServer = "http://localhost:3000/";
@@ -34,7 +35,7 @@ const signIn = async (ev) => {
       case "akkoma":
       case "gotosocial":
         platformSupported = true;
-        authRedirectURL = `${authServer}?method=oauth&instance=${fediverseServer}&scope=read:accounts+read:statuses&app=${app}`;
+        authRedirectURL = `${authServer}?method=oauth&instance=${fediverseServer}&scope=read:accounts+read:statuses&app=${app}&environment=${environment}`;
         break;
       case "misskey":
       case "calckey":
@@ -43,7 +44,7 @@ const signIn = async (ev) => {
       case "magnetar":
       case "sharkey":
         platformSupported = true;
-        authRedirectURL = `${authServer}?method=miauth&instance=${fediverseServer}&scope=read:account&app=${app}`;
+        authRedirectURL = `${authServer}?method=miauth&instance=${fediverseServer}&scope=read:account&app=${app}&environment=${environment}`;
         break;
       default:
         alert("Sorry, this platform is not yet supported.");

@@ -16,6 +16,13 @@ const greeting = document.getElementsByClassName("greeting");
 const loadingScreen = document.getElementById("loading");
 const profileImage = document.getElementsByClassName("profile-image");
 const loadingStatusEl = document.getElementById("loading-status");
+const skiptToResultsBtn = document.getElementById("skip-to-results");
+
+skiptToResultsBtn.addEventListener("click", () => {
+  window.skipToResults = true;
+  skiptToResultsBtn.innerHTML = "Skipping...";
+  skiptToResultsBtn.disabled = true;
+});
 
 const getData = async () => {
   let userData = {};

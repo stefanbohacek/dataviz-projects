@@ -5,6 +5,7 @@ const fetchRequest = async (url, platform, options) => {
   // options.mode = "no-cors"
 
   try {
+    const skiptToResultsBtn = document.getElementById("skip-to-results");
     const response = await fetch(url, options);
     // console.log({
     //   url,
@@ -48,6 +49,14 @@ const fetchRequest = async (url, platform, options) => {
             data = data.concat(await fetchRequest(nextPage, platform, options));
           } else {
             window.skipToResults = false;
+            if (typeof(skiptToResultsBtn) != 'undefined' && skiptToResultsBtn != null){
+              setTimeout(()=>{
+                skiptToResultsBtn.innerHTML = "Skip to results";
+                skiptToResultsBtn.disabled = false;
+              }, 1000);
+
+            }
+
           }
         }
 
@@ -70,6 +79,14 @@ const fetchRequest = async (url, platform, options) => {
             data = data.concat(await fetchRequest(url, platform, options));
           } else {
             window.skipToResults = false;            
+            if (typeof(skiptToResultsBtn) != 'undefined' && skiptToResultsBtn != null){
+              setTimeout(()=>{
+                skiptToResultsBtn.innerHTML = "Skip to results";
+                skiptToResultsBtn.disabled = false;
+              }, 1000);
+
+            }
+
           }
         }
         break;
