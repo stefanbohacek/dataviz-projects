@@ -18,14 +18,12 @@ const signIn = async (ev) => {
     let platformSupported = false;
     let authRedirectURL;
     let authServer;
-    let app;
+    const app = "fediverse-post-accessibility";
 
     if (ftfGlobal.node_env === "development") {
-      authServer = "https://auth.stefanbohacek.dev/";
-      app = "fediverse-post-accessibility-local";
+      authServer = "http://localhost:3000/";
     } else {
       authServer = "https://auth.stefanbohacek.dev/";
-      app = "fediverse-post-accessibility";
     }
 
     switch (platform) {

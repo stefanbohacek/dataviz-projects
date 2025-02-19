@@ -18,14 +18,14 @@ const signIn = async (ev) => {
     let platformSupported = false;
     let authRedirectURL;
     let authServer;
-    let app;
+    const app = "fediverse-hashtags";
 
-    if (ftfGlobal.node_env === "development") {
+    const environment = ftfGlobal.node_env ?? "production"
+
+    if (environment) {
       authServer = "http://localhost:3000/";
-      app = "fediverse-hashtags-local";
     } else {
       authServer = "https://auth.stefanbohacek.dev/";
-      app = "fediverse-hashtags";
     }
 
     switch (platform) {
@@ -36,7 +36,7 @@ const signIn = async (ev) => {
       case "akkoma":
       case "gotosocial":
         platformSupported = true;
-        authRedirectURL = `${authServer}?method=oauth&instance=${fediverseServer}&scope=read:accounts+read:statuses&app=${app}`;
+        authRedirectURL = `${authServer}?method=oauth&instance=${fediverseServer}&scope=read:accounts+read:statuses&app=${app}&environment=${environment}`;
         break;
       case "misskey":
       case "calckey":

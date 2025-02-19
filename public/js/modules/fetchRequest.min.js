@@ -43,8 +43,12 @@ const fetchRequest = async (url, platform, options) => {
             ).toLocaleString();
           }
 
-          await sleep(500);
-          data = data.concat(await fetchRequest(nextPage, platform, options));
+          if (!window.skipToResults){
+            await sleep(500);
+            data = data.concat(await fetchRequest(nextPage, platform, options));
+          } else {
+            window.skipToResults = false;
+          }
         }
 
         break;
@@ -60,8 +64,13 @@ const fetchRequest = async (url, platform, options) => {
             body.untilId = lastItem.id;
             options.body = JSON.stringify(body);
           }
-          await sleep(500);
-          data = data.concat(await fetchRequest(url, platform, options));
+
+          if (!window.skipToResults){
+            await sleep(500);
+            data = data.concat(await fetchRequest(url, platform, options));
+          } else {
+            window.skipToResults = false;            
+          }
         }
         break;
       default:
