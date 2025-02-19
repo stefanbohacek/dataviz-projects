@@ -21,7 +21,7 @@ const signIn = async (ev) => {
     const app = "fediverse-hashtags";
     const environment = ftfGlobal.node_env ?? "production"
 
-    if (environment) {
+    if (environment === "development") {
       authServer = "http://localhost:3000/";
     } else {
       authServer = "https://auth.stefanbohacek.dev/";
