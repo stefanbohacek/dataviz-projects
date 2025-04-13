@@ -18,7 +18,7 @@ const signIn = async (ev) => {
     let platformSupported = false;
     let authRedirectURL;
     let authServer;
-    const app = "mastodon-dataviz-local";
+    const app = "mastodon-dataviz";
     const environment = ftfGlobal.node_env ?? "production"
 
     if (environment === "development") {
