@@ -5,4 +5,4 @@ One prompts you to "explore your fediverse connections" with a text input field 
 
 Learn more about the accounts you follow and that follow you in the fediverse.
 
-[Explore](https://data.stefanbohacek.dev/projects/fediverse) | [Learn more](https://stefanbohacek.com/project/explore-your-fediverse-connections/)
+[Explore](https://data.stefanbohacek.com/projects/fediverse) | [Learn more](https://stefanbohacek.com/project/explore-your-fediverse-connections/)

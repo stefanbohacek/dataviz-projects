@@ -24,7 +24,7 @@ const signIn = async (ev) => {
     if (environment === "development") {
       authServer = "http://localhost:3000/";
     } else {
-      authServer = "https://auth.stefanbohacek.dev/";
+      authServer = "https://auth.stefanbohacek.com/";
     }
 
     switch (platform) {
