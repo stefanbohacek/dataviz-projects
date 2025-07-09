@@ -1,2 +1,13 @@
 $black: #363636;
 $twitter-blue: rgb(27, 149, 224);
+
+:root,
+[data-bs-theme="light"] {
+  --bs-secondary-bg-subtle: #eff0f3 !important;
+  --bs-secondary-rgb: 13, 13, 13 !important;
+
+}
+
+[data-bs-theme="dark"] {
+  --bs-secondary-rgb: 203, 203, 203 !important;
+}

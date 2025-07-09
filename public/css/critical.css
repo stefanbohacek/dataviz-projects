@@ -7614,6 +7614,14 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+:root,
+[data-bs-theme="light"] {
+  --bs-secondary-bg-subtle: #eff0f3 !important;
+  --bs-secondary-rgb: 13, 13, 13 !important; }
+
+[data-bs-theme="dark"] {
+  --bs-secondary-rgb: 203, 203, 203 !important; }
+
 img {
   max-width: 100%; }
 
