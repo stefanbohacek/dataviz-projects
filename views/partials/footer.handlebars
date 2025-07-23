@@ -1,140 +1,88 @@
 <footer class="footer mt-auto py-3 bg-light-subtle">
   <div class="container pt-5 pb-3">
     <div class="row align-items-center">
-      <div class="col-sm-12 mx-auto pt-0 pb-5 mb-5 text-center border-bottom">
+      <div class="col-sm-12 mx-auto pt-0 pb-2 mb-2 text-center">
         {{#if project}}
-          <ul class="share-buttons" data-source="simplesharingbuttons.com">
-            <li>
-              <a
-                href="https://getpocket.com/save?url={{projectURLencoded}}&title={{title}}"
-                target="_blank"
-                rel="noopener"
-                title="Add to Pocket"
-              ><img
-                  width="60px"
-                  height="60px"
-                  loading="lazy"
-                  alt="Add to Pocket"
-                  src="/images/social-media/pocket.svg"
-                /></a>
-            </li>
-            <li>
-              <a
-                href="https://pinboard.in/popup_login/?url={{projectURLencoded}}&title={{title}}&description={{description}}"
-                target="_blank"
-                rel="noopener"
-                title="Save to Pinboard"
-              ><img
-                  width="60px"
-                  height="60px"
-                  loading="lazy"
-                  alt="Save to Pinboard"
-                  src="/images/social-media/pinboard.svg"
-                /></a>
-            </li>
-            <li>
-              <a
-                href="mailto:?subject={{title}}&body={{description}}%20{{projectURLencoded}}"
-                target="_blank"
-                rel="noopener"
-                title="Email this page"
-              ><img
-                  width="60px"
-                  height="60px"
-                  loading="lazy"
-                  alt="Send email"
-                  src="/images/social-media/email.svg"
-                /></a>
-            </li>
-          </ul>
+        <ul class="share-buttons"
+          data-source="simplesharingbuttons.com">
+          <li>
+            <a href="https://getpocket.com/save?url={{projectURLencoded}}&title={{title}}"
+              target="_blank"
+              rel="noopener"
+              title="Add to Pocket"><img width="60px"
+                height="60px"
+                loading="lazy"
+                alt="Add to Pocket"
+                src="/images/social-media/pocket.svg" /></a>
+          </li>
+          <li>
+            <a href="https://pinboard.in/popup_login/?url={{projectURLencoded}}&title={{title}}&description={{description}}"
+              target="_blank"
+              rel="noopener"
+              title="Save to Pinboard"><img width="60px"
+                height="60px"
+                loading="lazy"
+                alt="Save to Pinboard"
+                src="/images/social-media/pinboard.svg" /></a>
+          </li>
+          <li>
+            <a href="mailto:?subject={{title}}&body={{description}}%20{{projectURLencoded}}"
+              target="_blank"
+              rel="noopener"
+              title="Email this page"><img width="60px"
+                height="60px"
+                loading="lazy"
+                alt="Send email"
+                src="/images/social-media/email.svg" /></a>
+          </li>
+        </ul>
         {{/if}}
         <p>
-          <a class="text-dark-emphasis" href="https://stefanbohacek.online/@stefan">@stefan</a>
+          Created by <a class="text-dark-emphasis"
+            href="https://stefanbohacek.online/@stefan" rel="me">@Stefan</a> Bohacek
           {{#if project}}
-            |
-            <a class="text-dark-emphasis" href="https://github.com/stefanbohacek/dataviz-projects/tree/main/projects/{{project}}">View source</a>
-          {{/if}}
           |
-          <a class="text-dark-emphasis" href="https://stefanbohacek.com/dataviz/">More projects</a>
+          <a class="text-dark-emphasis"
+            href="https://github.com/stefanbohacek/dataviz-projects/tree/main/projects/{{project}}">View source</a>
+          |
+          <a class="text-dark-emphasis"
+            href="https://stefanbohacek.com/dataviz/">More projects</a>
+          {{/if}}
         </p>
       </div>
-      <div class="col-sm-6 col-md-4 pt-5 mx-auto text-center">
-        <p>
-          <a href="https://fightfascism.neocities.org">
-            <img
-              width="140"
-              height="140"
-              class="lazy-load"
-              title="Fight Fascism sticker by Angus Johnston"
-              alt="Fight fascism"
-              data-src="/images/logos/fight-fascism-square.png"
-            />
-          </a>
-          <noscript>
-            <a href="https://fightfascism.neocities.org">
-              <img
-                width="140"
-                height="140"
-                class="lazy-load"
-                title="Fight Fascism sticker by Angus Johnston"
-                alt="Fight fascism"
-                src="/images/logos/fight-fascism-square.png"
-              />
-            </a>
-          </noscript>
-        </p>
-      </div>
-      <div class="col-sm-6 col-md-4 pt-5 mx-auto text-center">
-        <p>
-          <a href="https://blacklivesmatter.com/">
-            <img
-              width="140"
-              height="140"
-              class="lazy-load"
-              alt="Black Lives Matter"
-              title="Black Lives Matter logo"
-              data-src="/images/logos/blm.png"
-            />
-          </a>
-          <noscript>
-            <a href="https://blacklivesmatter.com/">
-              <img
-                width="140"
-                height="140"
-                class="lazy-load"
-                alt="Black Lives Matter"
-                title="Black Lives Matter logo"
-                src="/images/logos/blm.png"
-              />
-            </a>
-          </noscript>
-        </p>
-      </div>
-      <div class="col-sm-6 col-md-4 pt-5 mx-auto text-center">
-        <p>
-          <a href="https://indieweb.org/">
-            <img
-              width="140"
-              height="140"
-              class="lazy-load"
-              alt="IndieWeb"
-              title="Support #indieweb!"
-              data-src="/images/logos/indiewebcamp-black.png"
-            />
-          </a>
-          <noscript>
-            <a href="https://indieweb.org/">
-              <img
-                width="140"
-                height="140"
-                class="lazy-load"
-                alt="IndieWeb"
-                title="Support #indieweb!"
-                src="/images/logos/indiewebcamp-black.png"
-              />
-            </a>
-          </noscript>
-        </p>
+      <div class="col-12 pt-2 mx-auto text-center">
+        <a class="d-inline-block mb-1" href="https://fightfascism.neocities.org">
+          <img loading="lazy"
+            width="100"
+            height="100"
+            title="Fight Fascism sticker by Angus Johnston"
+            alt="The words 'Fight Fascism' in white in all caps on a black background."
+            data-src="/images/logos/fight-fascism-square.png" />
+        </a>
+        <a class="d-inline-block mb-1" href="https://lifehacker.com/where-to-donate-to-help-people-fighting-for-racial-just-1843852418">
+          <img loading="lazy"
+            width="100"
+            height="100"
+            alt="The text 'Black Lives Matter' in all-caps, one letter per line, alternating between black text on white background and white text on black background."
+            title="Black lives matter!"
+            data-src="/images/logos/blm.png" />
+        </a>
+        <a class="d-inline-block mb-1" href="https://translifeline.org/donate/">
+          <img loading="lazy"
+            width="100"
+            height="100"
+            alt="The text 'Trans rights are human rights' in all-caps, laid out to form a trans rights flag with alternating blue, pink, and white stripes."
+            title="Support the trans community!"
+            data-src="/images/logos/trans-rights.jpg" />
+        </a>
+        <a class="d-inline-block mb-1" href="https://indieweb.org/">
+          <img loading="lazy"
+            width="100"
+            height="100"
+            alt="IndieWeb Camp logo consisting of stylized letters IWC and the text 'IndieWebCamp'"
+            title="Support #indieweb!"
+            data-src="/images/logos/indiewebcamp-black.png" />
+        </a>
       </div>
     </div>
   </div>
