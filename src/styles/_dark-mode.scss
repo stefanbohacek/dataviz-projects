@@ -1,11 +1,31 @@
-body[data-bs-theme="dark"]{
+body[data-bs-theme="dark"] {
+
   .tabulator-col,
-  .tabulator-row-odd{
+  .tabulator-row-odd {
     background-color: #4e4e4e;
   }
+
+  .tabulator-header,
+  .tabulator-col{
+      background-color: #1a1a1a !important;
+  }
+
+  .tabulator-row-odd,
+  .tabulator-row-even {
+    &:hover {
+      background-color: #1a1a1a !important;
+    }
+  }
+
+  .tabulator,
+  .tabulator-row{
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+
   .tabulator-header,
   .tabulator-row-even,
-  .tabulator-footer{
+  .tabulator-footer {
     background-color: #2a2a2a !important;
   }
 }

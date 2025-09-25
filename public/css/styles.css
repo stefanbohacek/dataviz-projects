@@ -11181,6 +11181,19 @@ body[data-bs-theme="dark"] .tabulator-row-odd {
   background-color: #4e4e4e; }
 
 body[data-bs-theme="dark"] .tabulator-header,
+body[data-bs-theme="dark"] .tabulator-col {
+  background-color: #1a1a1a !important; }
+
+body[data-bs-theme="dark"] .tabulator-row-odd:hover,
+body[data-bs-theme="dark"] .tabulator-row-even:hover {
+  background-color: #1a1a1a !important; }
+
+body[data-bs-theme="dark"] .tabulator,
+body[data-bs-theme="dark"] .tabulator-row {
+  border-top: none !important;
+  border-bottom: none !important; }
+
+body[data-bs-theme="dark"] .tabulator-header,
 body[data-bs-theme="dark"] .tabulator-row-even,
 body[data-bs-theme="dark"] .tabulator-footer {
   background-color: #2a2a2a !important; }
