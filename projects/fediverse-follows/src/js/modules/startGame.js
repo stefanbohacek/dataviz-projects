@@ -8,17 +8,21 @@ const gameInterface = document.getElementById("viz-user");
 const answerForm = document.getElementById("answer-form");
 const currentAnswerEl = document.getElementById("current-answer");
 const roundCounterEl = document.getElementById("round-counter");
+const maxRoundCounterEl = document.getElementById("max-round-counter");
 const followBio = document.getElementById("follow-bio");
 const pointsTotalEl = document.getElementById("points-total");
+const pointsTotalMaxEl = document.getElementById("points-max");
 const resultsSection = document.getElementById("results-section");
 const resultsTable = document.getElementById("results-table");
 const restartGameBtns = document.getElementsByClassName("restart-game");
+const skipRoundBtn = document.getElementById("skip-round");
 
 let fullUserData;
 let follows;
 let resumeGame = false;
 const gameStateInit = {
   currentRound: 1,
+  maxRounds: 10,
   currentRoundAccountIndex: 0,
   points: 0,
   rounds: [],
@@ -38,7 +42,7 @@ if (savedGameState) {
 }
 
 const playRound = (follows) => {
-  if (gameState.currentRound > 10) {
+  if (gameState.currentRound > gameState.maxRounds) {
     answerForm.classList.add("d-none");
     resultsSection.classList.remove("d-none");
     showResults();
@@ -94,6 +98,8 @@ const checkAnswer = () => {
 };
 
 const showResults = () => {
+  pointsTotalMaxEl.innerText = gameState.maxRounds;
+
   let resultsHtml = /* html */ `
     <thead>
       <tr>
@@ -134,7 +140,11 @@ const showResults = () => {
         </td>
         <td data-label="Your answer" class="text-start">${round.userAnswer}</td>
         <td data-label="Result" class="text-start">${
-          roundResult ? `✅ Correct!` : `❌ Incorrect`
+          roundResult
+            ? `✅ Correct!`
+            : userAnswer === "(skipped)"
+            ? `⛔ Skipped`
+            : `❌ Incorrect`
         }</td>
       </tr>
     `;
@@ -149,6 +159,14 @@ const showResults = () => {
 answerForm.addEventListener("submit", (ev) => {
   ev.preventDefault();
   checkAnswer();
+});
+
+skipRoundBtn.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  gameState.rounds[gameState.currentRound].userAnswer = "(skipped)";
+  gameState.currentRound++;
+  localStorage.setItem("fediverseFollowsGameState", JSON.stringify(gameState));
+  playRound(follows);
 });
 
 [...restartGameBtns].forEach((restartGameBtn) => {
@@ -175,11 +193,15 @@ export default async (userData) => {
     profileImage[1].src = userData.profileImageURL;
   }
 
-  setTimeout(() => {
-    initAwesomplete("#current-answer", {
-      list: follows.map((account) => `${account.username} (${account.acct})`),
-      minChars: 0,
-    });
-  }, 1000);
+  initAwesomplete("#current-answer", {
+    list: follows.map((account) => `${account.username} (${account.acct})`),
+    minChars: 0,
+  });
+
+  if (fullUserData?.follows?.length < 10) {
+    gameState.maxRounds = fullUserData?.follows?.length || 0;
+  }
+
+  maxRoundCounterEl.innerText = gameState.maxRounds;
   playRound(follows);
 };
