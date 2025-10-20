@@ -172,7 +172,7 @@ skipRoundBtn.addEventListener("click", (ev) => {
 [...restartGameBtns].forEach((restartGameBtn) => {
   restartGameBtn.addEventListener("click", (ev) => {
     ev.preventDefault();
-    localStorage.removeItem("fediverseFollowsData");
+    localStorage.removeItem("fediverseFollowsGameState");
     window.location.reload();
   });
 });
