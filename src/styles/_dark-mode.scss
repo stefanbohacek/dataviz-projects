@@ -28,4 +28,16 @@ body[data-bs-theme="dark"] {
   .tabulator-footer {
     background-color: #2a2a2a !important;
   }
+
+  .awesomplete > ul > li {
+    color: white;
+    background-color: black;
+  }
+  
+
+  .awesomplete mark {
+    color: black;
+    background-color: silver;
+  }
+
 }

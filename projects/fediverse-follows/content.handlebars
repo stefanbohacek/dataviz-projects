@@ -1,0 +1,88 @@
+<section id="intro"
+  class="flex-shrink-0">
+  <div class="d-flex align-items-center vh-100 position-relative overflow-hidden">
+    <div class="mx-auto my-5 p-2">
+      <h1 class="text-dark-emphasis text-center">How well do you know your <mark>fediverse follows</mark>?</h1>
+      <p class="text-start text-dark-emphasis mt-5">
+      <form id="sign-in-form">
+        <label for="fediverse-server"
+          class="d-block form-label text-start text-dark-emphasis">Your instance or server</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text">https://</span>
+          <input required
+            id="fediverse-server"
+            type="text"
+            class="form-control"
+            placeholder="mastodon.social">
+          <button class="btn btn-outline-secondary text-dark-emphasis"
+            type="submit"
+            id="sign-in">Begin</button>
+        </div>
+      </form>
+      <p><a href="https://stefanbohacek.com/project/explore-your-fediverse-connections/">Learn more</a> | <a
+          href="https://stefanbohacek.com/project/explore-your-fediverse-connections/#privacy-policy">Privacy policy</a>
+      </p>
+      </p>
+    </div>
+  </div>
+</section>
+<section id="loading"
+  class="flex-shrink-0 d-none">
+  <div class="d-flex align-items-center vh-100 position-relative overflow-hidden text-center">
+    <div class="mx-auto my-5">
+      <h1 class="display-4 fw-normal"><span class="greeting"></span> <img class="profile-image rounded-circle"></h1>
+      <p id="wait-message"
+        class="mt-5">
+        Please wait, your data is loading...
+      </p>
+      <p id="progress-items-wrapper"
+        class="d-none text-center fs-6 text-muted">
+        <span id="progress-items">0</span> connections processed...
+      </p>
+      <p class="placeholder-wave">
+        <span class="placeholder col-12"></span>
+      </p>
+    </div>
+  </div>
+</section>
+<div id="viz-user"
+  class="d-none container mb-5">
+  <form id="answer-form">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="mt-0 mb-4"><img class="profile-image rounded-circle"> <span id="account-name"></span></h1>
+        <label for="answer"
+          class="form-label">Can you recognize this account based on their profile description? Round <span id="round-counter">1</span>/10</label>
+      </div>
+      <div id="bio-column"
+        class="col-sm-12 col-md-6 sticky-top">
+        <p id="follow-bio"
+          class="card bg-alternate p-3 rounded">
+        </p>
+      </div>
+      <div id="options-column"
+        class="col-sm-12 col-md-6">
+        <input id="current-answer" required
+          type="text"
+          placeholder="Your follow's name..."
+          class="form-control w-100 awesomplete"
+          id="answer">
+        <button type="submit"
+          class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+  <div id="results-section"
+    class="d-none">
+    <h2>Results</h2>
+    <p>
+      <strong>Points:</strong> <span id="points-total">0</span> / 10
+    </p>
+    <table id="results-table" class="table mt-3 fs-6">
+    </table>
+    <p class="text-center">
+      <butto class="btn btn-secondary restart-game">Start over</button>
+    </p>
+  </div>
+</div>
+<script src="/libs/awesomplete/awesomplete.min.js"></script>

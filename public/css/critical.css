@@ -7681,6 +7681,59 @@ ul.share-buttons .sr-only {
   width: 1px;
   overflow: hidden; }
 
+@media (max-width: 800px) {
+  table thead {
+    left: -9999px;
+    position: absolute;
+    visibility: hidden; }
+  table tr {
+    border-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    background-color: #fff; }
+    body[data-bs-theme="dark"] table tr {
+      background-color: #000; }
+  table td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    padding: 12px;
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff; }
+    body[data-bs-theme="dark"] table td {
+      background-color: #000; }
+    table td:before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+      color: #666; }
+    table td:last-child {
+      border-bottom: none; }
+  table td .d-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  table td img {
+    max-width: 32px;
+    max-height: 32px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; } }
+
 body {
   color: #363636;
   font-family: 'Roboto', sans-serif;

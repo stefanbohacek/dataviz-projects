@@ -1,0 +1,159 @@
+// global modules
+
+import getServerPlatform from "/js/modules/getServerPlatform.min.js";
+import getUrlParams from "/js/modules/getUrlParams.min.js";
+import stripHTML from "/js/modules/stripHTML.min.js";
+import saveData from "/js/modules/saveData.min.js";
+
+// local modules
+
+import fetchData from "./fetchData.min.js";
+import startGame from "./startGame.min.js";
+
+const greeting = document.getElementsByClassName("greeting");
+const loadingScreen = document.getElementById("loading");
+const profileImage = document.getElementsByClassName("profile-image");
+
+const getData = async () => {
+  let userData = {};
+  const { token, instance, username, userid, avatarUrl } = getUrlParams(true);
+
+  if (token && instance) {
+    const platform = await getServerPlatform(instance);
+    let userInfo = {},
+      profileImageURL;
+
+    switch (platform) {
+      case "mastodon":
+      case "hometown":
+      case "pixelfed":
+      case "friendica":
+      case "pleroma":
+      case "akkoma":
+      case "gotosocial":
+        userInfo = await fetchData(
+          instance,
+          platform,
+          "accounts/verify_credentials",
+          token
+        );
+        console.log("userInfo", userInfo);
+        profileImageURL = userInfo.avatar_static || userInfo.avatar;
+
+        if (userInfo.display_name) {
+          userData.name = userInfo.display_name || "there";
+        }
+
+        if (userInfo.acct) {
+          userData.account = `@${userInfo.acct}@${instance}`;
+
+          if (!userData.name) {
+            userData.name = `@${userInfo.acct}`;
+          }
+        }
+
+        if (!userData.name) {
+          userData.name = "there";
+        }
+
+        if (profileImageURL) {
+          userData.profileImageURL = profileImageURL;
+        }
+
+        break;
+      case "misskey":
+      case "calckey":
+      case "firefish":
+      case "foundkey":
+      case "magnetar":
+      case "sharkey":
+        userInfo.id = userid;
+        userData.name = username;
+        userData.account = `@${username}@${instance}`;
+        userData.profileImageURL = avatarUrl;
+
+        break;
+      default:
+        break;
+    }
+
+    loadingScreen.classList.remove("d-none");
+    greeting[0].innerHTML = `Hello ${userData.name}!`;
+
+    if (userData.profileImageURL) {
+      profileImage[0].src = userData.profileImageURL;
+    }
+
+    const loading = document.getElementById("loading");
+
+    loading.scrollIntoView({
+      behavior: "smooth",
+    });
+
+    let following;
+
+    switch (platform) {
+      case "mastodon":
+      case "hometown":
+      case "pixelfed":
+      case "friendica":
+      case "pleroma":
+      case "akkoma":
+      case "gotosocial":
+        following = await fetchData(
+          instance,
+          platform,
+          `accounts/${userInfo.id}/following?limit=100 `,
+          token
+        );
+
+        break;
+      case "misskey":
+      case "calckey":
+      case "firefish":
+      case "foundkey":
+      case "magnetar":
+      case "sharkey":
+        following = await fetchData(
+          instance,
+          platform,
+          `users/following `,
+          token,
+          userInfo.id
+        );
+        following = following.map((f) => f.followee);
+        break;
+      default:
+        break;
+    }
+
+    if (following && following.length) {
+      if (!following[0].acct) {
+        following.forEach((account) => {
+          account.acct = `${account.username}@${account.host || instance}`;
+        });
+      }
+    }
+
+    let follows = [];
+
+    following.forEach((account) => {
+      follows.push({
+        id: account.id,
+        username: account.username,
+        acct: account.acct,
+        display_name: account.display_name,
+        note: stripHTML(account?.note),
+        url: account.url,
+        avatar: account.avatar,
+      });
+    });
+
+    userData.follows = follows.filter(f => f.note);
+
+    saveData("fediverseFollowsData", userData, 60);
+    startGame(userData);
+  }
+};
+
+export default getData;

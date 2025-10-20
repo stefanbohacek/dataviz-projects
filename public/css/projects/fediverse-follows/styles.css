@@ -1,0 +1,22 @@
+.profile-image {
+  vertical-align: text-bottom;
+  width: 3rem;
+  height: 3rem; }
+  .display-4 .profile-image {
+    vertical-align: baseline; }
+
+.privacy-policy p {
+  max-width: 800px; }
+
+mark {
+  display: inline-block; }
+
+.awesomplete {
+  width: 100%;
+  margin-bottom: 0.5rem; }
+
+#results-table td {
+  text-align: center; }
+  @media (min-width: 801px) {
+    #results-table td {
+      max-width: 1rem; } }
