@@ -44,7 +44,8 @@
         <span class="placeholder col-12"></span>
       </p>
       <p>
-        <button class="btn btn-secondary" id="skip-to-results">Skip</button>
+        <button class="btn btn-secondary"
+          id="skip-to-results">Skip</button>
       </p>
     </div>
   </div>
@@ -56,7 +57,8 @@
       <div class="col-sm-12">
         <h1 class="mt-0 mb-4"><img class="profile-image rounded-circle"> <span id="account-name"></span></h1>
         <label for="answer"
-          class="form-label">Can you recognize this account based on their profile description? Round <span id="round-counter">1</span>/<span id="max-round-counter">10</span></label>
+          class="form-label">Can you recognize this account based on their profile description? Round <span
+            id="round-counter">1</span>/<span id="max-round-counter">10</span></label>
       </div>
       <div id="bio-column"
         class="col-sm-12 col-md-6">
@@ -66,15 +68,24 @@
       </div>
       <div id="options-column"
         class="col-sm-12 col-md-6">
-        <input id="current-answer" required
+        <input id="current-answer"
+          required
           type="text"
           placeholder="Your follow's name..."
           class="form-control w-100 awesomplete"
           id="answer">
-        <button type="submit"
-          class="btn btn-primary">Submit</button>
-        <button id="skip-round"
-          class="btn btn-outline-secondary">Skip</button>
+        <div class="row">
+          <div class="col">
+            <button type="submit"
+              class="btn btn-primary">Submit</button>
+            <button id="skip-round"
+              class="btn btn-outline-secondary">Skip</button>
+          </div>
+          <div class="col text-end">
+            <button id="log-out"
+              class="btn btn-outline-warning">Log out</button>
+          </div>
+        </div>
       </div>
     </div>
   </form>
@@ -84,7 +95,8 @@
     <p>
       <strong>Points:</strong> <span id="points-total">0</span> / <span id="points-max">10</span>
     </p>
-    <table id="results-table" class="table mt-3 fs-6">
+    <table id="results-table"
+      class="table mt-3 fs-6">
     </table>
     <p class="text-center">
       <butto class="btn btn-secondary restart-game">Start over</button>

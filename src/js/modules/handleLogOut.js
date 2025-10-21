@@ -1,0 +1,15 @@
+export default () => {
+  const logOutBtn = document.getElementById("log-out");
+  if (logOutBtn) {
+    logOutBtn.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      localStorage.clear();
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "instant",
+      });
+      window.location.reload();
+    });
+  }
+};
