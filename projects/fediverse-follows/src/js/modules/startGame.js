@@ -1,5 +1,6 @@
 import randomFromArray from "/js/modules/randomFromArray.min.js";
 import initAwesomplete from "/js/modules/initAwesomplete.min.js";
+import showResults from "./showResults.min.js";
 
 const loadingScreen = document.getElementById("loading");
 const profileImage = document.getElementsByClassName("profile-image");
@@ -10,10 +11,7 @@ const currentAnswerEl = document.getElementById("current-answer");
 const roundCounterEl = document.getElementById("round-counter");
 const maxRoundCounterEl = document.getElementById("max-round-counter");
 const followBio = document.getElementById("follow-bio");
-const pointsTotalEl = document.getElementById("points-total");
-const pointsTotalMaxEl = document.getElementById("points-max");
 const resultsSection = document.getElementById("results-section");
-const resultsTable = document.getElementById("results-table");
 const restartGameBtns = document.getElementsByClassName("restart-game");
 const skipRoundBtn = document.getElementById("skip-round");
 
@@ -45,7 +43,7 @@ const playRound = (follows) => {
   if (gameState.currentRound > gameState.maxRounds) {
     answerForm.classList.add("d-none");
     resultsSection.classList.remove("d-none");
-    showResults();
+    showResults(gameStateInit, gameState, fullUserData);
     return;
   }
 
@@ -95,65 +93,6 @@ const checkAnswer = () => {
 
   localStorage.setItem("fediverseFollowsGameState", JSON.stringify(gameState));
   playRound(follows);
-};
-
-const showResults = () => {
-  pointsTotalMaxEl.innerText = gameState.maxRounds;
-
-  let resultsHtml = /* html */ `
-    <thead>
-      <tr>
-        <th>Account</th>
-        <th>Your answer</th>
-        <th>Result</th>
-      </tr>
-    </thead>
-    <tbody>
-  `;
-
-  gameState.rounds.forEach((round, index) => {
-    if (gameState.rounds[index]?.userAnswer) {
-      const userAnswer = gameState.rounds[index].userAnswer;
-
-      const correctAnswer = `${
-        fullUserData.follows[round.accountIndex].username
-      } (${fullUserData.follows[round.accountIndex].acct})`;
-
-      const roundResult = correctAnswer === userAnswer;
-
-      resultsHtml += /* html */ `
-      <tr>
-        <td data-label="Account" class="text-start">
-          <div class="d-flex text-start">
-            <div class="flex-shrink-0">
-              <img width="32" height="32" src="${
-                fullUserData.follows[round.accountIndex].avatar
-              }" alt="">
-            </div>
-            <div class="flex-grow-1 ms-0 ms-md-3">
-            <strong>${
-              fullUserData.follows[round.accountIndex].username
-            }</strong><br/>
-              ${fullUserData.follows[round.accountIndex].note}
-            </div>
-          </div>
-        </td>
-        <td data-label="Your answer" class="text-start">${round.userAnswer}</td>
-        <td data-label="Result" class="text-start">${
-          roundResult
-            ? `✅ Correct!`
-            : userAnswer === "(skipped)"
-            ? `⛔ Skipped`
-            : `❌ Incorrect`
-        }</td>
-      </tr>
-    `;
-    }
-  });
-
-  resultsHtml += `</tbody>`;
-  resultsTable.innerHTML = resultsHtml;
-  pointsTotalEl.innerText = gameState.points;
 };
 
 answerForm.addEventListener("submit", (ev) => {

@@ -37,7 +37,6 @@ const getData = async () => {
           "accounts/verify_credentials",
           token
         );
-        console.log("userInfo", userInfo);
         profileImageURL = userInfo.avatar_static || userInfo.avatar;
 
         if (userInfo.display_name) {
@@ -59,6 +58,9 @@ const getData = async () => {
         if (profileImageURL) {
           userData.profileImageURL = profileImageURL;
         }
+
+        userData.instance = instance;
+        userData.platform = platform;
 
         break;
       case "misskey":
@@ -149,7 +151,7 @@ const getData = async () => {
       });
     });
 
-    userData.follows = follows.filter(f => f.note);
+    userData.follows = follows.filter((f) => f.note);
 
     saveData("fediverseFollowsData", userData, 60);
     startGame(userData);
