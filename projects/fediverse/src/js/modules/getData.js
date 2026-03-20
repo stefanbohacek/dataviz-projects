@@ -137,6 +137,12 @@ const getData = async () => {
           token,
           userInfo.id
         );
+
+
+        console.log("followers", followers);
+        
+        console.log("following", following);
+        
         followers = followers.map((f) => f.follower);
         following = following.map((f) => f.followee);
         break;
