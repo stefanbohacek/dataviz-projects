@@ -21,7 +21,7 @@ const errorMessages = {
 ready(async () => {
   signInForm.addEventListener("submit", signIn);
   userData = await loadData("fediverseUserData");
-  const params = getUrlParams(true);
+  const params = getUrlParams(false);
 
   if (params?.error) {
     if (errorMessages[params.error]) {

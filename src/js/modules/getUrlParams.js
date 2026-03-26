@@ -1,4 +1,4 @@
-const getUrlParams = (clear) => {
+export default (clear) => {
   const url = location.href;
   let params = [];
 
@@ -17,5 +17,3 @@ const getUrlParams = (clear) => {
 
   return params;
 };
-
-export default getUrlParams;

@@ -17,6 +17,7 @@ const profileImage = document.getElementsByClassName("profile-image");
 const getData = async () => {
   let userData = {};
   const { token, instance, username, userid, avatarUrl } = getUrlParams(true);
+  // console.log({ token, instance, username, userid, avatarUrl });
 
   if (token && instance) {
     const platform = await getServerPlatform(instance);
@@ -37,7 +38,7 @@ const getData = async () => {
           "accounts/verify_credentials",
           token
         );
-        console.log("userInfo", userInfo);
+        // console.log("userInfo", userInfo);
         profileImageURL = userInfo.avatar_static || userInfo.avatar;
 
         if (userInfo.display_name) {
@@ -139,9 +140,8 @@ const getData = async () => {
         );
 
 
-        console.log("followers", followers);
-        
-        console.log("following", following);
+        // console.log("followers", followers);
+        // console.log("following", following);
         
         followers = followers.map((f) => f.follower);
         following = following.map((f) => f.followee);
