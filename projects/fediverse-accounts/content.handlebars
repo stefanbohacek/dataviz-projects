@@ -48,6 +48,21 @@
     <button id="download-html" type="button" class="btn btn-outline-secondary text-dark-emphasis text-dark-emphasis">
       Download HTML</button>
   </div>
+  <p class="mt-4 mb-0">
+    <label for="fediverse-server" class="form-label">Open profile links from this server</label>
+  </p>
+  <div class="input-group mb-2 mt-0" id="server-input-group">
+    <span class="input-group-text">Server</span>
+    <input
+      type="text"
+      id="fediverse-server"
+      class="form-control"
+      placeholder="mastodon.social"
+      aria-describedby="server-info"
+    />
+    <button id="server-submit" class="btn btn-primary">Update</button>
+  </div>  
+  <div id="server-info" class="form-text"><small>Currently only Mastodon servers are supported. <em>Sorry!</em></small></div>
   <div id="placeholder-table" class="mt-5">
     <table class="table table-striped">
       <thead>
